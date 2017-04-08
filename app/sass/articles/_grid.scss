@@ -18,6 +18,13 @@
   flex-basis: 820px;
 }
 
+@media (max-width: 1260px) {
+  .container {
+    margin-left: 30px;
+    margin-right: 35px;
+  }
+}
+
 
 @media (max-width: 1024px) {
   .container {
