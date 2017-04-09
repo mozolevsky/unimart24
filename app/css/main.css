@@ -1,3 +1,123 @@
+/*.main-title - h1*/
+.title-h1 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #c4010c;
+  font-weight: 400;
+  text-align: left; }
+
+.title-h3 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #c4010c;
+  font-weight: 600;
+  text-align: left; }
+
+.text-italic {
+  font-size: 18px;
+  line-height: 30px;
+  font-style: italic;
+  color: #000000;
+  text-align: left; }
+
+.text-normal {
+  font-size: 15px;
+  line-height: 26px;
+  color: #000000;
+  text-align: left; }
+
+.text-bold {
+  font-size: 15px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+  font-weight: 700; }
+
+.text-italic_adv {
+  font-size: 15px;
+  line-height: 26px; }
+
+.table-title {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600; }
+
+.table-text {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400; }
+
+.table-text_bold {
+  font-weight: 700; }
+
+@media (max-width: 1280px) {
+  .title-h1 {
+    font-size: 28px; }
+  .title-h3 {
+    font-size: 18px;
+    line-height: 26px; }
+  .text-italic {
+    font-size: 16px;
+    line-height: 28px; }
+  .text-normal {
+    font-size: 14px;
+    line-height: 24px; }
+  .text-bold {
+    font-size: 14px; }
+  .text-italic_adv {
+    font-size: 14px;
+    line-height: 24px; }
+  .table-text {
+    font-size: 13px;
+    line-height: 20px; } }
+
+@media (max-width: 1024px) {
+  .title-h1 {
+    font-size: 30px; }
+  .title-h3 {
+    font-size: 20px;
+    line-height: 21px; }
+  .text-italic {
+    font-size: 18px;
+    line-height: 32px; }
+  .text-normal {
+    font-size: 15px;
+    line-height: 26px; }
+  .text-italic_adv {
+    font-size: 15px;
+    line-height: 26px; }
+  .table-text {
+    font-size: 14px;
+    line-height: 22px; }
+  .table-text_bold {
+    line-height: 21px; } }
+
+@media (max-width: 768px) {
+  .text-italic {
+    font-size: 14px;
+    line-height: 22px; }
+  .text-normal {
+    font-size: 14px;
+    line-height: 24px; }
+  .text-italic_adv {
+    font-size: 14px;
+    line-height: 24px; }
+  .table-text {
+    font-size: 13px;
+    line-height: 20px; }
+  .table-text_bold {
+    font-size: 14px;
+    line-height: 20px; } }
+
+@media (max-width: 480px) {
+  .title-h1 {
+    font-size: 26px; }
+  .title-h3 {
+    font-size: 18px;
+    line-height: 26px; }
+  .text-italic {
+    line-height: 24px; } }
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
