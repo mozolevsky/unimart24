@@ -13,6 +13,12 @@
   font-weight: 600;
   text-align: left; }
 
+.title-h2 {
+  font-size: 26px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 400; }
+
 .text-italic {
   font-size: 18px;
   line-height: 30px;
@@ -53,6 +59,8 @@
 @media (max-width: 1280px) {
   .title-h1 {
     font-size: 28px; }
+  .title-h2 {
+    font-size: 24px; }
   .title-h3 {
     font-size: 18px;
     line-height: 26px; }
@@ -74,6 +82,8 @@
 @media (max-width: 1024px) {
   .title-h1 {
     font-size: 30px; }
+  .title-h2 {
+    font-size: 26px; }
   .title-h3 {
     font-size: 20px;
     line-height: 21px; }
@@ -93,6 +103,8 @@
     line-height: 21px; } }
 
 @media (max-width: 768px) {
+  .title-h2 {
+    font-size: 24px; }
   .text-italic {
     font-size: 14px;
     line-height: 22px; }
@@ -112,6 +124,9 @@
 @media (max-width: 480px) {
   .title-h1 {
     font-size: 26px; }
+  .title-h2 {
+    font-size: 22px;
+    line-height: 30px; }
   .title-h3 {
     font-size: 18px;
     line-height: 26px; }
