@@ -1,5 +1,7 @@
 /*.main-title - h1*/
 .title-h1 {
+  margin-top: 50px;
+  margin-bottom: 40px;
   font-size: 32px;
   line-height: 40px;
   color: #c4010c;
@@ -7,6 +9,8 @@
   text-align: left; }
 
 .title-h3 {
+  margin-top: 50px;
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: 28px;
   color: #c4010c;
@@ -14,6 +18,8 @@
   text-align: left; }
 
 .title-h2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
   font-size: 26px;
   line-height: 36px;
   color: #000000;
@@ -27,6 +33,8 @@
   text-align: left; }
 
 .text-normal {
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 15px;
   line-height: 26px;
   color: #000000;
@@ -38,6 +46,11 @@
   color: #000000;
   text-align: center;
   font-weight: 700; }
+
+.text-img-name {
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666; }
 
 .text-italic_adv {
   font-size: 15px;
@@ -58,10 +71,14 @@
 
 @media (max-width: 1280px) {
   .title-h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
     font-size: 28px; }
   .title-h2 {
     font-size: 24px; }
   .title-h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 26px; }
   .text-italic {
@@ -81,10 +98,14 @@
 
 @media (max-width: 1024px) {
   .title-h1 {
+    margin-top: 50px;
+    margin-bottom: 40px;
     font-size: 30px; }
   .title-h2 {
+    margin-top: 60px;
     font-size: 26px; }
   .title-h3 {
+    margin-top: 50px;
     font-size: 20px;
     line-height: 21px; }
   .text-italic {
@@ -103,12 +124,22 @@
     line-height: 21px; } }
 
 @media (max-width: 768px) {
+  .title-h1 {
+    margin-top: 40px;
+    margin-bottom: 30px; }
   .title-h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
     font-size: 24px; }
+  .title-h3 {
+    margin-top: 30px;
+    margin-bottom: 20px; }
   .text-italic {
     font-size: 14px;
     line-height: 22px; }
   .text-normal {
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 24px; }
   .text-italic_adv {
@@ -119,12 +150,21 @@
     line-height: 20px; }
   .table-text_bold {
     font-size: 14px;
-    line-height: 20px; } }
+    line-height: 20px; }
+  .table-title {
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.5; } }
 
 @media (max-width: 480px) {
   .title-h1 {
     font-size: 26px; }
   .title-h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 22px;
     line-height: 30px; }
   .title-h3 {
@@ -433,3 +473,90 @@
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row; } }
+
+.types__table-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #f5f5f5; }
+
+.types__table-name {
+  width: 230px; }
+
+.types__table-feature,
+.types__table-advantage {
+  width: -webkit-calc(50% - 117px);
+  width: calc(50% - 117px); }
+
+.types__table-feature {
+  margin-left: 2px;
+  margin-right: 2px; }
+
+.types__table-title {
+  display: none;
+  padding: 16px 10px;
+  margin: 0;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #c4010c; }
+
+.types__table-item_1 .types__table-title {
+  display: block; }
+
+.types__item-text {
+  padding: 20px 10px;
+  margin: 0; }
+
+@media (max-width: 1280px) {
+  .types__table-name {
+    width: 206px; }
+  .types__table-feature,
+  .types__table-advantage {
+    width: -webkit-calc(50% - 110px);
+    width: calc(50% - 110px); } }
+
+@media (max-width: 992px) {
+  .types__table-name {
+    width: 179px; }
+  .types__table-feature,
+  .types__table-advantage {
+    width: -webkit-calc(50% - 92px);
+    width: calc(50% - 92px); } }
+
+@media (max-width: 768px) {
+  .types__table-item {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+    border-bottom: none; }
+  .types__table-item_grey {
+    background-color: #f5f5f5; }
+  .types__table-title {
+    display: block;
+    border-bottom: none;
+    background-color: transparent;
+    padding: 0; }
+  .types__table-name {
+    width: 100%; }
+  .types__table-feature,
+  .types__table-advantage {
+    width: 45%; }
+  .types__table-feature {
+    margin: 0; }
+  .types__item-text {
+    padding: 0; }
+  .types__item-text.table-text_bold {
+    padding: 0;
+    padding-bottom: 20px; } }
+
+@media (max-width: 480px) {
+  .types__table-feature,
+  .types__table-advantage {
+    width: 100%; }
+  .types__table-feature {
+    padding-bottom: 20px; } }

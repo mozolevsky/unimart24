@@ -1,5 +1,7 @@
 /*.main-title - h1*/
 .title-h1 {
+  margin-top: 50px;
+  margin-bottom: 40px;
   font-size: 32px;
   line-height: 40px;
   color: $red;
@@ -8,6 +10,8 @@
 }
 
 .title-h3 {
+  margin-top: 50px;
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: 28px;
   color: $red;
@@ -16,6 +20,8 @@
 }
 
 .title-h2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
   font-size: 26px;
   line-height: 36px;
   color: $black;
@@ -31,6 +37,8 @@
 }
 
 .text-normal {
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 15px;
   line-height: 26px;
   color: $black;
@@ -43,6 +51,12 @@
   color: $black;
   text-align: center;
   font-weight: 700;
+}
+
+.text-img-name {
+  font-size: 12px;
+  line-height: 20px;
+  color: $gray-medium;
 }
 
 .text-italic_adv {
@@ -68,6 +82,8 @@
 
 @media (max-width: 1280px) {
   .title-h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
     font-size: 28px;
   }
 
@@ -76,6 +92,8 @@
   }
 
   .title-h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 26px;
   }
@@ -107,14 +125,18 @@
 
 @media (max-width: 1024px) {
   .title-h1 {
+    margin-top: 50px;
+    margin-bottom: 40px;
     font-size: 30px;
   }
 
   .title-h2 {
+    margin-top: 60px;
     font-size: 26px;
   }
 
   .title-h3 {
+    margin-top: 50px;
     font-size: 20px;
     line-height: 21px;
   }
@@ -145,8 +167,20 @@
 }
 
 @media (max-width: 768px) {
+  .title-h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
   .title-h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
     font-size: 24px;
+  }
+
+  .title-h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   .text-italic {
@@ -155,6 +189,8 @@
   }
 
   .text-normal {
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 24px;
   }
@@ -173,6 +209,15 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  .table-title {
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $black;
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: 480px) {
@@ -180,6 +225,8 @@
     font-size: 26px;
   }
   .title-h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 22px;
     line-height: 30px;
   }
