@@ -93,6 +93,87 @@
   width: 100%;
 }
 
+.left-column__newsletter {
+  padding: 28px;
+  border: 1px solid $gray-light;
+}
+
+.left-column__newsletter-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.left-column__newsletter-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: $gray-light;
+  border: 1px solid $grey-light4;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.left-column__newsletter-btn {
+  padding: 10px;
+  width: 100%;
+  background-color: $red;
+  border-radius: 2px;
+  color: $white;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.left-column__newsletter-icon-block {
+  position: relative;
+  display: block;
+  width: 53px;
+  height: 50px;
+  margin: 20px auto;
+  background-image: url("../../img/mail-icon.png");
+}
+
+.left-column__newsletter-icon-block::before,
+.left-column__newsletter-icon-block::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: $grey-light5;
+}
+
+.left-column__newsletter-icon-block::before {
+  left: -69px;
+}
+
+.left-column__newsletter-icon-block::after {
+  right: -69px;
+}
+
+@media (max-width: 1280px) {
+  .left-column__newsletter-icon-block::before,
+  .left-column__newsletter-icon-block::after {
+    width: 80%;
+  }
+
+  .left-column__newsletter-icon-block::before {
+    left: -55px;
+  }
+
+  .left-column__newsletter-icon-block::after {
+    right: -55px;
+  }
+}
 
 @media (max-width: 1024px) {
   .left-nav__container {
