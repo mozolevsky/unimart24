@@ -153,40 +153,50 @@
           justify-content: flex-start; }
 
 .left-column {
-  -webkit-flex-basis: 256px;
-      -ms-flex-preferred-size: 256px;
-          flex-basis: 256px;
+  width: 256px;
   margin-right: 60px; }
 
 .right-column {
   -webkit-flex-basis: 820px;
       -ms-flex-preferred-size: 820px;
-          flex-basis: 820px; }
+          flex-basis: 820px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 @media (max-width: 1260px) {
   .container {
     margin-left: 30px;
-    margin-right: 35px; } }
+    margin-right: 35px; }
+  .left-column {
+    width: 220px;
+    margin-right: 40px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; } }
 
 @media (max-width: 1024px) {
   .container {
     margin-left: 30px;
     margin-right: 35px; }
   .left-column {
-    -webkit-flex-basis: 220px;
-        -ms-flex-preferred-size: 220px;
-            flex-basis: 220px;
-    margin-right: 40px;
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0; } }
+    display: none; } }
 
 @media (max-width: 768px) {
   .container {
+    margin-top: 25px;
     margin-left: 28px;
-    margin-right: 28px; }
-  .left-column {
-    display: none; } }
+    margin-right: 28px; } }
 
 @media (max-width: 480px) {
   .container {
@@ -293,3 +303,133 @@
 .left-column__banner-wrapper {
   margin: 30px 0;
   width: auto; }
+
+.left-column__banner-img {
+  width: 100%; }
+
+@media (max-width: 1024px) {
+  .left-nav__container {
+    width: 220px; } }
+
+.breadcrumbs-wrapper {
+  margin: -12px 0; }
+
+.breadcrumbs-wrapper > .rsbreadcrumb {
+  text-align: left; }
+
+.logo-block {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.logo-block___logo-wrapper {
+  margin-right: 40px; }
+
+.logo-block__logo-img {
+  width: 294px; }
+
+@media (max-width: 1024px) {
+  .logo-block___logo-wrapper {
+    margin-right: 30px; }
+  .logo-block__logo-img {
+    width: 256px; } }
+
+@media (max-width: 768px) {
+  .logo-block___logo-wrapper {
+    margin-right: 21px; }
+  .logo-block__logo-img {
+    width: 175px; } }
+
+@media (max-width: 480px) {
+  .logo-block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .logo-block___logo-wrapper {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px; }
+  .logo-block__logo-img {
+    width: 100%; } }
+
+.two-images__slider {
+  margin: 40px 0; }
+
+@media (max-width: 768px) {
+  .two-images__slider {
+    margin: 30px 0; } }
+
+.advantages {
+  margin: 30px 0 40px 0; }
+
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.advantages__slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+
+.advantages__advantage {
+  padding-top: 66px;
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.advantages__advantage_reliability {
+  background-image: url("../../img/reliability-icon.png"); }
+
+.advantages__advantage_guarantee {
+  background-image: url("../../img/guarantee-icon.png"); }
+
+.advantages__advantage_trouble-free {
+  background-image: url("../../img/trouble-free-icon.png"); }
+
+.advantages__advantage_quality-control {
+  background-image: url("../../img/quality-control-icon.png"); }
+
+@media (max-width: 768px) {
+  .advantages__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .advantages__slide {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 30px; }
+  .advantages__advantage {
+    min-width: 173px; } }
+
+@media (max-width: 480px) {
+  .advantages {
+    width: 100%; }
+  .advantages__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; } }

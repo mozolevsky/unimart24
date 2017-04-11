@@ -22,6 +22,7 @@
     <!-- взято с сайта. конец -->
 
     <!-- новые стили. начало -->
+    <link rel="stylesheet" href="libs/swiper/dist/css/swiper.css" type="text/css">
     <link href="css/main.css" type="text/css" rel="stylesheet" />
 
 </head>
@@ -91,10 +92,85 @@
         </div>
     </aside>
     <div class="right-column">
+        <div class="breadcrumbs-wrapper">
+            <ul class="rsbreadcrumb">
+                <li><a href="/"><span>Главная</span></a></li>
+                <li><span> / </span></li>
+                <li><a href=""><span>Полезная информация</span></a></li>
+                <li><span> / </span></li>
+                <li>Информационные статьи</li>
+            </ul>
+        </div>
+
+        <h1 class="title-h1">Группа KAN</h1>
+        <div class="logo-block">
+            <div class="logo-block___logo-wrapper">
+                <img src="img/logo-block-img.jpg" alt="#" class="logo-block__logo-img">
+            </div>
+            <div class="logo-block___logo-desc">
+                <p class="text-italic">Группа KAN производит инженерные сиестемы отопления и водоснабжения. С  1990 года
+                    конструкторы KAN учитывают требования современного строительства и реализуют идею универсальной системы
+                    KAN-therm. Группа KAN производит инженерные системы отопления и водоснабжения.</p>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <p class="text-normal">
+                Качество продукции под маркой KAN-therm неоднократно высоко оценивалось как в Польше,
+                так и за рубежом. За время работы компания KAN трижды получала золотую эмблему Quality International,
+                шесть раз становилась лауреатом "Золотого Инсталлятора", дважды завоевала золотые медали Международной
+                выставки в Познани. Благодаря многолетнему опыту и внедрению инноваций, торговые партнеры, дистрибьюторы и
+                проектировщики инженерных систем доверяют компании и считают KAN.
+            </p>
+        </div>
+
+        <!-- слайдер с двумя картинками -->
+
+        <div class="text-block">
+            <p class="text-normal">Системы KAN-therm отвечают экологическим стандартам в современном строительстве и нормам
+                энергосбережения и влияния зданий на окружающую среду. Главными преимуществами для тех, кто выбирает KAN, можно назвать:</p>
+        </div>
+
+        <div class="advantages swiper-container">
+            <div class="advantages__wrapper swiper-wrapper">
+                <div class="advantages__slide">
+                    <div class="advantages__advantage advantages__advantage_reliability">
+                        <span class="advantages__advantage-title text-bold">Надежность соединений</span>
+                    </div>
+                    <div class="advantages__advantage advantages__advantage_guarantee">
+                        <span class="advantages__advantage-title text-bold">Гарантия на систему 10 лет</span>
+                    </div>
+                </div>
+                <div class="advantages__slide">
+                    <div class="advantages__advantage advantages__advantage_trouble-free">
+                        <span class="advantages__advantage-title text-bold">Безаварийная эксплуатация за 50 лет</span>
+                    </div>
+                    <div class="advantages__advantage advantages__advantage_quality-control">
+                        <span class="advantages__advantage-title text-bold">Контроль испытательной лаборатории на каждом этапе производства</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </div>
 </div>
+
+<script type="text/javascript" src="libs/swiper/dist/js/swiper.js"></script>
+<!-- Initialize Swipers -->
+
+<script>
+    window.onload = function() {
+        if (window.innerWidth <= 480) {
+            console.log('This is mobile device');
+
+            var swiperAdvantages = new Swiper('.advantages', {
+                slideClass: 'advantages__slide',
+                slidesPerView: 1
+            });
+        }
+    }
+</script>
 
 </body>
 </html>
