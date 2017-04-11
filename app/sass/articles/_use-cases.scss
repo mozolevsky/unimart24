@@ -1,0 +1,13 @@
+.use-cases {
+  width: 100%;
+}
+
+.use-cases__img {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .use-cases__slide {
+    width: 80% !important;
+  }
+}
