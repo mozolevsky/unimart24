@@ -365,10 +365,8 @@
 
         <p class="title-h3">Акции</p>
         <div class="swiper-container specials">
-            <div class="specials__pagination slider-pagination">
-                <a href="#" class="slider-pagination slider-pagination__prev"></a>
-                <a href="" class="slider-pagination slider-pagination__next"></a>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
             <div class="specials__wrapper swiper-wrapper">
                 <a class="specials__slide swiper-slide">
                     <div class="specials__img-wrapper">
@@ -441,7 +439,6 @@
 <script>
     window.onload = function() {
         if (window.innerWidth <= 480) {
-            console.log('This is mobile device');
 
             var swiperTwoImages = new Swiper('.two-images__slider', {
                 slidesPerView: 1,
@@ -456,7 +453,24 @@
                 pagination: '.swiper-pagination',
                 paginationClickable: true
             });
+        }
 
+        if (window.innerWidth <= 768) {
+            var swiperSpecials = new Swiper('.specials', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    480: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        initialSlide: 1
+                    }
+                }
+            });
         }
     }
 
