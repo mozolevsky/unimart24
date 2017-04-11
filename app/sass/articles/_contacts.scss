@@ -1,3 +1,7 @@
+.contacts-block {
+  width: 100%;
+}
+
 .contacts-block__wrap {
   display: flex;
   justify-content: space-between;
@@ -13,11 +17,11 @@
 }
 
 .contacts__map {
+  box-sizing: border-box;
   width: 505px;
   height: 272px;
-  padding-left: 30px;
+  margin-left: 30px;
   margin-top: -45px;
-  background-color: #30509d;
 }
 
 .contacts-block__address-item .phone,
@@ -35,7 +39,6 @@
 @media (max-width: 1024px) {
   .contacts__map {
     width: 406px;
-    padding-left: 21px;
   }
 }
 
@@ -49,6 +52,7 @@
     width: 100%;
     padding: 0;
     margin-top: 0;
+    margin-left: 0;
     margin-bottom: 20px;
     height: 282px;
   }
