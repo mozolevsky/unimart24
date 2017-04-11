@@ -24,6 +24,7 @@
     <!-- новые стили. начало -->
     <link rel="stylesheet" href="libs/fancybox3/jquery.fancybox.min.css">
     <link rel="stylesheet" href="libs/swiper/dist/css/swiper.css" type="text/css">
+    <link rel="stylesheet" href="libs/tabs/tabs.css" type="text/css">
     <link href="css/main.css" type="text/css" rel="stylesheet" />
 
 </head>
@@ -101,6 +102,7 @@
         </div>
     </aside>
     <div class="right-column">
+
         <div class="breadcrumbs-wrapper">
             <ul class="rsbreadcrumb">
                 <li><a href="/"><span>Главная</span></a></li>
@@ -485,74 +487,86 @@
             </div>
         </div>
 
-        <div class="use-cases">
-            <h3 class="title-h3">Примеры использования KAN-thermo</h3>
-            <div class="swiper-container use-cases__slider">
-                <div class="use-cases__pagination slider-pagination">
-                    <a href="#" class="slider-pagination slider-pagination__prev"></a>
-                    <a href="" class="slider-pagination slider-pagination__next"></a>
+        <div class="swiper-container use-cases">
+        <h3 class="title-h3">Примеры использования KAN-thermo</h3>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="use-cases__wrapper swiper-wrapper">
+                <div class="use-cases__slide swiper-slide">
+                    <div class="use-cases__img-wrapper">
+                        <img src="img/use-case1.png" alt="" class="use-cases__img">
+                    </div>
                 </div>
-                <div class="swiper-wrapper">
-                    <div class="use-cases__slide swiper-slide">
-                        <div class="use-cases__img-wrapper">
-                            <img src="img/use-case1.png" alt="" class="use-cases__img">
-                        </div>
+                <div class="use-cases__slide swiper-slide">
+                    <div class="use-cases__img-wrapper">
+                        <img src="img/use-case2.png" alt="" class="use-cases__img">
                     </div>
-                    <div class="use-cases__slide swiper-slide">
-                        <div class="use-cases__img-wrapper">
-                            <img src="img/use-case2.png" alt="" class="use-cases__img">
-                        </div>
+                </div>
+                <div class="use-cases__slide swiper-slide">
+                    <div class="use-cases__img-wrapper">
+                        <img src="img/use-case3.png" alt="" class="use-cases__img">
                     </div>
-                    <div class="use-cases__slide swiper-slide">
-                        <div class="use-cases__img-wrapper">
-                            <img src="img/use-case3.png" alt="" class="use-cases__img">
-                        </div>
-                    </div>
-                    <div class="use-cases__slide swiper-slide">
-                        <div class="use-cases__img-wrapper">
-                            <img src="img/use-case4.png" alt="" class="use-cases__img">
-                        </div>
+                </div>
+                <div class="use-cases__slide swiper-slide">
+                    <div class="use-cases__img-wrapper">
+                        <img src="img/use-case4.png" alt="" class="use-cases__img">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="articles">
+        <div class="swiper-container articles">
             <h3 class="title-h3">Статьи о товарах</h3>
-            <div class="swiper-container articles__slider">
-                <div class="articles__pagination slider-pagination">
-                    <a href="#" class="slider-pagination slider-pagination__prev"></a>
-                    <a href="" class="slider-pagination slider-pagination__next"></a>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="articles__wrapper swiper-wrapper">
+                <div class="articles__slide swiper-slide">
+                    <div class="articles__img-wrapper articles__img-wrapper">
+                        <img src="img/use-case1.png" alt="" class="articles__img">
+                    </div>
+                    <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
                 </div>
-                <div class="swiper-wrapper">
-                    <div class="articles__slide swiper-slide">
-                        <div class="use-cases__img-wrapper articles__img-wrapper">
-                            <img src="img/use-case1.png" alt="" class="use-cases__img">
-                        </div>
-                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
+                <div class="articles__slide swiper-slide">
+                    <div class="articles__img-wrapper articles__img-wrapper">
+                        <img src="img/use-case2.png" alt="" class="articles__img">
                     </div>
-                    <div class="use-cases__slide swiper-slide">
-                        <div class="use-cases__img-wrapper articles__img-wrapper">
-                            <img src="img/use-case2.png" alt="" class="use-cases__img">
-                        </div>
-                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
+                    <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
+                </div>
+                <div class="articles__slide swiper-slide">
+                    <div class="articles__img-wrapper articles__img-wrapper">
+                        <img src="img/use-case3.png" alt="" class="articles__img">
                     </div>
-                    <div class="use-cases__slide swiper-slide">
-                        <div class="use-cases__img-wrapper articles__img-wrapper">
-                            <img src="img/use-case3.png" alt="" class="use-cases__img">
-                        </div>
-                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
+                    <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
+                </div>
+                <div class="articles__slide swiper-slide">
+                    <div class="articles__img-wrapper articles__img-wrapper">
+                        <img src="img/use-case4.png" alt="" class="articles__img">
                     </div>
-                    <div class="use-cases__slide swiper-slide">
-                        <div class="use-cases__img-wrapper articles__img-wrapper">
-                            <img src="img/use-case4.png" alt="" class="use-cases__img">
-                        </div>
-                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
-                    </div>
-                    >>>>>>> f22428d17d195c922c1fd98b4ba7e56dcefb6460
+                    <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
                 </div>
             </div>
         </div>
+
+        <section class="magic-tabs">
+            <div class="tabs tabs-style-linemove">
+                <nav>
+                    <ul>
+                        <li class="tab-current"><a href="#section-linemove-1" class="icon icon-home"><span>Home</span></a></li>
+                        <li class=""><a href="#section-linemove-2" class="icon icon-box"><span>Archive</span></a></li>
+                        <li class=""><a href="#section-linemove-3" class="icon icon-display"><span>Analytics</span></a></li>
+                        <li class=""><a href="#section-linemove-4" class="icon icon-upload"><span>Upload</span></a></li>
+                        <li class=""><a href="#section-linemove-5" class="icon icon-tools"><span>Settings</span></a></li>
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+                    <section id="section-linemove-1" class="content-current"><p>1</p></section>
+                    <section id="section-linemove-2" class=""><p>2</p></section>
+                    <section id="section-linemove-3" class=""><p>3</p></section>
+                    <section id="section-linemove-4" class=""><p>4</p></section>
+                    <section id="section-linemove-5" class=""><p>5</p></section>
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+        </section>
 
         <div class="reccomend">
             <h3 class="title-h3">Также будут полезны</h3>
@@ -593,6 +607,8 @@
 </div>
 <!-- новые скрипты -->
 <script src="libs/jquery-3.2.1.min/index.js"></script>
+<script src="libs/tabs/modernizr.custom.js"></script>
+<script src="libs/tabs/cbpFWTabs.js"></script>
 <script type="text/javascript" src="libs/fancybox3/jquery.fancybox.min.js"></script>
 <script>
     $("[data-fancybox]").fancybox();
@@ -651,40 +667,39 @@
                     }
                 }
             });
+
+            var swiperUseCases = new Swiper('.use-cases', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    480: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        initialSlide: 1
+                    }
+                }
+            });
+
+            var swiperArticles = new Swiper('.articles', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    480: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        initialSlide: 1
+                    }
+                }
+            });
         }
-
-        var swiperArticles = new Swiper('.articles__slider', {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            paginationClickable: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            breakpoints: {
-                480: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 10,
-                    centeredSlides: true,
-                    initialSlide: 1
-                }
-            }
-        });
-
-        var swiperUseCases = new Swiper('.use-cases__slider', {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            paginationClickable: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            breakpoints: {
-                480: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 10,
-                    centeredSlides: true,
-                    initialSlide: 1
-                }
-            }
-        });
-
     };
 
 </script>

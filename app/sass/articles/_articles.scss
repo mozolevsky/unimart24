@@ -11,3 +11,42 @@
 .articles__img-wrapper {
   margin-bottom: 20px;
 }
+
+.articles__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles__slide {
+  width: 24%;
+  text-align: left;
+}
+
+.articles__img {
+  width: 100%;
+}
+
+.articles .swiper-button-next,
+.articles .swiper-button-prev {
+  display: none;
+}
+
+
+@media (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 768px) {
+  .articles .swiper-button-next,
+  .articles .swiper-button-prev {
+    display: block;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .articles__slide {
+    width: 80%;
+  }
+}
