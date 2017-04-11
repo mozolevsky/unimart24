@@ -358,7 +358,7 @@
                     </div>
                 </div>
                 <div class="contacts__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.9119923358962!2d37.59392331544687!3d55.74265810024251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bae8870c3eb%3A0x8f82df30e42a5340!2z0YPQuy4g0J_RgNC10YfQuNGB0YLQtdC90LrQsCwgMTMsINCc0L7RgdC60LLQsCwgMTE5MDM0!5e0!3m2!1sru!2sru!4v1491929385993" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                   <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.9119923358962!2d37.59392331544687!3d55.74265810024251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bae8870c3eb%3A0x8f82df30e42a5340!2z0YPQuy4g0J_RgNC10YfQuNGB0YLQtdC90LrQsCwgMTMsINCc0L7RgdC60LLQsCwgMTE5MDM0!5e0!3m2!1sru!2sru!4v1491929385993" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
                 </div>
             </div>
         </div>
@@ -391,6 +391,74 @@
                     </div>
                     <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
                 </a>
+            </div>
+        </div>
+
+        <div class="use-cases">
+            <h3 class="title-h3">Примеры использования KAN-thermo</h3>
+            <div class="swiper-container use-cases__slider">
+                <div class="use-cases__pagination slider-pagination">
+                    <a href="#" class="slider-pagination slider-pagination__prev"></a>
+                    <a href="" class="slider-pagination slider-pagination__next"></a>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper">
+                            <img src="img/use-case1.png" alt="" class="use-cases__img">
+                        </div>
+                    </div>
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper">
+                            <img src="img/use-case2.png" alt="" class="use-cases__img">
+                        </div>
+                    </div>
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper">
+                            <img src="img/use-case3.png" alt="" class="use-cases__img">
+                        </div>
+                    </div>
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper">
+                            <img src="img/use-case4.png" alt="" class="use-cases__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="articles">
+            <h3 class="title-h3">Статьи о товарах</h3>
+            <div class="swiper-container articles__slider">
+                <div class="articles__pagination slider-pagination">
+                    <a href="#" class="slider-pagination slider-pagination__prev"></a>
+                    <a href="" class="slider-pagination slider-pagination__next"></a>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="articles__slide swiper-slide">
+                        <div class="use-cases__img-wrapper articles__img-wrapper">
+                            <img src="img/use-case1.png" alt="" class="use-cases__img">
+                        </div>
+                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
+                    </div>
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper articles__img-wrapper">
+                            <img src="img/use-case2.png" alt="" class="use-cases__img">
+                        </div>
+                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
+                    </div>
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper articles__img-wrapper">
+                            <img src="img/use-case3.png" alt="" class="use-cases__img">
+                        </div>
+                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
+                    </div>
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper articles__img-wrapper">
+                            <img src="img/use-case4.png" alt="" class="use-cases__img">
+                        </div>
+                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -456,9 +524,57 @@
                 pagination: '.swiper-pagination',
                 paginationClickable: true
             });
-
         }
-    }
+
+    };
+
+    var swiperArticles = new Swiper('.articles__slider', {
+        spaceBetween: 20,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        slidesPerView: 4,
+        breakpoints: {
+            // when window width is <= 480px
+            480: {
+                slidesPerView: 1
+            },
+            // when window width is <= 768px
+            768: {
+                slidesPerView: 2
+            },
+            // when window width is <= 1024px
+            1024: {
+                slidesPerView: 4
+            },
+            // when window width is <= 1280px
+            1280: {
+                slidesPerView: 3
+            }}
+    });
+
+    var swiperUseCases = new Swiper('.use-cases__slider', {
+        spaceBetween: 20,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        slidesPerView: 4,
+        breakpoints: {
+            // when window width is <= 480px
+            480: {
+                slidesPerView: 1
+            },
+            // when window width is <= 768px
+            768: {
+                slidesPerView: 2
+            },
+            // when window width is <= 1024px
+            1024: {
+                slidesPerView: 4
+            },
+            // when window width is <= 1280px
+            1280: {
+                slidesPerView: 3
+            }}
+    });
 
 </script>
 

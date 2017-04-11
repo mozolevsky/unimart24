@@ -1043,3 +1043,24 @@
     line-height: 22px; }
   .reccomend__item-text {
     font-size: 13px; } }
+
+.use-cases {
+  width: 100%; }
+
+.use-cases__img {
+  width: 100%; }
+
+@media (max-width: 480px) {
+  .use-cases__slide {
+    width: 80% !important; } }
+
+.articles {
+  width: 100%; }
+
+.articles__link {
+  color: #214496;
+  text-align: left;
+  cursor: pointer; }
+
+.articles__img-wrapper {
+  margin-bottom: 20px; }
