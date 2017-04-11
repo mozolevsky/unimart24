@@ -1,7 +1,7 @@
 /*.main-title - h1*/
 .title-h1 {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 46px;
+  margin-bottom: 36px;
   font-size: 32px;
   line-height: 40px;
   color: $red;
@@ -10,8 +10,8 @@
 }
 
 .title-h3 {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 46px;
+  margin-bottom: 26px;
   font-size: 20px;
   line-height: 28px;
   color: $red;
@@ -20,12 +20,13 @@
 }
 
 .title-h2 {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 46px;
+  margin-bottom: 26px;
   font-size: 26px;
   line-height: 36px;
   color: $black;
   font-weight: 400;
+  text-align: left;
 }
 
 .text-italic {
@@ -37,8 +38,8 @@
 }
 
 .text-normal {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 13px;
+  margin-bottom: 13px;
   font-size: 15px;
   line-height: 26px;
   color: $black;
@@ -49,7 +50,7 @@
   font-size: 15px;
   line-height: 26px;
   color: $black;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
 }
 
@@ -80,10 +81,23 @@
   font-weight: 700;
 }
 
+.inner-link {
+  color: $blue;
+  text-decoration: underline;
+}
+
+.media-name {
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  text-align: left;
+}
+
+
 @media (max-width: 1280px) {
   .title-h1 {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 36px;
+    margin-bottom: 26px;
     font-size: 28px;
   }
 
@@ -92,8 +106,8 @@
   }
 
   .title-h3 {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 36px;
+    margin-bottom: 26px;
     font-size: 18px;
     line-height: 26px;
   }
@@ -104,6 +118,7 @@
   }
 
   .text-normal {
+    margin: 12px 0;
     font-size: 14px;
     line-height: 24px;
   }
@@ -125,18 +140,18 @@
 
 @media (max-width: 1024px) {
   .title-h1 {
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 46px;
+    margin-bottom: 36px;
     font-size: 30px;
   }
 
   .title-h2 {
-    margin-top: 60px;
+    margin-top: 55px;
     font-size: 26px;
   }
 
   .title-h3 {
-    margin-top: 50px;
+    margin-top: 46px;
     font-size: 20px;
     line-height: 21px;
   }
@@ -147,6 +162,7 @@
   }
 
   .text-normal {
+    margin: 13px 0;
     font-size: 15px;
     line-height: 26px;
   }
@@ -168,19 +184,19 @@
 
 @media (max-width: 768px) {
   .title-h1 {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 36px;
+    margin-bottom: 26px;
   }
 
   .title-h2 {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 36px;
+    margin-bottom: 26px;
     font-size: 24px;
   }
 
   .title-h3 {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 26px;
+    margin-bottom: 16px;
   }
 
   .text-italic {
@@ -189,8 +205,6 @@
   }
 
   .text-normal {
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-size: 14px;
     line-height: 24px;
   }
@@ -225,8 +239,8 @@
     font-size: 26px;
   }
   .title-h2 {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 26px;
+    margin-bottom: 16px;
     font-size: 22px;
     line-height: 30px;
   }
