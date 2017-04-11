@@ -1,0 +1,42 @@
+.links-catalog {
+  width: 100%;
+}
+
+.links-catalog__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.links-catalog__column {
+  width: 227px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  text-align: left;
+  @include textParam(14px, 25px, $blue);
+}
+
+.links-catalog__column:last-child {
+  margin-right: 0;
+}
+
+.links-catalog__number {
+ color: $grey-medium2;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 768px) {
+  .links-catalog__column {
+  }
+}
+
+
+@media (max-width: 480px) {
+  .links-catalog__column {
+  }
+}

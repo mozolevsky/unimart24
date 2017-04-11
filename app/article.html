@@ -182,8 +182,8 @@
                 а также задать интересующие вопросы и заказать партию товара любого объема.</p>
         </div>
 
-        <p class="title-h3">Награды и сертификаты</p>
         <div class="certificates">
+            <p class="title-h3">Награды и сертификаты</p>
             <div class="certificates__wrapper">
                 <div class="certificates__certificate">
                     <a class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert1.png" alt="" class="certificates__img"></a>
@@ -353,8 +353,8 @@
             </div>
         </div>
 
-        <p class="title-h3">Акции</p>
         <div class="swiper-container specials">
+            <p class="title-h3">Акции</p>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="specials__wrapper swiper-wrapper">
@@ -379,6 +379,99 @@
                     </div>
                     <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
                 </a>
+            </div>
+        </div>
+
+        <div class="swiper-container popular">
+            <p class="title-h3">Популярные товары</p>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="popular__wrapper swiper-wrapper">
+                <div class="popular__slide swiper-slide">
+                <p class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</p>
+                <div class="popular__img-wrapper">
+                    <img src="img/paint1.png" alt="" class="popular__img">
+                </div>
+                <p class="popular__price-wrapper">
+                    от <span class="popular__price">664</span>
+                    <span class="popular__price-unit">р.</span>
+                </p>
+            </div>
+                <div class="popular__slide swiper-slide">
+                    <p class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</p>
+                    <div class="popular__img-wrapper">
+                        <img src="img/paint1.png" alt="" class="popular__img">
+                    </div>
+                    <p class="popular__price-wrapper">
+                        от <span class="popular__price">664</span>
+                        <span class="popular__price-unit">р.</span>
+                    </p>
+                </div>
+                <div class="popular__slide swiper-slide">
+                    <p class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</p>
+                    <div class="popular__img-wrapper">
+                        <img src="img/paint3.png" alt="" class="popular__img">
+                    </div>
+                    <p class="popular__price-wrapper">
+                        от <span class="popular__price">664</span>
+                        <span class="popular__price-unit">р.</span>
+                    </p>
+                </div>
+                <div class="popular__slide swiper-slide">
+                    <p class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</p>
+                    <div class="popular__img-wrapper">
+                        <img src="img/paint4.png" alt="" class="popular__img">
+                    </div>
+                    <p class="popular__price-wrapper">
+                        от <span class="popular__price">664</span>
+                        <span class="popular__price-unit">р.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="links-catalog">
+            <h3 class="title-h3">Каталог товаров KAN</h3>
+            <div class="links-catalog__wrapper">
+                <div class="links-catalog__column">
+                    <p class="links-catalog__position">
+                        <a href="#" class="links-catalog__link">Общестроительные материалы</a> <span class="links-catalog__number">(152)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Асбестоцементные изделия</a> <span class="links-catalog__number">(162)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">ЖБИ</a> <span class="links-catalog__number">(202)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Пиломатериалы</a> <span class="links-catalog__number">(347)</span>
+                    </p>
+                </div>
+                <div class="links-catalog__column">
+                    <p class="links-catalog__position">
+                        <a href="#" class="links-catalog__link">Вентиляция</a> <span class="links-catalog__number">(784)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Кондиционирование</a> <span class="links-catalog__number">(71)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Водоснабжение</a> <span class="links-catalog__number">(318)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Канализация</a> <span class="links-catalog__number">(912)</span>
+                    </p>
+                </div>
+                <div class="links-catalog__column">
+                    <p class="links-catalog__position">
+                        <a href="#" class="links-catalog__link">Видеонаблюдение</a> <span class="links-catalog__number">(67)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Домофония</a> <span class="links-catalog__number">(12)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Контроль доступа</a> <span class="links-catalog__number">(67)</span>
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -414,6 +507,22 @@
 
         if (window.innerWidth <= 768) {
             var swiperSpecials = new Swiper('.specials', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    480: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        initialSlide: 1
+                    }
+                }
+            });
+
+            var swiperPopular = new Swiper('.popular', {
                 slidesPerView: 2,
                 spaceBetween: 20,
                 paginationClickable: true,
