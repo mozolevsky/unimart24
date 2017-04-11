@@ -713,6 +713,19 @@
   color: inherit;
   text-align: left; }
 
+.specials .swiper-button-next,
+.specials .swiper-button-prev {
+  display: none; }
+
+@media (max-width: 768px) {
+  .specials .swiper-button-next,
+  .specials .swiper-button-prev {
+    display: block; } }
+
+@media (max-width: 480px) {
+  .specials__slide {
+    width: 80%; } }
+
 .info__image-right .media-block {
   padding-left: 30px;
   float: right; }
