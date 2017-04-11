@@ -1,6 +1,12 @@
 $white: #fff;
-$grey-light2: #f5f5f5;
 $gray-light: #f3f3f3;
+$grey-light2: #f5f5f5;
+$grey-light3: #e8e8e8;
 $gray-medium: #666666;
 $red: #c4010c;
 $black: #000000;
+$blue: #30509d;
+
+@mixin trans {
+  transition: all 0.3s ease-in-out;
+}
