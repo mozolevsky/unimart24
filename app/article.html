@@ -22,6 +22,7 @@
     <!-- взято с сайта. конец -->
 
     <!-- новые стили. начало -->
+    <link rel="stylesheet" href="libs/fancybox3/jquery.fancybox.min.css">
     <link rel="stylesheet" href="libs/swiper/dist/css/swiper.css" type="text/css">
     <link href="css/main.css" type="text/css" rel="stylesheet" />
 
@@ -124,7 +125,18 @@
             </p>
         </div>
 
-        <!-- слайдер с двумя картинками -->
+        <div class="two-images__slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="two-images__image-wrapper swiper-slide">
+                    <img src="img/two-img__img1.png" alt="" class="two-images__img">
+                </div>
+                <div class="two-images__image-wrapper swiper-slide">
+                    <img src="img/two-img__img2.png" alt="" class="two-images__img">
+                </div>
+            </div>
+            <p class="two-images__img-title">Фирменный завод и флаг Kan System</p>
+            <div class="two-images__pagination swiper-pagination"></div>
+        </div>
 
         <div class="text-block">
             <p class="text-normal">Системы KAN-therm отвечают экологическим стандартам в современном строительстве и нормам
@@ -133,7 +145,7 @@
 
         <div class="advantages swiper-container">
             <div class="advantages__wrapper swiper-wrapper">
-                <div class="advantages__slide">
+                <div class="advantages__slide swiper-slide">
                     <div class="advantages__advantage advantages__advantage_reliability">
                         <span class="advantages__advantage-title text-bold">Надежность соединений</span>
                     </div>
@@ -141,7 +153,7 @@
                         <span class="advantages__advantage-title text-bold">Гарантия на систему 10 лет</span>
                     </div>
                 </div>
-                <div class="advantages__slide">
+                <div class="advantages__slide swiper-slide">
                     <div class="advantages__advantage advantages__advantage_trouble-free">
                         <span class="advantages__advantage-title text-bold">Безаварийная эксплуатация за 50 лет</span>
                     </div>
@@ -150,8 +162,8 @@
                     </div>
                 </div>
             </div>
+            <div class="two-images__pagination swiper-pagination"></div>
         </div>
-
 
         <div class="types">
             <h3 class="title-h3">Типы систем KAN-therm</h3>
@@ -232,22 +244,89 @@
             </div>
         </div>
 
+        <p class="title-h3">Награды и сертификаты</p>
+        <div class="certificates">
+            <div class="certificates__wrapper">
+                <div class="certificates__certificate">
+                    <a class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert1.png" alt="" class="certificates__img"></a>
+                </div>
+                <div class="certificates__certificate">
+                    <a class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert2.png" alt="" class="certificates__img"></a>
+                </div>
+                <div class="certificates__certificate">
+                    <a class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert3.png" alt="" class="certificates__img"></a>
+                </div>
+                <div class="certificates__certificate">
+                    <a class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert4.png" alt="" class="certificates__img"></a>
+                </div>
+                <div class="certificates__certificate">
+                    <a class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert5.png" alt="" class="certificates__img"></a>
+                </div>
+            </div>
+        </div>
+
+        <p class="title-h3">Акции</p>
+        <div class="swiper-container specials">
+            <div class="specials__pagination slider-pagination">
+                <a href="#" class="slider-pagination slider-pagination__prev"></a>
+                <a href="" class="slider-pagination slider-pagination__next"></a>
+            </div>
+            <div class="specials__wrapper swiper-wrapper">
+                <a class="specials__slide swiper-slide">
+                    <div class="specials__img-wrapper">
+                        <img src="img/discount1.png" alt="" class="specials__img">
+                        <span class="specials__date">До 15 мая</span>
+                    </div>
+                    <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
+                </a>
+                <a class="specials__slide swiper-slide">
+                    <div class="specials__img-wrapper">
+                        <img src="img/discount2.png" alt="" class="specials__img">
+                        <span class="specials__date">До 15 мая</span>
+                    </div>
+                    <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
+                </a>
+                <a class="specials__slide swiper-slide">
+                    <div class="specials__img-wrapper">
+                        <img src="img/discount3.png" alt="" class="specials__img">
+                        <span class="specials__date">До 15 мая</span>
+                    </div>
+                    <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
+                </a>
+            </div>
+        </div>
+
 
     </div>
 </div>
+<!-- новые скрипты -->
+<script src="libs/jquery-3.2.1.min/index.js"></script>
+<script type="text/javascript" src="libs/fancybox3/jquery.fancybox.min.js"></script>
+<script>
+    $("[data-fancybox]").fancybox();
+</script>
+
 
 <script type="text/javascript" src="libs/swiper/dist/js/swiper.js"></script>
-<!-- Initialize Swipers -->
-
 <script>
     window.onload = function() {
         if (window.innerWidth <= 480) {
             console.log('This is mobile device');
 
-            var swiperAdvantages = new Swiper('.advantages', {
-                slideClass: 'advantages__slide',
-                slidesPerView: 1
+            var swiperTwoImages = new Swiper('.two-images__slider', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: '.swiper-pagination',
+                paginationClickable: true
             });
+
+            var swiperAdvantages = new Swiper('.advantages', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: '.swiper-pagination',
+                paginationClickable: true
+            });
+
         }
     }
 </script>

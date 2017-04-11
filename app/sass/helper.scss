@@ -1,6 +1,21 @@
 $white: #fff;
 $grey-light2: #f5f5f5;
 $gray-light: #f3f3f3;
+$grey-light2: #f7f7f7;
+$grey-light3: #ebebeb;
 $gray-medium: #666666;
 $red: #c4010c;
 $black: #000000;
+$slider-bullet: #6b80a0;
+$blue: #214496;
+$blue-light: #6b7fa0;
+
+@mixin textParam($size: 15px, $height: 26px, $color: $black) {
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin trans($duration: 0.3s) {
+  transition: all $duration ease-in-out;
+}
