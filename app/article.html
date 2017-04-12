@@ -86,10 +86,10 @@
             </div>
         </div>
         <div class="left-column__banner-wrapper">
-            <img src="img/banner1.png" alt="" class="left-column__banner-img">
+            <a href="#"><img src="img/banner1.png" alt="" class="left-column__banner-img"></a>
         </div>
         <div class="left-column__banner-wrapper">
-            <img src="img/banner2.png" alt="" class="left-column__banner-img">
+            <a href="#"><img src="img/banner2.png" alt="" class="left-column__banner-img"></a>
         </div>
         <div class="left-column__newsletter">
             <p class="left-column__newsletter-title title-h3">Узнать о лучших предложениях</p>
@@ -177,7 +177,13 @@
             <h3 class="title-h3">Преимущества инсталляций KAN</h3>
             <div class="media-block">
                 <div class="media-block__image">
-                    <img src="img/img_block1.png">
+                    <div class="videocover">
+                        <button class="media-block__video-button" type="button"></button>
+                    </div>
+                    <video class="media-block__video" >
+                        <source src="video/small.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <p class="media-name">Фирменный завод и флаг Kan System</p>
                 </div>
             </div>
@@ -195,7 +201,7 @@
             <p class="title-h3">Награды и сертификаты</p>
             <div class="certificates__wrapper">
                 <div class="certificates__certificate">
-                    <a class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert1.png" alt="" class="certificates__img"></a>
+                    <div class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert1.png" alt="" class="certificates__img"></div>
                 </div>
                 <div class="certificates__certificate">
                     <a class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert2.png" alt="" class="certificates__img"></a>
@@ -399,7 +405,7 @@
             <div class="swiper-button-prev"></div>
             <div class="popular__wrapper swiper-wrapper">
                 <div class="popular__slide swiper-slide">
-                    <p class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</p>
+                    <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
                     <div class="popular__img-wrapper">
                         <img src="img/paint1.png" alt="" class="popular__img">
                     </div>
@@ -409,7 +415,7 @@
                     </p>
                 </div>
                 <div class="popular__slide swiper-slide">
-                    <p class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</p>
+                    <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
                     <div class="popular__img-wrapper">
                         <img src="img/paint1.png" alt="" class="popular__img">
                     </div>
@@ -419,7 +425,7 @@
                     </p>
                 </div>
                 <div class="popular__slide swiper-slide">
-                    <p class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</p>
+                    <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
                     <div class="popular__img-wrapper">
                         <img src="img/paint3.png" alt="" class="popular__img">
                     </div>
@@ -429,7 +435,7 @@
                     </p>
                 </div>
                 <div class="popular__slide swiper-slide">
-                    <p class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</p>
+                    <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
                     <div class="popular__img-wrapper">
                         <img src="img/paint4.png" alt="" class="popular__img">
                     </div>
@@ -493,22 +499,22 @@
             <div class="use-cases__wrapper swiper-wrapper">
                 <div class="use-cases__slide swiper-slide">
                     <div class="use-cases__img-wrapper">
-                        <img src="img/use-case1.png" alt="" class="use-cases__img">
+                        <a class="use-cases__link" href="img/use-case1.png" data-fancybox="use-cases"><img src="img/use-case1.png" alt="" class="use-cases__img"></a>
                     </div>
                 </div>
                 <div class="use-cases__slide swiper-slide">
                     <div class="use-cases__img-wrapper">
-                        <img src="img/use-case2.png" alt="" class="use-cases__img">
+                        <a class="use-cases__link" href="img/use-case2.png" data-fancybox="use-cases"><img src="img/use-case2.png" alt="" class="use-cases__img"></a>
                     </div>
                 </div>
                 <div class="use-cases__slide swiper-slide">
                     <div class="use-cases__img-wrapper">
-                        <img src="img/use-case3.png" alt="" class="use-cases__img">
+                        <a class="use-cases__link" href="img/use-case3.png" data-fancybox="use-cases"><img src="img/use-case3.png" alt="" class="use-cases__img"></a>
                     </div>
                 </div>
                 <div class="use-cases__slide swiper-slide">
                     <div class="use-cases__img-wrapper">
-                        <img src="img/use-case4.png" alt="" class="use-cases__img">
+                        <a class="use-cases__link"  href="img/use-case4.png" data-fancybox="use-cases"><img src="img/use-case4.png" alt="" class="use-cases__img"></a>
                     </div>
                 </div>
             </div>
@@ -837,46 +843,65 @@
             });
 
             var secondTab = document.querySelectorAll('.tabs-container__tab-item')[1];
-            secondTab.addEventListener('click', function() {
-                var swiperTabAdv= new Swiper('.tab-adv', {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                    paginationClickable: true,
-                    nextButton: '.swiper-button-next',
-                    prevButton: '.swiper-button-prev',
-                    breakpoints: {
-                        480: {
-                            slidesPerView: 'auto',
-                            spaceBetween: 10,
-                            centeredSlides: true,
-                            initialSlide: 1
+            if (secondTab) {
+                secondTab.addEventListener('click', function() {
+                    var swiperTabAdv= new Swiper('.tab-adv', {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                        paginationClickable: true,
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        breakpoints: {
+                            480: {
+                                slidesPerView: 'auto',
+                                spaceBetween: 10,
+                                centeredSlides: true,
+                                initialSlide: 1
+                            }
                         }
-                    }
+                    });
                 });
-            });
+            }
 
             var thirdTab = document.querySelectorAll('.tabs-container__tab-item')[2];
-            thirdTab.addEventListener('click', function() {
-                var swiperTabAdv= new Swiper('.news-slider', {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                    paginationClickable: true,
-                    nextButton: '.swiper-button-next',
-                    prevButton: '.swiper-button-prev',
-                    breakpoints: {
-                        480: {
-                            slidesPerView: 'auto',
-                            spaceBetween: 10,
-                            centeredSlides: true,
-                            initialSlide: 1
+            if (thirdTab) {
+                thirdTab.addEventListener('click', function() {
+                    var swiperTabAdv= new Swiper('.news-slider', {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                        paginationClickable: true,
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        breakpoints: {
+                            480: {
+                                slidesPerView: 'auto',
+                                spaceBetween: 10,
+                                centeredSlides: true,
+                                initialSlide: 1
+                            }
                         }
-                    }
+                    });
                 });
-            });
+            }
 
         }
     };
+ </script>
 
+<script>
+    /* video */
+    document.body.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (target.className == 'videocover' || target.parentNode.className == 'videocover') {
+            var video = target.parentElement.parentElement.querySelector('.media-block__video');
+            var cover = target.parentElement.parentElement.querySelector('.videocover');
+
+            video.setAttribute("controls", true);
+            video.play();
+            cover.setAttribute("style", 'visibility: hidden');
+        }
+    });
 </script>
 
 </body>

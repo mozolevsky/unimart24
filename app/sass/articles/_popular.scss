@@ -25,6 +25,11 @@
   @include textParam(14px, 20px, $blue);
   text-align: left;
   margin-bottom: 23px;
+  display: block;
+}
+
+.popular__title:hover {
+  cursor: pointer;
 }
 
 .popular__img-wrapper {

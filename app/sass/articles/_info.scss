@@ -5,10 +5,44 @@
 
 .info .media-block__image {
   width: 390px;
+  position: relative;
 }
 
 .info .media-block__image img {
   width: 100%;
+}
+
+.media-block__video {
+  width: 100%;
+}
+
+.media-block__video-button {
+  @include elemToCenter();
+  width: 58px;
+  height: 58px;
+  background: url('../../img/video-button.png') no-repeat center;
+  z-index: 5;
+  border: 0;
+  @include trans();
+}
+
+
+.media-block__video-button:hover {
+  cursor: pointer;
+}
+
+.videocover {
+  position: absolute;
+  width: 100%;
+  height: 89%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.videocover:hover {
+  cursor: pointer;
 }
 
 .info__image-left .media-block{

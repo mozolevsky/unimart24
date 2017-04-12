@@ -17,6 +17,7 @@
   width: 40px;
   padding-top: 6px;
   padding-bottom: 6px;
+  @include trans();
 }
 
 .left-nav__pointer:last-child {
@@ -47,6 +48,8 @@
 
 .left-nav__pointer:hover {
   cursor: pointer;
+  color: $white;
+  background-color: $red;
 }
 
 .left-nav__articles {
@@ -54,14 +57,23 @@
   padding-bottom: 25px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
+  flex-grow: 1;
+  align-items: stretch;
 }
 
 .left-nav__article-name {
-  margin-left: 32px;
+  padding-left: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
   color: $gray-medium;
+  text-align: left;
+  @include trans();
+}
+
+.left-nav__article-name:hover {
+  color: $white;
+  background-color: $red;
 }
 
 .left-nav__article-name:first-child {
@@ -78,7 +90,7 @@
   position: absolute;
   top: 50%;
   margin-top: -3.5px;
-  left: -10px;
+  left: 16px;
   height: 7px;
   width: 4px;
   background: url('../../img/left-nav__article-name-pointer_active.svg') no-repeat center;
