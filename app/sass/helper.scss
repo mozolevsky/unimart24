@@ -8,10 +8,13 @@ $grey-medium2: #898989;
 $gray-medium: #666666;
 $gray-dark: #424242;
 $red: #c4010c;
+$red2: #c5010d;
 $black: #000000;
 $slider-bullet: #6b80a0;
 $blue: #214496;
 $blue-light: #6b7fa0;
+$tabs-border: #bcc3d9;
+
 
 @mixin textParam($size: 15px, $height: 26px, $color: $black) {
   font-size: $size;
