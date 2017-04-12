@@ -52,23 +52,27 @@
   clear:both;
 }
 
-
 /*experts*/
 .experts {
   width: 100%;
 }
 
 .experts__wrapper {
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
 }
 
 .experts__slide {
   box-sizing: border-box;
   width: 23%;
+  margin-right: 3%;
   padding: 20px;
   padding-bottom: 30px;
   background-color: $grey-light2;
+}
+
+.experts__slide:last-child {
+  margin-right: 0;
 }
 
 .expert-img {

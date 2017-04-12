@@ -10,7 +10,12 @@
 .advantages__slide {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 23%;
+  margin-right: 3%;
+}
+
+.advantages__slide:last-child {
+  margin-right: 0;
 }
 
 .advantages__advantage {
@@ -48,10 +53,12 @@
 @media (max-width: 768px) {
   .advantages__wrapper {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .advantages__slide {
     flex-wrap: wrap;
+    width: 47%;
   }
 
   .advantages__advantage {
@@ -70,10 +77,11 @@
   .advantages__wrapper {
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: nowrap;
   }
 
   .advantages__slide {
-    width: 100%;
+    width: 47%;
     flex-shrink: 0;
     margin-bottom: 0;
   }

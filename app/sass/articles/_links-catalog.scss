@@ -5,12 +5,12 @@
 .links-catalog__wrapper {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .links-catalog__column {
-  width: 227px;
+  width: 32%;
   flex-shrink: 0;
   margin-right: 10px;
   text-align: left;
