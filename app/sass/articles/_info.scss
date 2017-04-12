@@ -26,6 +26,7 @@
 
 .info__list_num {
   padding-left: 21px;
+  margin-bottom: 0;
 }
 
 .info__list-item {
@@ -59,7 +60,7 @@
 .info__text-italic {
   padding: 30px;
   padding-bottom: 35px;
-  margin: 30px 0;
+  margin: 25px 0;
   background-color: $grey-light2;
 }
 
@@ -111,7 +112,7 @@
   .info__text-italic {
     padding: 20px;
     padding-bottom: 25px;
-    margin: 20px 0;
+    margin: 15px 0;
   }
 }
 

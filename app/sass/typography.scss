@@ -1,6 +1,6 @@
 /*.main-title - h1*/
 .title-h1 {
-  margin-top: 46px;
+  margin-top: 35px;
   margin-bottom: 36px;
   font-size: 32px;
   line-height: 40px;
@@ -11,7 +11,7 @@
 
 .title-h3 {
   margin-top: 46px;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
   font-size: 20px;
   line-height: 28px;
   color: $red;
@@ -21,7 +21,7 @@
 
 .title-h2 {
   margin-top: 46px;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
   font-size: 26px;
   line-height: 36px;
   color: $black;
@@ -39,7 +39,6 @@
 
 .text-normal {
   margin-top: 13px;
-  margin-bottom: 13px;
   font-size: 15px;
   line-height: 26px;
   color: $black;
@@ -47,6 +46,7 @@
 }
 
 .text-bold {
+  margin-top: 13px;
   font-size: 15px;
   line-height: 26px;
   color: $black;
@@ -118,12 +118,13 @@
   }
 
   .text-normal {
-    margin: 12px 0;
+    margin-top: 12px;
     font-size: 14px;
     line-height: 24px;
   }
 
   .text-bold {
+    margin-top: 12px;
     font-size: 14px;
   }
 
@@ -162,7 +163,7 @@
   }
 
   .text-normal {
-    margin: 13px 0;
+    margin-top: 13px;
     font-size: 15px;
     line-height: 26px;
   }

@@ -1,5 +1,5 @@
 .two-images__slider {
-  margin: 40px 0;
+  margin: 20px 0;
   width: 100%;
 }
 
@@ -23,19 +23,11 @@
   text-align: left;
 }
 
-
-
-@media (max-width: 1024px) {
-
-}
-
-
 @media (max-width: 768px) {
   .two-images__slider {
-    margin: 30px 0;
+    margin: 20px 0;
   }
 }
-
 
 @media (max-width: 480px) {
   .two-images__slider {
