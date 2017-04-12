@@ -157,6 +157,8 @@
                     <div class="advantages__advantage advantages__advantage_reliability">
                         <span class="advantages__advantage-title text-bold">Надежность соединений</span>
                     </div>
+                </div>
+                <div class="advantages__slide swiper-slide">
                     <div class="advantages__advantage advantages__advantage_guarantee">
                         <span class="advantages__advantage-title text-bold">Гарантия на систему 10 лет</span>
                     </div>
@@ -165,6 +167,8 @@
                     <div class="advantages__advantage advantages__advantage_trouble-free">
                         <span class="advantages__advantage-title text-bold">Безаварийная эксплуатация за 50 лет</span>
                     </div>
+                </div>
+                <div class="advantages__slide swiper-slide">
                     <div class="advantages__advantage advantages__advantage_quality-control">
                         <span class="advantages__advantage-title text-bold">Контроль испытательной лаборатории на каждом этапе производства</span>
                     </div>
@@ -238,11 +242,11 @@
                         <p class="types__table-title table-title">Тип системы</p>
                         <p class="types__item-text table-text_bold">Системы отопления и охлаждения</p>
                     </div>
-                    <div class="types__table-feature">
+                    <div class="types__table-column types__table-feature">
                         <p class="types__table-title table-title">Особенности</p>
                         <p class="types__item-text table-text">различные виды материалов труб и соединителей, а также способы их соединения</p>
                     </div>
-                    <div class="types__table-advantage">
+                    <div class="types__table-column types__table-advantage">
                         <p class="types__table-title table-title">Преимущества</p>
                         <p class="types__item-text table-text">можно выполнить любую систему отопления</p>
                     </div>
@@ -252,11 +256,11 @@
                         <p class="types__table-title table-title">Тип системы</p>
                         <p class="types__item-text table-text_bold">Системы водоснабжения холодной и горячей воды</p>
                     </div>
-                    <div class="types__table-feature">
+                    <div class="types__table-column types__table-feature">
                         <p class="types__table-title table-title">Особенности</p>
                         <p class="types__item-text table-text">идеально подходят для создания внутренних систем водоснабжения</p>
                     </div>
-                    <div class="types__table-advantage">
+                    <div class="types__table-column types__table-advantage">
                         <p class="types__table-title table-title">Преимущества</p>
                         <p class="types__item-text table-text">высокая стойкость к коррозии, химическая и микробиологическая нейтральность,
                             большой дтапазон диаметров</p>
@@ -267,12 +271,12 @@
                         <p class="types__table-title table-title">Тип системы</p>
                         <p class="types__item-text table-text_bold">Системы напольного, настенного отопления и охлаждения</p>
                     </div>
-                    <div class="types__table-feature">
+                    <div class="types__table-column types__table-feature">
                         <p class="types__table-title table-title">Особенности</p>
                         <p class="types__item-text table-text">большой выбор конструктивных решений широкий ассортимент
                             монтажного оборудования позволяет точно подобрать систему для каждого проекта</p>
                     </div>
-                    <div class="types__table-advantage">
+                    <div class="types__table-column types__table-advantage">
                         <p class="types__table-title table-title">Преимущества</p>
                         <p class="types__item-text table-text">простой монтаж</p>
                     </div>
@@ -282,11 +286,11 @@
                         <p class="types__table-title table-title">Тип системы</p>
                         <p class="types__item-text table-text_bold">Системы отопления и охлаждения открытых поверхностей</p>
                     </div>
-                    <div class="types__table-feature">
+                    <div class="types__table-column types__table-feature">
                         <p class="types__table-title table-title">Особенности</p>
                         <p class="types__item-text table-text">конструкция не дает образовываться снежному покрову и обледенению</p>
                     </div>
-                    <div class="types__table-advantage">
+                    <div class="types__table-column types__table-advantage">
                         <p class="types__table-title table-title">Преимущества</p>
                         <p class="types__item-text table-text">обеспечивает комфортное использование открытых площадок</p>
                     </div>
@@ -296,12 +300,12 @@
                         <p class="types__table-title table-title">Тип системы</p>
                         <p class="types__item-text table-text_bold">Противопожарные спринклерные системы</p>
                     </div>
-                    <div class="types__table-feature">
+                    <div class="types__table-column types__table-feature">
                         <p class="types__table-title table-title">Особенности</p>
                         <p class="types__item-text table-text">быстрая техника монтажа „press” – опрессовка на трубе
                             соединителей, оснащенных уплотнительным кольцом</p>
                     </div>
-                    <div class="types__table-advantage">
+                    <div class="types__table-column types__table-advantage">
                         <p class="types__table-title table-title">Преимущества</p>
                         <p class="types__item-text table-text">сертифицированное оборудование отвечает высоким требованиям к качеству материалов и монтажу</p>
                     </div>
@@ -757,7 +761,12 @@
                 slidesPerView: 1,
                 spaceBetween: 20,
                 pagination: '.swiper-pagination',
-                paginationClickable: true
+                paginationClickable: true,
+                breakpoints: {
+                    480: {
+                        slidesPerView: 2
+                    }
+                }
             });
         }
 

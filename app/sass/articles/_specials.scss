@@ -8,15 +8,19 @@
 
 .specials__wrapper {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 25px;
+  justify-content: flex-start;
 }
 
 .specials__slide {
   width: 32%;
+  margin-right: 2%;
   border: 1px solid $grey-light3;
   border-bottom: 3px solid $grey-light3;
   @include trans();
+}
+
+.specials__slide:last-child {
+  margin-right: 0;
 }
 
 .specials__slide:hover {

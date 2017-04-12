@@ -27,7 +27,19 @@
 .contacts-block__address-item .phone,
 .contacts-block__address-item .mail {
   display: block;
-  padding-top: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.contacts-block__address-item .phone {
+  background-image: url('../../img/icon-tel.png');
+}
+
+.contacts-block__address-item .mail {
+  background-image: url('../../img/icon-mail-small.png');
 }
 
 @media (max-width: 1280px) {
