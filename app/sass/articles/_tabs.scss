@@ -1,0 +1,112 @@
+.content-wrap section.content-current {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+
+/*experts*/
+.expert-item {
+  box-sizing: border-box;
+  flex-basis: 23%;
+  padding: 20px;
+  padding-bottom: 30px;
+  background-color: $grey-light2;
+}
+
+.expert-img {
+  width: 84px;
+  height: 84px;
+}
+
+.expert-text-block {
+  text-align: left;
+}
+
+.expert-item .expert-name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $black;
+}
+
+.expert-item .expert-desc {
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 18px;
+  font-style: italic;
+  color: $black;
+  font-weight: 400;
+}
+
+.expert-item .expert-phone,
+.expert-item .expert-mail {
+  padding: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: $black;
+  font-weight: 400;
+}
+
+.expert-item .expert-mail {
+  color: $blue;
+}
+
+/*advantages*/
+
+.tab__adv-item .tab__adv-text {
+  color: $blue;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.tab__adv-item {
+  box-sizing: border-box;
+  flex-basis: 20%;
+  padding: 20px;
+  padding-top: 90px;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+}
+
+.tab__adv-item_1 {
+  background-image: url("../../img/support-icon.png");
+}
+
+.tab__adv-item_2 {
+  background-image: url("../../img/list-icon.png");
+}
+
+.tab__adv-item_3 {
+  background-image: url("../../img/shipping.png");
+}
+
+.tab__adv-item_4 {
+  background-image: url("../../img/chicking-quality-icon.png");
+}
+
+@media (max-width: 1024px) {
+  .expert-item .expert-desc {
+    line-height: 16px;
+  }
+
+  .expert-item .expert-phone,
+  .expert-item .expert-mail {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .expert-img {
+    margin: 0 auto;
+  }
+
+  .expert-text-block {
+    text-align: center;
+  }
+}

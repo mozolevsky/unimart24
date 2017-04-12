@@ -1223,3 +1223,104 @@
 @media (max-width: 480px) {
   .articles__slide {
     width: 80%; } }
+
+.content-wrap section.content-current {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0; }
+
+/*experts*/
+.expert-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-flex-basis: 23%;
+      -ms-flex-preferred-size: 23%;
+          flex-basis: 23%;
+  padding: 20px;
+  padding-bottom: 30px;
+  background-color: #f7f7f7; }
+
+.expert-img {
+  width: 84px;
+  height: 84px; }
+
+.expert-text-block {
+  text-align: left; }
+
+.expert-item .expert-name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000; }
+
+.expert-item .expert-desc {
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 18px;
+  font-style: italic;
+  color: #000000;
+  font-weight: 400; }
+
+.expert-item .expert-phone,
+.expert-item .expert-mail {
+  padding: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: 400; }
+
+.expert-item .expert-mail {
+  color: #214496; }
+
+/*advantages*/
+.tab__adv-item .tab__adv-text {
+  color: #214496;
+  font-size: 14px;
+  line-height: 22px; }
+
+.tab__adv-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+  padding: 20px;
+  padding-top: 90px;
+  background-repeat: no-repeat;
+  background-position: center 20px; }
+
+.tab__adv-item_1 {
+  background-image: url("../../img/support-icon.png"); }
+
+.tab__adv-item_2 {
+  background-image: url("../../img/list-icon.png"); }
+
+.tab__adv-item_3 {
+  background-image: url("../../img/shipping.png"); }
+
+.tab__adv-item_4 {
+  background-image: url("../../img/chicking-quality-icon.png"); }
+
+@media (max-width: 1024px) {
+  .expert-item .expert-desc {
+    line-height: 16px; }
+  .expert-item .expert-phone,
+  .expert-item .expert-mail {
+    font-size: 14px;
+    line-height: 18px; } }
+
+@media (max-width: 1024px) {
+  .expert-img {
+    margin: 0 auto; }
+  .expert-text-block {
+    text-align: center; } }
