@@ -15,8 +15,12 @@
 
 .left-nav__sortable-block {
   border-right: 1px solid $gray-light;
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+
+.left-nav__active {
+  display: flex;
 }
 
 .left-nav__pointer {
