@@ -32,13 +32,13 @@
     <aside class="left-column">
         <div class="left-nav__container">
             <div class="left-nav__pointers">
-                <span class="left-nav__pointer">0-9</span>
-                <span class="left-nav__pointer">A</span>
+                <span class="left-nav__pointer" onclick="openLeftNavTab(event, 'Numbers')">0-9</span>
+                <span class="left-nav__pointer" onclick="openLeftNavTab(event, 'A')">A</span>
                 <span class="left-nav__pointer">B</span>
                 <span class="left-nav__pointer">C</span>
                 <span class="left-nav__pointer">D</span>
                 <span class="left-nav__pointer">E</span>
-                <span class="left-nav__pointer left-nav__pointer_active">F</span>
+                <span class="left-nav__pointer left-nav__pointer_active" onclick="openLeftNavTab(event, 'F')">F</span>
                 <span class="left-nav__pointer">G</span>
                 <span class="left-nav__pointer">H</span>
                 <span class="left-nav__pointer">I</span>
@@ -62,27 +62,35 @@
                 <span class="left-nav__pointer">А-Я</span>
             </div>
             <div class="left-nav__articles">
-                <a href="#" class="left-nav__article-name">Fergo</a>
-                <a href="#" class="left-nav__article-name">Ferrari Cavallino</a>
-                <a href="#" class="left-nav__article-name">Ferrari Scuderia</a>
-                <a href="#" class="left-nav__article-name">Fersini</a>
-                <a href="#" class="left-nav__article-name">Ferz</a>
-                <a href="#" class="left-nav__article-name">Festissimo</a>
-                <a href="#" class="left-nav__article-name">Fete</a>
-                <a class="left-nav__article-name left-nav__article-name_active">Frosch</a>
-                <a href="#" class="left-nav__article-name">Five Wien Home</a>
-                <a href="#" class="left-nav__article-name">Flexible by Bata</a>
-                <a href="#" class="left-nav__article-name">Flioraj</a>
-                <a href="#" class="left-nav__article-name">Flora & Co</a>
-                <a href="#" class="left-nav__article-name">Florame</a>
-                <a href="#" class="left-nav__article-name">Flyfor</a>
-                <a href="#" class="left-nav__article-name">Fobo</a>
-                <a href="#" class="left-nav__article-name">Fontana 2.0</a>
-                <a href="#" class="left-nav__article-name">Fonti</a>
-                <a href="#" class="left-nav__article-name">FoodaHolic</a>
-                <a href="#" class="left-nav__article-name">Frank NY</a>
-                <a href="#" class="left-nav__article-name">Frank Wright</a>
-                <a href="#" class="left-nav__article-name">Freddy</a>
+                <div class="left-nav__tab-container" id="numbers">
+                    <a href="#" class="left-nav__article-name">Fergo</a>
+                    <a href="#" class="left-nav__article-name">Ferrari Cavallino</a>
+                    <a href="#" class="left-nav__article-name">Ferrari Scuderia</a>
+                    <a href="#" class="left-nav__article-name">Fersini</a>
+                    <a href="#" class="left-nav__article-name">Ferz</a>
+                    <a href="#" class="left-nav__article-name">Festissimo</a>
+                    <a href="#" class="left-nav__article-name">Fete</a>
+                    <a class="left-nav__article-name left-nav__article-name_active">Frosch</a>
+                    <a href="#" class="left-nav__article-name">Five Wien Home</a>
+                    <a href="#" class="left-nav__article-name">Flexible by Bata</a>
+                    <a href="#" class="left-nav__article-name">Flioraj</a>
+                    <a href="#" class="left-nav__article-name">Flora & Co</a>
+                    <a href="#" class="left-nav__article-name">Florame</a>
+                    <a href="#" class="left-nav__article-name">Flyfor</a>
+                    <a href="#" class="left-nav__article-name">Fobo</a>
+                    <a href="#" class="left-nav__article-name">Fontana 2.0</a>
+                    <a href="#" class="left-nav__article-name">Fonti</a>
+                    <a href="#" class="left-nav__article-name">FoodaHolic</a>
+                    <a href="#" class="left-nav__article-name">Frank NY</a>
+                    <a href="#" class="left-nav__article-name">Frank Wright</a>
+                    <a href="#" class="left-nav__article-name">Freddy</a>
+                </div>
+                <div class="left-nav__tab-container" id="A">
+
+                </div>
+                <div class="left-nav__tab-container" id="F">
+
+                </div>
             </div>
         </div>
         <div class="left-column__banner-wrapper">
@@ -369,84 +377,88 @@
                     </div>
                 </div>
                 <div class="contacts__map">
-                   <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.9119923358962!2d37.59392331544687!3d55.74265810024251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bae8870c3eb%3A0x8f82df30e42a5340!2z0YPQuy4g0J_RgNC10YfQuNGB0YLQtdC90LrQsCwgMTMsINCc0L7RgdC60LLQsCwgMTE5MDM0!5e0!3m2!1sru!2sru!4v1491929385993" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.9119923358962!2d37.59392331544687!3d55.74265810024251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bae8870c3eb%3A0x8f82df30e42a5340!2z0YPQuy4g0J_RgNC10YfQuNGB0YLQtdC90LrQsCwgMTMsINCc0L7RgdC60LLQsCwgMTE5MDM0!5e0!3m2!1sru!2sru!4v1491929385993" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
 
-        <div class="swiper-container specials">
-            <p class="title-h3">Акции</p>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="specials__wrapper swiper-wrapper">
-                <a class="specials__slide swiper-slide">
-                    <div class="specials__img-wrapper">
-                        <img src="img/discount1.png" alt="" class="specials__img">
-                        <span class="specials__date">До 15 мая</span>
-                    </div>
-                    <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
-                </a>
-                <a class="specials__slide swiper-slide">
-                    <div class="specials__img-wrapper">
-                        <img src="img/discount2.png" alt="" class="specials__img">
-                        <span class="specials__date">До 15 мая</span>
-                    </div>
-                    <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
-                </a>
-                <a class="specials__slide swiper-slide">
-                    <div class="specials__img-wrapper">
-                        <img src="img/discount3.png" alt="" class="specials__img">
-                        <span class="specials__date">До 15 мая</span>
-                    </div>
-                    <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
-                </a>
+        <div class="overflow-block">
+            <div class="swiper-container specials">
+                <p class="title-h3">Акции</p>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="specials__wrapper swiper-wrapper">
+                    <a class="specials__slide swiper-slide">
+                        <div class="specials__img-wrapper">
+                            <img src="img/discount1.png" alt="" class="specials__img">
+                            <span class="specials__date">До 15 мая</span>
+                        </div>
+                        <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
+                    </a>
+                    <a class="specials__slide swiper-slide">
+                        <div class="specials__img-wrapper">
+                            <img src="img/discount2.png" alt="" class="specials__img">
+                            <span class="specials__date">До 15 мая</span>
+                        </div>
+                        <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
+                    </a>
+                    <a class="specials__slide swiper-slide">
+                        <div class="specials__img-wrapper">
+                            <img src="img/discount3.png" alt="" class="specials__img">
+                            <span class="specials__date">До 15 мая</span>
+                        </div>
+                        <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="swiper-container popular">
-            <p class="title-h3">Популярные товары</p>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="popular__wrapper swiper-wrapper">
-                <div class="popular__slide swiper-slide">
-                    <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
-                    <div class="popular__img-wrapper">
-                        <img src="img/paint1.png" alt="" class="popular__img">
+        <div class="overflow-block">
+            <div class="swiper-container popular">
+                <p class="title-h3">Популярные товары</p>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="popular__wrapper swiper-wrapper">
+                    <div class="popular__slide swiper-slide">
+                        <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
+                        <div class="popular__img-wrapper">
+                            <img src="img/paint1.png" alt="" class="popular__img">
+                        </div>
+                        <p class="popular__price-wrapper">
+                            от <span class="popular__price">664</span>
+                            <span class="popular__price-unit">р.</span>
+                        </p>
                     </div>
-                    <p class="popular__price-wrapper">
-                        от <span class="popular__price">664</span>
-                        <span class="popular__price-unit">р.</span>
-                    </p>
-                </div>
-                <div class="popular__slide swiper-slide">
-                    <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
-                    <div class="popular__img-wrapper">
-                        <img src="img/paint1.png" alt="" class="popular__img">
+                    <div class="popular__slide swiper-slide">
+                        <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
+                        <div class="popular__img-wrapper">
+                            <img src="img/paint1.png" alt="" class="popular__img">
+                        </div>
+                        <p class="popular__price-wrapper">
+                            от <span class="popular__price">664</span>
+                            <span class="popular__price-unit">р.</span>
+                        </p>
                     </div>
-                    <p class="popular__price-wrapper">
-                        от <span class="popular__price">664</span>
-                        <span class="popular__price-unit">р.</span>
-                    </p>
-                </div>
-                <div class="popular__slide swiper-slide">
-                    <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
-                    <div class="popular__img-wrapper">
-                        <img src="img/paint3.png" alt="" class="popular__img">
+                    <div class="popular__slide swiper-slide">
+                        <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
+                        <div class="popular__img-wrapper">
+                            <img src="img/paint3.png" alt="" class="popular__img">
+                        </div>
+                        <p class="popular__price-wrapper">
+                            от <span class="popular__price">664</span>
+                            <span class="popular__price-unit">р.</span>
+                        </p>
                     </div>
-                    <p class="popular__price-wrapper">
-                        от <span class="popular__price">664</span>
-                        <span class="popular__price-unit">р.</span>
-                    </p>
-                </div>
-                <div class="popular__slide swiper-slide">
-                    <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
-                    <div class="popular__img-wrapper">
-                        <img src="img/paint4.png" alt="" class="popular__img">
+                    <div class="popular__slide swiper-slide">
+                        <a href="#" class="popular__title">Эмаль акриловая термостойкая золотая Р-818 0.4 кг</a>
+                        <div class="popular__img-wrapper">
+                            <img src="img/paint4.png" alt="" class="popular__img">
+                        </div>
+                        <p class="popular__price-wrapper">
+                            от <span class="popular__price">664</span>
+                            <span class="popular__price-unit">р.</span>
+                        </p>
                     </div>
-                    <p class="popular__price-wrapper">
-                        от <span class="popular__price">664</span>
-                        <span class="popular__price-unit">р.</span>
-                    </p>
                 </div>
             </div>
         </div>
@@ -496,29 +508,31 @@
             </div>
         </div>
 
-        <div class="swiper-container use-cases">
-        <h3 class="title-h3">Примеры использования KAN-thermo</h3>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="use-cases__wrapper swiper-wrapper">
-                <div class="use-cases__slide swiper-slide">
-                    <div class="use-cases__img-wrapper">
-                        <a class="use-cases__link" href="img/use-case2_big.png" data-fancybox="use-cases"><img src="img/use-case1.png" alt="" class="use-cases__img"></a>
+        <div class="overflow-block">
+            <div class="swiper-container use-cases">
+                <h3 class="title-h3">Примеры использования KAN-thermo</h3>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="use-cases__wrapper swiper-wrapper">
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper">
+                            <a class="use-cases__link" href="img/use-case2_big.png" data-fancybox="use-cases"><img src="img/use-case1.png" alt="" class="use-cases__img"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="use-cases__slide swiper-slide">
-                    <div class="use-cases__img-wrapper">
-                        <a class="use-cases__link" href="img/use-case2_big.png" data-fancybox="use-cases"><img src="img/use-case2.png" alt="" class="use-cases__img"></a>
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper">
+                            <a class="use-cases__link" href="img/use-case2_big.png" data-fancybox="use-cases"><img src="img/use-case2.png" alt="" class="use-cases__img"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="use-cases__slide swiper-slide">
-                    <div class="use-cases__img-wrapper">
-                        <a class="use-cases__link" href="img/use-case2_big.png" data-fancybox="use-cases"><img src="img/use-case3.png" alt="" class="use-cases__img"></a>
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper">
+                            <a class="use-cases__link" href="img/use-case2_big.png" data-fancybox="use-cases"><img src="img/use-case3.png" alt="" class="use-cases__img"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="use-cases__slide swiper-slide">
-                    <div class="use-cases__img-wrapper">
-                        <a class="use-cases__link"  href="img/use-case2_big.png" data-fancybox="use-cases"><img src="img/use-case4.png" alt="" class="use-cases__img"></a>
+                    <div class="use-cases__slide swiper-slide">
+                        <div class="use-cases__img-wrapper">
+                            <a class="use-cases__link"  href="img/use-case2_big.png" data-fancybox="use-cases"><img src="img/use-case4.png" alt="" class="use-cases__img"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -531,7 +545,7 @@
                 <li class="tabs-container__tab-item"><a href="#tab3">Новости</a></li>
             </ul>
             <section id="first-tab-group" class="tabgroup">
-                <div id="tab1">
+                <div id="tab1" class="overflow-block">
                     <div class="swiper-container experts">
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -583,7 +597,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="tab2">
+                <div id="tab2" class="overflow-block">
                     <div class="swiper-container tab-adv">
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -611,8 +625,8 @@
 
                         </div>
                     </div>
-                </div>
-                <div id="tab3">
+                 </div>
+                <div id="tab3" class="overflow-block">
                     <div class="swiper-container news-slider">
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -651,34 +665,36 @@
             </section>
         </div>
 
-        <div class="swiper-container articles">
-            <h3 class="title-h3">Статьи о товарах</h3>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="articles__wrapper swiper-wrapper">
-                <div class="articles__slide swiper-slide">
-                    <div class="articles__img-wrapper articles__img-wrapper">
-                        <img src="img/use-case1.png" alt="" class="articles__img">
+        <div class="overflow-block">
+            <div class="swiper-container articles">
+                <h3 class="title-h3">Статьи о товарах</h3>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="articles__wrapper swiper-wrapper">
+                    <div class="articles__slide swiper-slide">
+                        <div class="articles__img-wrapper articles__img-wrapper">
+                            <img src="img/use-case1.png" alt="" class="articles__img">
+                        </div>
+                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
                     </div>
-                    <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
-                </div>
-                <div class="articles__slide swiper-slide">
-                    <div class="articles__img-wrapper articles__img-wrapper">
-                        <img src="img/use-case2.png" alt="" class="articles__img">
+                    <div class="articles__slide swiper-slide">
+                        <div class="articles__img-wrapper articles__img-wrapper">
+                            <img src="img/use-case2.png" alt="" class="articles__img">
+                        </div>
+                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
                     </div>
-                    <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
-                </div>
-                <div class="articles__slide swiper-slide">
-                    <div class="articles__img-wrapper articles__img-wrapper">
-                        <img src="img/use-case3.png" alt="" class="articles__img">
+                    <div class="articles__slide swiper-slide">
+                        <div class="articles__img-wrapper articles__img-wrapper">
+                            <img src="img/use-case3.png" alt="" class="articles__img">
+                        </div>
+                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
                     </div>
-                    <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
-                </div>
-                <div class="articles__slide swiper-slide">
-                    <div class="articles__img-wrapper articles__img-wrapper">
-                        <img src="img/use-case4.png" alt="" class="articles__img">
+                    <div class="articles__slide swiper-slide">
+                        <div class="articles__img-wrapper articles__img-wrapper">
+                            <img src="img/use-case4.png" alt="" class="articles__img">
+                        </div>
+                        <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
                     </div>
-                    <a class="table-text articles__link" href="#">Крупнейший в мире производитель керамических строительных материалов</a>
                 </div>
             </div>
         </div>
@@ -721,6 +737,39 @@
     </div>
 </div>
 <!-- новые скрипты -->
+<script>
+
+   /* var poiners = document.querySelectorAll('left-nav__pointer');
+    for (var i=0; i < poiners.length; i++) {
+        poiners[i].addEventListener('click', function (evt) {
+            var tabName
+            openLeftNavTab(evt, tabId);
+        })
+    }*/
+
+    function openLeftNavTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("left-nav__tab-container");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="left-nav__pointer" and remove the class "active"
+        tablinks = document.getElementsByClassName("left-nav__pointer");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" left-nav__pointer_active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " left-nav__pointer_active";
+    }
+</script>
+
+
 <script src="libs/jquery-3.2.1.min/index.js"></script>
 <script>
     $('.tabgroup > div').hide();
@@ -778,7 +827,7 @@
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 breakpoints: {
-                    480: {
+                    479: {
                         slidesPerView: 'auto',
                         spaceBetween: 10,
                         centeredSlides: true,

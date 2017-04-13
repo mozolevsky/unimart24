@@ -245,7 +245,7 @@
   .right-column {
     width: 100%; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .container {
     margin-top: 25px;
     margin-left: 28px;
@@ -282,16 +282,25 @@
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.left-nav__sortable-block {
+  border-right: 1px solid #f3f3f3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .left-nav__pointer {
   width: 40px;
   padding-top: 6px;
   padding-bottom: 6px;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-
-.left-nav__pointer:last-child {
-  padding-top: 26px;
-  padding-bottom: 32px; }
+  transition: all 0.3s ease-in-out;
+  line-height: 1em; }
 
 .left-nav__pointer_active {
   color: #fff;
@@ -320,10 +329,10 @@
 .left-nav__articles {
   padding-top: 15px;
   padding-bottom: 25px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%; }
+
+.left-nav__tab-container {
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -338,6 +347,12 @@
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch; }
+
+.left-nav__tab-container_active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .left-nav__article-name {
   padding-left: 32px;
@@ -475,7 +490,7 @@
   .logo-block__logo-img {
     width: 256px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .logo-block___logo-wrapper {
     margin-right: 21px; }
   .logo-block__logo-img {
@@ -513,7 +528,7 @@
   color: #666666;
   text-align: left; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .two-images__slider {
     margin: 20px 0; } }
 
@@ -580,7 +595,7 @@
   .advantages__advantage {
     margin-right: 10px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .advantages__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -690,7 +705,7 @@
     width: -webkit-calc(50% - 92px);
     width: calc(50% - 92px); } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .types__table-item {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -850,7 +865,7 @@
 .specials .swiper-button-prev {
   display: none; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .specials .swiper-button-next,
   .specials .swiper-button-prev {
     display: block; }
@@ -967,7 +982,7 @@
   .info__image-right .media-block__image {
     width: 345px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .info__list {
     padding-left: 30px; }
   .info__list_num {
@@ -1043,7 +1058,7 @@
   .contacts__map {
     width: 406px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .contacts-block__wrap {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1135,7 +1150,7 @@
 .popular__price-unit {
   font-weight: bold; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .popular .swiper-button-next,
   .popular .swiper-button-prev {
     display: block; } }
@@ -1178,7 +1193,7 @@
 .links-catalog__number {
   color: #898989; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .links-catalog__column {
     min-width: 175px; } }
 
@@ -1260,7 +1275,7 @@
   .reccomend__item-text-block {
     width: 100%; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .reccomend__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1341,7 +1356,7 @@
 .use-cases .swiper-button-prev {
   display: none; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .use-cases .swiper-button-next,
   .use-cases .swiper-button-prev {
     display: block; } }
@@ -1382,7 +1397,7 @@
 .articles .swiper-button-prev {
   display: none; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .articles .swiper-button-next,
   .articles .swiper-button-prev {
     display: block;
@@ -1599,7 +1614,7 @@
     font-size: 14px;
     line-height: 18px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .tabs li {
     margin-right: 20px; }
   .experts__slide {
@@ -1640,7 +1655,7 @@
   margin: 0;
   padding: 0; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .overflow-block > div {
     overflow: visible;
     padding: 0 20px;

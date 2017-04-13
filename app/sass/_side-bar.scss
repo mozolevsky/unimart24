@@ -13,16 +13,18 @@
   flex-direction: column;
 }
 
+.left-nav__sortable-block {
+  border-right: 1px solid $gray-light;
+  display: flex;
+  flex-direction: column;
+}
+
 .left-nav__pointer {
   width: 40px;
   padding-top: 6px;
   padding-bottom: 6px;
   @include trans();
-}
-
-.left-nav__pointer:last-child {
-  padding-top: 26px;
-  padding-bottom: 32px;
+  line-height: 1em;
 }
 
 .left-nav__pointer_active {
@@ -55,11 +57,19 @@
 .left-nav__articles {
   padding-top: 15px;
   padding-bottom: 25px;
-  display: flex;
+  width: 100%;
+}
+
+.left-nav__tab-container {
+  display: none;
   flex-direction: column;
   width: 100%;
   flex-grow: 1;
   align-items: stretch;
+}
+
+.left-nav__tab-container_active {
+  display: flex;
 }
 
 .left-nav__article-name {

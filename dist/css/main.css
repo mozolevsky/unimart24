@@ -245,7 +245,7 @@
   .right-column {
     width: 100%; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .container {
     margin-top: 25px;
     margin-left: 28px;
@@ -475,7 +475,7 @@
   .logo-block__logo-img {
     width: 256px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .logo-block___logo-wrapper {
     margin-right: 21px; }
   .logo-block__logo-img {
@@ -513,7 +513,7 @@
   color: #666666;
   text-align: left; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .two-images__slider {
     margin: 20px 0; } }
 
@@ -580,7 +580,7 @@
   .advantages__advantage {
     margin-right: 10px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .advantages__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -690,7 +690,7 @@
     width: -webkit-calc(50% - 92px);
     width: calc(50% - 92px); } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .types__table-item {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -850,10 +850,13 @@
 .specials .swiper-button-prev {
   display: none; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .specials .swiper-button-next,
   .specials .swiper-button-prev {
-    display: block; } }
+    display: block; }
+  .specials__slide {
+    width: 40%;
+    margin-right: 0; } }
 
 @media (max-width: 479px) {
   .specials__slide {
@@ -964,7 +967,7 @@
   .info__image-right .media-block__image {
     width: 345px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .info__list {
     padding-left: 30px; }
   .info__list_num {
@@ -975,7 +978,7 @@
     padding-bottom: 30px;
     width: 100%; }
   .info .media-block__image {
-    width: 460px;
+    width: 100%;
     margin: 0 auto; }
   .info .media-block__image img {
     width: 100%; }
@@ -1040,7 +1043,7 @@
   .contacts__map {
     width: 406px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .contacts-block__wrap {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1132,7 +1135,7 @@
 .popular__price-unit {
   font-weight: bold; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .popular .swiper-button-next,
   .popular .swiper-button-prev {
     display: block; } }
@@ -1175,7 +1178,7 @@
 .links-catalog__number {
   color: #898989; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .links-catalog__column {
     min-width: 175px; } }
 
@@ -1257,7 +1260,7 @@
   .reccomend__item-text-block {
     width: 100%; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .reccomend__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1338,7 +1341,7 @@
 .use-cases .swiper-button-prev {
   display: none; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .use-cases .swiper-button-next,
   .use-cases .swiper-button-prev {
     display: block; } }
@@ -1379,7 +1382,7 @@
 .articles .swiper-button-prev {
   display: none; }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .articles .swiper-button-next,
   .articles .swiper-button-prev {
     display: block;
@@ -1596,7 +1599,7 @@
     font-size: 14px;
     line-height: 18px; } }
 
-@media (max-width: 747px) {
+@media (max-width: 767px) {
   .tabs li {
     margin-right: 20px; }
   .experts__slide {
@@ -1630,3 +1633,31 @@
     margin: 0 auto; }
   .expert-text-block {
     text-align: center; } }
+
+.overflow-block {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 767px) {
+  .overflow-block > div {
+    overflow: visible;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .overflow-block .swiper-button-next {
+    right: 4px; }
+  .overflow-block .swiper-button-prev {
+    left: 4px; } }
+
+@media (max-width: 479px) {
+  .overflow-block > div {
+    overflow: visible;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .overflow-block .swiper-button-next {
+    right: 4px; }
+  .overflow-block .swiper-button-prev {
+    left: 4px; } }
