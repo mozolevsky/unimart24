@@ -1,0 +1,60 @@
+.use-cases {
+  width: 100%;
+}
+
+.use-cases__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.use-cases__slide {
+  width: 24%;
+}
+
+.use-cases__link {
+  position: relative;
+  display: block;
+  @include trans();
+}
+
+
+.use-cases__link::before {
+  content: '';
+  @include elemToCenter();
+  background: url('../img/hover-icon.png') no-repeat center;
+  transform: translate(-50%, -51%);
+  width: 100%;
+  height: 98%;
+  display: none;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.use-cases__link:hover::before {
+  display: block;
+}
+
+
+.use-cases__img {
+  width: 100%;
+}
+
+.use-cases .swiper-button-next,
+.use-cases .swiper-button-prev {
+  display: none;
+}
+
+
+@media (max-width: $s) {
+  .use-cases .swiper-button-next,
+  .use-cases .swiper-button-prev {
+    display: block;
+  }
+}
+
+
+@media (max-width: $xs) {
+  .use-cases__slide {
+    width: 80%;
+  }
+}

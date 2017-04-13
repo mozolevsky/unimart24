@@ -15,6 +15,11 @@ $blue: #214496;
 $blue-light: #6b7fa0;
 $tabs-border: #bcc3d9;
 
+/* breakpoints */
+$xs: 480px;
+$s: 747px;
+$m: 1023px;
+
 
 @mixin textParam($size: 15px, $height: 26px, $color: $black) {
   font-size: $size;

@@ -89,18 +89,18 @@ gulp.task('build', ['clean', 'img' , 'sass', 'cssMin', 'scripts'], function (){
     var buildCss = gulp.src('app/css/**/*.css')
         .pipe(gulp.dest('dist/css'));
 
+    var buildLibs = gulp.src('app/libs/**/*')
+        .pipe(gulp.dest('dist/libs'));
+
     var buldFonts = gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'));
 
-    var video = gulp.src('app/video/**/*')
+    var buildVideo = gulp.src('app/video/**/*')
         .pipe(gulp.dest('dist/video'));
 
     var buildJs = gulp.src('app/js/**/*')
         .pipe(gulp.dest('dist/js'));
 
     var buildHtml = gulp.src('app/*.html')
-        .pipe(gulp.dest('dist'));
-
-    var moveVideo = gulp.src('app/video/*')
         .pipe(gulp.dest('dist'));
 });
