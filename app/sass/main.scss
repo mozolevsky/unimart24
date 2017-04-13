@@ -17,3 +17,43 @@
 @import "use-cases";
 @import "articles";
 @import "tabs";
+
+
+.overflow-block {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: $s) {
+  .overflow-block > div {
+    overflow: visible;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .overflow-block .swiper-button-next {
+     right: 4px;
+  }
+
+  .overflow-block .swiper-button-prev {
+    left: 4px;
+  }
+}
+
+@media (max-width: $xs) {
+  .overflow-block > div {
+    overflow: visible;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .overflow-block .swiper-button-next {
+    right: 4px;
+  }
+
+  .overflow-block .swiper-button-prev {
+    left: 4px;
+  }
+}

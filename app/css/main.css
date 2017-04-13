@@ -251,7 +251,7 @@
     margin-left: 28px;
     margin-right: 28px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .container {
     margin-left: 10px;
     margin-right: 10px; } }
@@ -481,7 +481,7 @@
   .logo-block__logo-img {
     width: 175px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .logo-block {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -517,7 +517,7 @@
   .two-images__slider {
     margin: 20px 0; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .two-images__slider {
     padding-bottom: 35px;
     margin-bottom: 0; }
@@ -600,7 +600,7 @@
     margin-bottom: 30px;
     margin-right: 0; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .advantages {
     width: 100%; }
   .advantages__wrapper {
@@ -728,7 +728,7 @@
   .types__table-column {
     padding-top: 20px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .types__table-feature,
   .types__table-advantage {
     width: 100%; } }
@@ -745,7 +745,8 @@
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  overflow: auto; }
 
 .certificates__certificate {
   height: 130px;
@@ -779,7 +780,7 @@
 .certificates__img-link:hover::before {
   display: block; }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .certificates__wrapper {
     overflow: auto; } }
 
@@ -852,9 +853,12 @@
 @media (max-width: 747px) {
   .specials .swiper-button-next,
   .specials .swiper-button-prev {
-    display: block; } }
+    display: block; }
+  .specials__slide {
+    width: 40%;
+    margin-right: 0; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .specials__slide {
     width: 80%; } }
 
@@ -974,7 +978,7 @@
     padding-bottom: 30px;
     width: 100%; }
   .info .media-block__image {
-    width: 460px;
+    width: 100%;
     margin: 0 auto; }
   .info .media-block__image img {
     width: 100%; }
@@ -983,9 +987,9 @@
     padding-bottom: 25px;
     margin: 15px 0; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .info .media-block__image {
-    width: 300px; } }
+    width: 100%; } }
 
 .contacts-block {
   width: 100%; }
@@ -1066,7 +1070,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .contacts__map {
     height: 164px; }
   .contacrs-block__address {
@@ -1136,7 +1140,7 @@
   .popular .swiper-button-prev {
     display: block; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .popular__slide {
     width: 80%; } }
 
@@ -1280,7 +1284,7 @@
   .reccomend__item-img {
     margin-bottom: 20px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .reccomend__item-title {
     font-size: 14px;
     line-height: 22px; }
@@ -1342,7 +1346,7 @@
   .use-cases .swiper-button-prev {
     display: block; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .use-cases__slide {
     width: 80%; } }
 
@@ -1384,7 +1388,7 @@
     display: block;
     margin-top: -15px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .articles__slide {
     width: 80%; } }
 
@@ -1615,7 +1619,7 @@
     display: block;
     margin-top: -15px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .experts__slide {
     width: 80%; }
   .tab-adv__slide {
@@ -1629,3 +1633,31 @@
     margin: 0 auto; }
   .expert-text-block {
     text-align: center; } }
+
+.overflow-block {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 747px) {
+  .overflow-block > div {
+    overflow: visible;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .overflow-block .swiper-button-next {
+    right: 4px; }
+  .overflow-block .swiper-button-prev {
+    left: 4px; } }
+
+@media (max-width: 479px) {
+  .overflow-block > div {
+    overflow: visible;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .overflow-block .swiper-button-next {
+    right: 4px; }
+  .overflow-block .swiper-button-prev {
+    left: 4px; } }

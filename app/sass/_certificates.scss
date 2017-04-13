@@ -9,6 +9,7 @@
   padding: 20px;
   box-sizing: border-box;
   background-color: $grey-light2;
+  overflow: auto;
 }
 
 .certificates__certificate {
@@ -38,7 +39,6 @@
 .certificates__img-link:hover::before {
   display: block;
 }
-
 
 
 @media (max-width: $s) {
