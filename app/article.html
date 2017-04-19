@@ -32,7 +32,7 @@
     <aside class="left-column">
         <div class="left-nav__container">
             <div class="left-nav__pointers">
-                <span class="left-nav__pointer left-nav__sort-pointer" data-name="Numbers">0-9</span>
+                <!--<span class="left-nav__pointer left-nav__sort-pointer" data-name="Numbers">0-9</span>-->
                 <div class="left-nav__sortable-block left-nav__active">
                     <span class="left-nav__pointer" data-name="A">A</span>
                     <span class="left-nav__pointer" data-name="B">B</span>
@@ -294,16 +294,18 @@
         </div>
 
         <div class="info info__image-left">
-            <h3 class="title-h3">Преимущества инсталляций KAN</h3>
+            <h2 class="title-h2">Преимущества инсталляций KAN</h2>
             <div class="media-block">
                 <div class="media-block__image">
-                    <div class="videocover">
-                        <button class="media-block__video-button" type="button"></button>
+                    <div class="media-block__video-wrapper">
+                        <div class="videocover">
+                            <button class="media-block__video-button" type="button"></button>
+                        </div>
+                        <video class="media-block__video" >
+                            <source src="video/small.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <video class="media-block__video" >
-                        <source src="video/small.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
                     <p class="media-name">Фирменный завод и флаг Kan System</p>
                 </div>
             </div>
@@ -318,7 +320,7 @@
         </div>
 
         <div class="certificates">
-            <p class="title-h3">Награды и сертификаты</p>
+            <h3 class="title-h3">Награды и сертификаты</h3>
             <div class="certificates__wrapper">
                 <div class="certificates__certificate">
                     <div class="certificates__img-link" data-fancybox="certificates" href="img/cert-big.jpg"><img src="img/cert1.png" alt="" class="certificates__img"></div>
@@ -492,7 +494,7 @@
 
         <div class="overflow-block">
             <div class="swiper-container specials">
-                <p class="title-h3">Акции</p>
+                <h3 class="title-h3">Акции</h3>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="specials__wrapper swiper-wrapper">
@@ -523,7 +525,7 @@
 
         <div class="overflow-block">
             <div class="swiper-container popular">
-                <p class="title-h3">Популярные товары</p>
+                <h3 class="title-h3">Популярные товары</h3>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="popular__wrapper swiper-wrapper">
@@ -881,6 +883,13 @@
       var changePointersLang = document.querySelector('.left-nav__change-language');
       if (changePointersLang) {
           changePointersLang.addEventListener('click', function(e) {
+
+              if (changePointersLang.innerText == 'А-Я') {
+                  changePointersLang.innerText = 'A-Z'
+              } else {
+                  changePointersLang.innerText = 'А-Я'
+              }
+
               var pointerBlocks = document.querySelectorAll('.left-nav__sortable-block');
               Array.prototype.forEach.call(pointerBlocks, function (item) {
                   item.classList.toggle('left-nav__active');

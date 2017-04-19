@@ -21,6 +21,13 @@
 
 .media-block__video {
   width: 100%;
+  display: block;
+}
+
+.media-block__video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .media-block__video-button {
@@ -41,7 +48,7 @@
 .videocover {
   position: absolute;
   width: 100%;
-  height: 89%;
+  height: 100%;
   z-index: 1;
   top: 0;
   left: 0;

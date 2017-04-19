@@ -32,37 +32,96 @@
     <aside class="left-column">
         <div class="left-nav__container">
             <div class="left-nav__pointers">
-                <span class="left-nav__pointer" onclick="openLeftNavTab(event, 'Numbers')">0-9</span>
-                <span class="left-nav__pointer" onclick="openLeftNavTab(event, 'A')">A</span>
-                <span class="left-nav__pointer">B</span>
-                <span class="left-nav__pointer">C</span>
-                <span class="left-nav__pointer">D</span>
-                <span class="left-nav__pointer">E</span>
-                <span class="left-nav__pointer left-nav__pointer_active" onclick="openLeftNavTab(event, 'F')">F</span>
-                <span class="left-nav__pointer">G</span>
-                <span class="left-nav__pointer">H</span>
-                <span class="left-nav__pointer">I</span>
-                <span class="left-nav__pointer">J</span>
-                <span class="left-nav__pointer">K</span>
-                <span class="left-nav__pointer">L</span>
-                <span class="left-nav__pointer">M</span>
-                <span class="left-nav__pointer">N</span>
-                <span class="left-nav__pointer">O</span>
-                <span class="left-nav__pointer">P</span>
-                <span class="left-nav__pointer">Q</span>
-                <span class="left-nav__pointer">R</span>
-                <span class="left-nav__pointer">S</span>
-                <span class="left-nav__pointer">T</span>
-                <span class="left-nav__pointer">U</span>
-                <span class="left-nav__pointer">V</span>
-                <span class="left-nav__pointer">W</span>
-                <span class="left-nav__pointer">X</span>
-                <span class="left-nav__pointer">Y</span>
-                <span class="left-nav__pointer">Z</span>
-                <span class="left-nav__pointer">А-Я</span>
+                <span class="left-nav__pointer left-nav__sort-pointer" data-name="Numbers">0-9</span>
+                <div class="left-nav__sortable-block left-nav__active">
+                    <span class="left-nav__pointer" data-name="A">A</span>
+                    <span class="left-nav__pointer" data-name="B">B</span>
+                    <span class="left-nav__pointer" data-name="C">C</span>
+                    <span class="left-nav__pointer" data-name="D">D</span>
+                    <span class="left-nav__pointer" data-name="E">E</span>
+                    <span class="left-nav__pointer left-nav__pointer_active" data-name="F">F</span>
+                    <span class="left-nav__pointer" data-name="F">G</span>
+                    <span class="left-nav__pointer" data-name="H">H</span>
+                    <span class="left-nav__pointer" data-name="I">I</span>
+                    <span class="left-nav__pointer" data-name="J">J</span>
+                    <span class="left-nav__pointer" data-name="K">K</span>
+                    <span class="left-nav__pointer" data-name="L">L</span>
+                    <span class="left-nav__pointer" data-name="M">M</span>
+                    <span class="left-nav__pointer" data-name="N">N</span>
+                    <span class="left-nav__pointer" data-name="O">O</span>
+                    <span class="left-nav__pointer" data-name="P">P</span>
+                    <span class="left-nav__pointer" data-name="Q">Q</span>
+                    <span class="left-nav__pointer" data-name="R">R</span>
+                    <span class="left-nav__pointer" data-name="S">S</span>
+                    <span class="left-nav__pointer" data-name="T">T</span>
+                    <span class="left-nav__pointer" data-name="U">U</span>
+                    <span class="left-nav__pointer" data-name="V">V</span>
+                    <span class="left-nav__pointer" data-name="W">W</span>
+                    <span class="left-nav__pointer" data-name="X">X</span>
+                    <span class="left-nav__pointer" data-name="Y">Y</span>
+                    <span class="left-nav__pointer" data-name="Z">Z</span>
+                </div>
+                <div class="left-nav__sortable-block">
+                    <span class="left-nav__pointer" data-name="A2">А</span>
+                    <span class="left-nav__pointer" data-name="B2">Б</span>
+                    <span class="left-nav__pointer" data-name="V2">В</span>
+                    <span class="left-nav__pointer" data-name="G2">Г</span>
+                    <span class="left-nav__pointer" data-name="D2">Д</span>
+                    <span class="left-nav__pointer" data-name="E2">E</span>
+                    <span class="left-nav__pointer" data-name="E3">Ё</span>
+                    <span class="left-nav__pointer" data-name="J2">Ж</span>
+                    <span class="left-nav__pointer" data-name="Z2">З</span>
+                    <span class="left-nav__pointer" data-name="I2">И</span>
+                    <span class="left-nav__pointer" data-name="I3">Й</span>
+                    <span class="left-nav__pointer" data-name="K2">К</span>
+                    <span class="left-nav__pointer" data-name="L2">Л</span>
+                    <span class="left-nav__pointer" data-name="M2">М</span>
+                    <span class="left-nav__pointer" data-name="N2">Н</span>
+                    <span class="left-nav__pointer" data-name="O2">О</span>
+                    <span class="left-nav__pointer" data-name="P2">П</span>
+                    <span class="left-nav__pointer" data-name="R2">Р</span>
+                    <span class="left-nav__pointer" data-name="S2">С</span>
+                    <span class="left-nav__pointer" data-name="T2">Т</span>
+                    <span class="left-nav__pointer" data-name="U2">У</span>
+                    <span class="left-nav__pointer" data-name="F2">Ф</span>
+                    <span class="left-nav__pointer" data-name="H2">Х</span>
+                    <span class="left-nav__pointer" data-name="C2">Ц</span>
+                    <span class="left-nav__pointer" data-name="CH">Ч</span>
+                    <span class="left-nav__pointer" data-name="SH">Ш</span>
+                    <span class="left-nav__pointer" data-name="SC">Щ</span>
+                    <span class="left-nav__pointer" data-name="Y2">Ы</span>
+                    <span class="left-nav__pointer" data-name="E4">Э</span>
+                    <span class="left-nav__pointer" data-name="IU">Ю</span>
+                    <span class="left-nav__pointer" data-name="IA">Я</span>
+                </div>
+                <span class="left-nav__pointer left-nav__change-language" data-name="Cyrillic">А-Я</span>
             </div>
             <div class="left-nav__articles">
-                <div class="left-nav__tab-container" id="numbers">
+                <div class="left-nav__tab-container" id="Numbers">
+                    <a href="#" class="left-nav__article-name">1</a>
+                    <a href="#" class="left-nav__article-name">2</a>
+                    <a href="#" class="left-nav__article-name">3</a>
+                    <a href="#" class="left-nav__article-name">4</a>
+                    <a href="#" class="left-nav__article-name">5</a>
+                    <a href="#" class="left-nav__article-name">6</a>
+                    <a href="#" class="left-nav__article-name">7</a>
+                    <a class="left-nav__article-name left-nav__article-name_active">8</a>
+                    <a href="#" class="left-nav__article-name">9</a>
+                    <a href="#" class="left-nav__article-name">0</a>
+                </div>
+                <div class="left-nav__tab-container" id="A">
+                    <a href="#" class="left-nav__article-name">Appolo</a>
+                    <a href="#" class="left-nav__article-name">Alando</a>
+                </div>
+                <div class="left-nav__tab-container" id="B">
+                    <a href="#" class="left-nav__article-name">Blomo</a>
+                </div>
+                <div class="left-nav__tab-container" id="C">
+                    <a href="#" class="left-nav__article-name">Cleo</a>
+                </div>
+                <div class="left-nav__tab-container" id="D"></div>
+                <div class="left-nav__tab-container" id="E"></div>
+                <div class="left-nav__tab-container left-nav__tab-container_active" id="F">
                     <a href="#" class="left-nav__article-name">Fergo</a>
                     <a href="#" class="left-nav__article-name">Ferrari Cavallino</a>
                     <a href="#" class="left-nav__article-name">Ferrari Scuderia</a>
@@ -85,12 +144,61 @@
                     <a href="#" class="left-nav__article-name">Frank Wright</a>
                     <a href="#" class="left-nav__article-name">Freddy</a>
                 </div>
-                <div class="left-nav__tab-container" id="A">
-
+                <div class="left-nav__tab-container" id="G"></div>
+                <div class="left-nav__tab-container" id="H"></div>
+                <div class="left-nav__tab-container" id="I"></div>
+                <div class="left-nav__tab-container" id="J"></div>
+                <div class="left-nav__tab-container" id="K"></div>
+                <div class="left-nav__tab-container" id="L"></div>
+                <div class="left-nav__tab-container" id="M"></div>
+                <div class="left-nav__tab-container" id="N"></div>
+                <div class="left-nav__tab-container" id="O"></div>
+                <div class="left-nav__tab-container" id="P"></div>
+                <div class="left-nav__tab-container" id="Q"></div>
+                <div class="left-nav__tab-container" id="R"></div>
+                <div class="left-nav__tab-container" id="S"></div>
+                <div class="left-nav__tab-container" id="T"></div>
+                <div class="left-nav__tab-container" id="U"></div>
+                <div class="left-nav__tab-container" id="V"></div>
+                <div class="left-nav__tab-container" id="W"></div>
+                <div class="left-nav__tab-container" id="X"></div>
+                <div class="left-nav__tab-container" id="Y"></div>
+                <div class="left-nav__tab-container" id="Z"></div>
+                <div class="left-nav__tab-container" id="A2">
+                    <a href="#" class="left-nav__article-name">Алла</a>
                 </div>
-                <div class="left-nav__tab-container" id="F">
-
+                <div class="left-nav__tab-container" id="B2">
+                    <a href="#" class="left-nav__article-name">Борис</a>
                 </div>
+                <div class="left-nav__tab-container" id="V2"></div>
+                <div class="left-nav__tab-container" id="G2"></div>
+                <div class="left-nav__tab-container" id="D2"></div>
+                <div class="left-nav__tab-container" id="E2"></div>
+                <div class="left-nav__tab-container" id="E3"></div>
+                <div class="left-nav__tab-container" id="J2"></div>
+                <div class="left-nav__tab-container" id="Z2"></div>
+                <div class="left-nav__tab-container" id="I2"></div>
+                <div class="left-nav__tab-container" id="I3"></div>
+                <div class="left-nav__tab-container" id="K2"></div>
+                <div class="left-nav__tab-container" id="L2"></div>
+                <div class="left-nav__tab-container" id="M2"></div>
+                <div class="left-nav__tab-container" id="N2"></div>
+                <div class="left-nav__tab-container" id="O3"></div>
+                <div class="left-nav__tab-container" id="P2"></div>
+                <div class="left-nav__tab-container" id="R2"></div>
+                <div class="left-nav__tab-container" id="S2"></div>
+                <div class="left-nav__tab-container" id="T2"></div>
+                <div class="left-nav__tab-container" id="U2"></div>
+                <div class="left-nav__tab-container" id="F2"></div>
+                <div class="left-nav__tab-container" id="H2"></div>
+                <div class="left-nav__tab-container" id="C2"></div>
+                <div class="left-nav__tab-container" id="CH"></div>
+                <div class="left-nav__tab-container" id="SH"></div>
+                <div class="left-nav__tab-container" id="SC"></div>
+                <div class="left-nav__tab-container" id="Y2"></div>
+                <div class="left-nav__tab-container" id="E4"></div>
+                <div class="left-nav__tab-container" id="IU"></div>
+                <div class="left-nav__tab-container" id="IA"></div>
             </div>
         </div>
         <div class="left-column__banner-wrapper">
@@ -625,7 +733,7 @@
 
                         </div>
                     </div>
-                 </div>
+                </div>
                 <div id="tab3" class="overflow-block">
                     <div class="swiper-container news-slider">
                         <div class="swiper-button-next"></div>
@@ -739,34 +847,64 @@
 <!-- новые скрипты -->
 <script>
 
-   /* var poiners = document.querySelectorAll('left-nav__pointer');
-    for (var i=0; i < poiners.length; i++) {
-        poiners[i].addEventListener('click', function (evt) {
-            var tabName
-            openLeftNavTab(evt, tabId);
-        })
-    }*/
+/* logic for sidebar menu */
+  +(function(){
+      var addHandlerToPointers = function () {
+          var pointers = document.querySelectorAll('.left-nav__sortable-block > .left-nav__pointer');
+          for (var i = 0; i < pointers.length; i++) {
+              pointers[i].addEventListener('click', function(e) {
+                  var tabName = e.target.getAttribute('data-name');
+                  if (tabName) openLeftNavTab(e, tabName);
+              });
+          }
+      };
+      addHandlerToPointers();
 
-    function openLeftNavTab(evt, tabName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
+      var sortPointer = document.querySelector('.left-nav__sort-pointer');
+      if (sortPointer) {
+          sortPointer.addEventListener('click', function (e) {
+              var pointerItems = document.querySelectorAll('.left-nav__active > .left-nav__pointer');
+              var pointerItemsArray = [].slice.call(pointerItems).reverse();
 
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("left-nav__tab-container");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
+              var elemString ='';
 
-        // Get all elements with class="left-nav__pointer" and remove the class "active"
-        tablinks = document.getElementsByClassName("left-nav__pointer");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" left-nav__pointer_active", "");
-        }
+              for (var i=0; i < pointerItemsArray.length; i++) {
+                  elemString = elemString + pointerItemsArray[i].outerHTML;
+              }
+              var pointers = document.querySelector('.left-nav__active');
+              pointers.innerHTML = elemString;
+              addHandlerToPointers();
+          })
 
-        // Show the current tab, and add an "active" class to the link that opened the tab
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " left-nav__pointer_active";
-    }
+      }
+
+      var changePointersLang = document.querySelector('.left-nav__change-language');
+      if (changePointersLang) {
+          changePointersLang.addEventListener('click', function(e) {
+              var pointerBlocks = document.querySelectorAll('.left-nav__sortable-block');
+              Array.prototype.forEach.call(pointerBlocks, function (item) {
+                  item.classList.toggle('left-nav__active');
+              });
+          });
+      }
+
+      function openLeftNavTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+
+          tabcontent = document.getElementsByClassName("left-nav__tab-container");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+
+          tablinks = document.getElementsByClassName("left-nav__pointer");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" left-nav__pointer_active", "");
+          }
+
+          document.getElementById(tabName).style.display = "flex";
+          evt.target.className += " left-nav__pointer_active";
+      }
+  })();
 </script>
 
 
@@ -944,7 +1082,7 @@
 
         }
     };
- </script>
+</script>
 
 <script>
     /* video */
