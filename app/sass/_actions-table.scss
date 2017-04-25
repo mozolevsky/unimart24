@@ -1,0 +1,140 @@
+.actions {
+  width: 100%;
+}
+
+.actions__table {
+  text-align: left;
+}
+
+.actions__table-item {
+  display: flex;
+  border-bottom: 1px solid $grey-light3;
+  cursor: pointer;
+  @include trans;
+}
+
+.actions__table-item:hover {
+  background-color: $grey-light2;
+}
+
+.actions__table-name {
+  width: 50%;
+}
+
+.actions__table-column {
+  width: 24%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.actions__table-column .actions__table-title {
+  border-left: 2px solid $white;
+}
+
+.actions__table-title {
+  display: none;
+  padding: 16px 10px;
+  margin: 0;
+  background-color: $grey-light2;
+  border-bottom: 1px solid $red;
+}
+
+.actions__table-item_1 .actions__table-title {
+  display: block;
+}
+
+.actions__item-text {
+  padding: 20px 10px;
+  margin: 0;
+}
+
+.table-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.table-list__item {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.table-list__item::before {
+  content: " — ";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+@media (max-width: $m) {
+
+}
+
+@media (max-width: $s) {
+  .actions__table-item {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: none;
+  }
+
+  .actions__table-item_grey {
+    background-color: $grey-light2;
+  }
+
+  .actions__table-item {
+    cursor: default;
+  }
+
+  .actions__table-item:hover {
+    background-color: transparent;
+  }
+
+  .actions__table-item_grey:hover {
+    background-color: $grey-light2;
+  }
+
+  .actions__table-title {
+    display: block;
+    border-bottom: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .actions__table-name {
+    width: 100%;
+  }
+
+  .actions__table-feature,
+  .actions__table-advantage {
+    width: 45%;
+  }
+
+  .actions__table-feature {
+    margin: 0;
+  }
+
+  .actions__item-text {
+    padding: 0;
+  }
+
+  .actions__item-text.table-text_bold {
+    padding: 0;
+  }
+
+  .actions__table-column {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: $xs) {
+  .actions__table-feature,
+  .actions__table-advantage {
+    width: 100%;
+  }
+
+
+}
