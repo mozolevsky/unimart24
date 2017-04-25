@@ -5,10 +5,16 @@
 
 .logo-block___logo-wrapper {
   margin-right: 40px;
+  width: 32%;
 }
 
 .logo-block__logo-img {
-  width: 294px;
+  /*width: 294px;*/
+  width: 100%;
+}
+
+.logo-block___logo-desc {
+  width: 60%;
 }
 
 
@@ -18,7 +24,7 @@
   }
 
   .logo-block__logo-img {
-    width: 256px;
+    /*width: 256px;*/
   }
 
 }
@@ -30,7 +36,7 @@
   }
 
   .logo-block__logo-img {
-    width: 175px;
+/*    width: 175px;*/
   }
 }
 

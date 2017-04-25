@@ -48,6 +48,26 @@
   margin: 0;
 }
 
+.table-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.table-list__item {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.table-list__item::before {
+    content: " — ";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 @media (max-width: 1280px) {
   .types__table-name {
     width: 206px;

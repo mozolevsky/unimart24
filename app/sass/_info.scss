@@ -93,6 +93,10 @@
   background-color: $red;
 }
 
+.info__list-item_dark-style::before {
+  background-color: $black;
+}
+
 .info__list-item_num::before {
   display: none;
 }

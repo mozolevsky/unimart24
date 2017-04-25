@@ -18,6 +18,9 @@
 @import "articles";
 @import "tabs";
 @import "payments-table";
+@import "data";
+@import "one-image";
+@import "social-networks";
 
 
 .overflow-block {
@@ -26,6 +29,8 @@
   margin: 0;
   padding: 0;
 }
+
+
 
 @media (max-width: $s) {
   .overflow-block > div {
