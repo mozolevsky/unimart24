@@ -98,8 +98,8 @@ gulp.task('build', ['clean', 'img' , 'sass', 'cssMin', 'scripts'], function (){
     var buildVideo = gulp.src('app/video/**/*')
         .pipe(gulp.dest('dist/video'));
 
-    var buildJs = gulp.src('app/js/**/*')
-        .pipe(gulp.dest('dist/js'));
+    var buildJs = gulp.src('app/scripts/**/*')
+        .pipe(gulp.dest('dist/scripts'));
 
     var buildHtml = gulp.src('app/*.html')
         .pipe(gulp.dest('dist'));

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- взято с сайта. начало -->
+    <title>Состояния</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/js/main/core/css/core.css?14438029863963" type="text/css"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/js/main/core/css/core_popup.css?148464791632859" type="text/css"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/templates/prostroy_default/assets/css/style.css?1484729375250897" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/templates/prostroy_default/assets/lib/fancybox/jquery.fancybox.css?14846483494614" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/templates/prostroy_default/assets/lib/owl/owl.carousel.css?14846483494638" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/templates/prostroy_default/assets/lib/jscrollpane/jquery.jscrollpane.css?14846483491682" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/templates/prostroy_default/assets/js/glass/style.css?1484648349298" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/templates/prostroy_default/assets/js/popup/style.css?14846483495618" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/templates/prostroy_default/components/bitrix/menu/horizontal_multilevel_red/style.css?14846501506644" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/templates/prostroy_default/components/redsign/easycart/gopro/style.css?148464835017302" type="text/css"  data-template-style="true"  rel="stylesheet" />
+    <link href="//www.stroymart24.ru.opt-css.1c-bitrix-cdn.ru/bitrix/templates/prostroy_default/template_styles.css?14848949624119" type="text/css"  data-template-style="true"  rel="stylesheet" />
+
+    <link href="" rel="shortcut icon"  type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- взято с сайта. конец -->
+
+    <!-- новые стили. начало -->
+    <link rel="stylesheet" href="libs/fancybox3/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/swiper/dist/css/swiper.css" type="text/css">
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+<div class="container">
+    <aside class="left-column">
+        <div class="left-nav__container">
+            <div class="left-nav__pointers">
+                <!--<span class="left-nav__pointer left-nav__sort-pointer" data-name="Numbers">0-9</span>-->
+                <div class="left-nav__sortable-block left-nav__active">
+                    <span class="left-nav__pointer" data-name="A">A</span>
+                    <span class="left-nav__pointer" data-name="B">B</span>
+                    <span class="left-nav__pointer" data-name="C">C</span>
+                    <span class="left-nav__pointer" data-name="D">D</span>
+                    <span class="left-nav__pointer" data-name="E">E</span>
+                    <span class="left-nav__pointer left-nav__pointer_active" data-name="F">F</span>
+                    <span class="left-nav__pointer" data-name="F">G</span>
+                    <span class="left-nav__pointer" data-name="H">H</span>
+                    <span class="left-nav__pointer" data-name="I">I</span>
+                    <span class="left-nav__pointer" data-name="J">J</span>
+                    <span class="left-nav__pointer" data-name="K">K</span>
+                    <span class="left-nav__pointer" data-name="L">L</span>
+                    <span class="left-nav__pointer" data-name="M">M</span>
+                    <span class="left-nav__pointer" data-name="N">N</span>
+                    <span class="left-nav__pointer" data-name="O">O</span>
+                    <span class="left-nav__pointer" data-name="P">P</span>
+                    <span class="left-nav__pointer" data-name="Q">Q</span>
+                    <span class="left-nav__pointer" data-name="R">R</span>
+                    <span class="left-nav__pointer" data-name="S">S</span>
+                    <span class="left-nav__pointer" data-name="T">T</span>
+                    <span class="left-nav__pointer" data-name="U">U</span>
+                    <span class="left-nav__pointer" data-name="V">V</span>
+                    <span class="left-nav__pointer" data-name="W">W</span>
+                    <span class="left-nav__pointer" data-name="X">X</span>
+                    <span class="left-nav__pointer" data-name="Y">Y</span>
+                    <span class="left-nav__pointer" data-name="Z">Z</span>
+                </div>
+                <div class="left-nav__sortable-block">
+                    <span class="left-nav__pointer" data-name="A2">А</span>
+                    <span class="left-nav__pointer" data-name="B2">Б</span>
+                    <span class="left-nav__pointer" data-name="V2">В</span>
+                    <span class="left-nav__pointer" data-name="G2">Г</span>
+                    <span class="left-nav__pointer" data-name="D2">Д</span>
+                    <span class="left-nav__pointer" data-name="E2">E</span>
+                    <span class="left-nav__pointer" data-name="E3">Ё</span>
+                    <span class="left-nav__pointer" data-name="J2">Ж</span>
+                    <span class="left-nav__pointer" data-name="Z2">З</span>
+                    <span class="left-nav__pointer" data-name="I2">И</span>
+                    <span class="left-nav__pointer" data-name="I3">Й</span>
+                    <span class="left-nav__pointer" data-name="K2">К</span>
+                    <span class="left-nav__pointer" data-name="L2">Л</span>
+                    <span class="left-nav__pointer" data-name="M2">М</span>
+                    <span class="left-nav__pointer" data-name="N2">Н</span>
+                    <span class="left-nav__pointer" data-name="O2">О</span>
+                    <span class="left-nav__pointer" data-name="P2">П</span>
+                    <span class="left-nav__pointer" data-name="R2">Р</span>
+                    <span class="left-nav__pointer" data-name="S2">С</span>
+                    <span class="left-nav__pointer" data-name="T2">Т</span>
+                    <span class="left-nav__pointer" data-name="U2">У</span>
+                    <span class="left-nav__pointer" data-name="F2">Ф</span>
+                    <span class="left-nav__pointer" data-name="H2">Х</span>
+                    <span class="left-nav__pointer" data-name="C2">Ц</span>
+                    <span class="left-nav__pointer" data-name="CH">Ч</span>
+                    <span class="left-nav__pointer" data-name="SH">Ш</span>
+                    <span class="left-nav__pointer" data-name="SC">Щ</span>
+                    <span class="left-nav__pointer" data-name="Y2">Ы</span>
+                    <span class="left-nav__pointer" data-name="E4">Э</span>
+                    <span class="left-nav__pointer" data-name="IU">Ю</span>
+                    <span class="left-nav__pointer" data-name="IA">Я</span>
+                </div>
+                <span class="left-nav__pointer left-nav__change-language" data-name="Cyrillic">А-Я</span>
+            </div>
+            <div class="left-nav__articles">
+                <div class="left-nav__tab-container" id="Numbers">
+                    <a href="#" class="left-nav__article-name">1</a>
+                    <a href="#" class="left-nav__article-name">2</a>
+                    <a href="#" class="left-nav__article-name">3</a>
+                    <a href="#" class="left-nav__article-name">4</a>
+                    <a href="#" class="left-nav__article-name">5</a>
+                    <a href="#" class="left-nav__article-name">6</a>
+                    <a href="#" class="left-nav__article-name">7</a>
+                    <a class="left-nav__article-name left-nav__article-name_active">8</a>
+                    <a href="#" class="left-nav__article-name">9</a>
+                    <a href="#" class="left-nav__article-name">0</a>
+                </div>
+                <div class="left-nav__tab-container" id="A">
+                    <a href="#" class="left-nav__article-name">Appolo</a>
+                    <a href="#" class="left-nav__article-name">Alando</a>
+                </div>
+                <div class="left-nav__tab-container" id="B">
+                    <a href="#" class="left-nav__article-name">Blomo</a>
+                </div>
+                <div class="left-nav__tab-container" id="C">
+                    <a href="#" class="left-nav__article-name">Cleo</a>
+                </div>
+                <div class="left-nav__tab-container" id="D"></div>
+                <div class="left-nav__tab-container" id="E"></div>
+                <div class="left-nav__tab-container left-nav__tab-container_active" id="F">
+                    <a href="#" class="left-nav__article-name">Fergo</a>
+                    <a href="#" class="left-nav__article-name">Ferrari Cavallino</a>
+                    <a href="#" class="left-nav__article-name">Ferrari Scuderia</a>
+                    <a href="#" class="left-nav__article-name">Fersini</a>
+                    <a href="#" class="left-nav__article-name">Ferz</a>
+                    <a href="#" class="left-nav__article-name">Festissimo</a>
+                    <a href="#" class="left-nav__article-name">Fete</a>
+                    <a class="left-nav__article-name left-nav__article-name_active">Frosch</a>
+                    <a href="#" class="left-nav__article-name">Five Wien Home</a>
+                    <a href="#" class="left-nav__article-name">Flexible by Bata</a>
+                    <a href="#" class="left-nav__article-name">Flioraj</a>
+                    <a href="#" class="left-nav__article-name">Flora & Co</a>
+                    <a href="#" class="left-nav__article-name">Florame</a>
+                    <a href="#" class="left-nav__article-name">Flyfor</a>
+                    <a href="#" class="left-nav__article-name">Fobo</a>
+                    <a href="#" class="left-nav__article-name">Fontana 2.0</a>
+                    <a href="#" class="left-nav__article-name">Fonti</a>
+                    <a href="#" class="left-nav__article-name">FoodaHolic</a>
+                    <a href="#" class="left-nav__article-name">Frank NY</a>
+                    <a href="#" class="left-nav__article-name">Frank Wright</a>
+                    <a href="#" class="left-nav__article-name">Freddy</a>
+                </div>
+                <div class="left-nav__tab-container" id="G"></div>
+                <div class="left-nav__tab-container" id="H"></div>
+                <div class="left-nav__tab-container" id="I"></div>
+                <div class="left-nav__tab-container" id="J"></div>
+                <div class="left-nav__tab-container" id="K"></div>
+                <div class="left-nav__tab-container" id="L"></div>
+                <div class="left-nav__tab-container" id="M"></div>
+                <div class="left-nav__tab-container" id="N"></div>
+                <div class="left-nav__tab-container" id="O"></div>
+                <div class="left-nav__tab-container" id="P"></div>
+                <div class="left-nav__tab-container" id="Q"></div>
+                <div class="left-nav__tab-container" id="R"></div>
+                <div class="left-nav__tab-container" id="S"></div>
+                <div class="left-nav__tab-container" id="T"></div>
+                <div class="left-nav__tab-container" id="U"></div>
+                <div class="left-nav__tab-container" id="V"></div>
+                <div class="left-nav__tab-container" id="W"></div>
+                <div class="left-nav__tab-container" id="X"></div>
+                <div class="left-nav__tab-container" id="Y"></div>
+                <div class="left-nav__tab-container" id="Z"></div>
+                <div class="left-nav__tab-container" id="A2">
+                    <a href="#" class="left-nav__article-name">Алла</a>
+                </div>
+                <div class="left-nav__tab-container" id="B2">
+                    <a href="#" class="left-nav__article-name">Борис</a>
+                </div>
+                <div class="left-nav__tab-container" id="V2"></div>
+                <div class="left-nav__tab-container" id="G2"></div>
+                <div class="left-nav__tab-container" id="D2"></div>
+                <div class="left-nav__tab-container" id="E2"></div>
+                <div class="left-nav__tab-container" id="E3"></div>
+                <div class="left-nav__tab-container" id="J2"></div>
+                <div class="left-nav__tab-container" id="Z2"></div>
+                <div class="left-nav__tab-container" id="I2"></div>
+                <div class="left-nav__tab-container" id="I3"></div>
+                <div class="left-nav__tab-container" id="K2"></div>
+                <div class="left-nav__tab-container" id="L2"></div>
+                <div class="left-nav__tab-container" id="M2"></div>
+                <div class="left-nav__tab-container" id="N2"></div>
+                <div class="left-nav__tab-container" id="O3"></div>
+                <div class="left-nav__tab-container" id="P2"></div>
+                <div class="left-nav__tab-container" id="R2"></div>
+                <div class="left-nav__tab-container" id="S2"></div>
+                <div class="left-nav__tab-container" id="T2"></div>
+                <div class="left-nav__tab-container" id="U2"></div>
+                <div class="left-nav__tab-container" id="F2"></div>
+                <div class="left-nav__tab-container" id="H2"></div>
+                <div class="left-nav__tab-container" id="C2"></div>
+                <div class="left-nav__tab-container" id="CH"></div>
+                <div class="left-nav__tab-container" id="SH"></div>
+                <div class="left-nav__tab-container" id="SC"></div>
+                <div class="left-nav__tab-container" id="Y2"></div>
+                <div class="left-nav__tab-container" id="E4"></div>
+                <div class="left-nav__tab-container" id="IU"></div>
+                <div class="left-nav__tab-container" id="IA"></div>
+            </div>
+        </div>
+        <div class="left-column__banner-wrapper">
+            <a href="#"><img src="img/banner1.png" alt="" class="left-column__banner-img"></a>
+        </div>
+        <div class="left-column__banner-wrapper">
+            <a href="#"><img src="img/banner2.png" alt="" class="left-column__banner-img"></a>
+        </div>
+        <div class="left-column__newsletter">
+            <p class="left-column__newsletter-title title-h3">Узнать о лучших предложениях</p>
+            <span class="left-column__newsletter-icon-block"></span>
+            <form class="left-column__newsletter-form">
+                <input class="left-column__newsletter-input" type="email" placeholder="Введите свой e-mail">
+                <button class="left-column__newsletter-btn" type="submit">Подписаться</button>
+            </form>
+        </div>
+    </aside>
+    <div class="right-column">
+
+        <div class="info info__image-left">
+            <h2 class="title-h2">Преимущества инсталляций KAN</h2>
+            <div class="media-block">
+                <div class="media-block__image">
+                    <img src="img/img_block1.png">
+                    <p class="media-name">Фирменный завод и флаг Kan System</p>
+                </div>
+            </div>
+            <p class="text-normal">Системы KAN-therm отвечают экологическим стандартам в современном строительстве и
+                нормам энергосбережения и влияния зданий на окружающую среду. Главными преимуществами для тех, кто выбирает
+                KAN, можно назвать.</p>
+            <p class="text-normal">Системы KAN-therm отвечают экологическим стандартам в современном строительстве и
+                нормам энергосбережения и влияния зданий на окружающую среду. Главными преимуществами для тех, кто выбирает
+                KAN, можно назвать.</p>
+            <p class="text-normal">Системы KAN-therm отвечают экологическим стандартам в современном строительстве и
+                нормам энергосбережения и влияния зданий на окружающую среду. Главными преимуществами для тех, кто выбирает
+                KAN, можно назвать.</p>
+        </div>
+
+        <!-- text above image -->
+        <div class="info info__image-left">
+            <h2 class="title-h2">Преимущества инсталляций KAN</h2>
+            <p class="text-normal">Системы KAN-therm отвечают экологическим стандартам в современном строительстве и
+                нормам энергосбережения и влияния зданий на окружающую среду. Главными преимуществами для тех, кто выбирает
+                KAN, можно назвать.</p>
+            <div class="media-block media-block_text-above">
+                <div class="media-block__image">
+                    <img src="img/img_block1.png">
+                    <p class="media-name">Фирменный завод и флаг Kan System</p>
+                </div>
+            </div>
+            <p class="text-normal">Системы KAN-therm отвечают экологическим стандартам в современном строительстве и
+                нормам энергосбережения и влияния зданий на окружающую среду. Главными преимуществами для тех, кто выбирает
+                KAN, можно назвать.</p>
+            <p class="text-normal">Системы KAN-therm отвечают экологическим стандартам в современном строительстве и
+                нормам энергосбережения и влияния зданий на окружающую среду. Главными преимуществами для тех, кто выбирает
+                KAN, можно назвать.</p>
+            <p class="text-normal">Системы KAN-therm отвечают экологическим стандартам в современном строительстве и
+                нормам энергосбережения и влияния зданий на окружающую среду. Главными преимуществами для тех, кто выбирает
+                KAN, можно назвать.</p>
+        </div>
+
+        <div class="info info__image-right">
+            <h2 class="title-h2">Области применения мультисистемы KAN-therm</h2>
+            <div class="media-block">
+                <div class="media-block__image">
+                    <img src="img/img_block1.png">
+                    <p class="media-name">Фирменный завод и флаг Kan System</p>
+                </div>
+            </div>
+            <p class="text-normal">Группа KAN разрабатывает и внедряет собственные уникальные решения для инженерных систем
+                в различных сферах применения. Мультисистема KAN-therm  включает в себя взаимодополняющие технические
+                решения в области инженерного обеспечения систем водоснабжения, отопления и охлаждения, противопожарных
+                спринклерных конструкций и в любых видах технологических и промышленных систем. KAN-therm применяется в
+                напольных и настенных инсталляциях, внутри перекрытий и на открытых поверхностях</p>
+            <p class="text-normal">Качество продукции под маркой KAN-therm неоднократно высоко оценивалось как в Польше,
+                так и за рубежом. За время работы компания KAN трижды получала золотую эмблему Quality International, шесть
+                раз становилась лауреатом "Золотого Инсталлятора", дважды завоевала золотые медали Международной выставки в Познани. </p>
+        </div>
+
+        <!-- text above image -->
+        <div class="info info__image-right">
+            <h2 class="title-h2">Области применения мультисистемы KAN-therm</h2>
+            <p class="text-normal">Качество продукции под маркой KAN-therm неоднократно высоко оценивалось как в Польше,
+                так и за рубежом. За время работы компания KAN трижды получала золотую эмблему Quality International, шесть
+                раз становилась лауреатом "Золотого Инсталлятора", дважды завоевала золотые медали Международной выставки в Познани. </p>
+            <div class="media-block media-block_text-above">
+                <div class="media-block__image">
+                    <img src="img/img_block1.png">
+                    <p class="media-name">Фирменный завод и флаг Kan System</p>
+                </div>
+            </div>
+            <p class="text-normal">Группа KAN разрабатывает и внедряет собственные уникальные решения для инженерных систем
+                в различных сферах применения. Мультисистема KAN-therm  включает в себя взаимодополняющие технические
+                решения в области инженерного обеспечения систем водоснабжения, отопления и охлаждения, противопожарных
+                спринклерных конструкций и в любых видах технологических и промышленных систем. KAN-therm применяется в
+                напольных и настенных инсталляциях, внутри перекрытий и на открытых поверхностях</p>
+            <p class="text-normal">Качество продукции под маркой KAN-therm неоднократно высоко оценивалось как в Польше,
+                так и за рубежом. За время работы компания KAN трижды получала золотую эмблему Quality International, шесть
+                раз становилась лауреатом "Золотого Инсталлятора", дважды завоевала золотые медали Международной выставки в Познани. </p>
+        </div>
+
+        <!-- 2 columns -->
+        <div class="types">
+            <h3 class="title-h3">Типы систем KAN-therm</h3>
+            <div class="types__table">
+                <div class="types__table-item types__table-item_1 types__table-item_grey">
+                    <div class="types__table-name">
+                        <p class="types__table-title table-title">Тип системы</p>
+                        <p class="types__item-text table-text_bold">Системы отопления и охлаждения</p>
+                    </div>
+                    <div class="types__table-column types__table-feature">
+                        <p class="types__table-title table-title">Особенности</p>
+                        <p class="types__item-text table-text">различные виды материалов труб и соединителей, а также способы их соединения</p>
+                    </div>
+                </div>
+                <div class="types__table-item">
+                    <div class="types__table-name">
+                        <p class="types__table-title table-title">Тип системы</p>
+                        <p class="types__item-text table-text_bold">Системы водоснабжения холодной и горячей воды</p>
+                    </div>
+                    <div class="types__table-column types__table-feature">
+                        <p class="types__table-title table-title">Особенности</p>
+                        <p class="types__item-text table-text">идеально подходят для создания внутренних систем водоснабжения</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 columns -->
+        <div class="types">
+            <h3 class="title-h3">Типы систем KAN-therm</h3>
+            <div class="types__table">
+                <div class="types__table-item types__table-item_1 types__table-item_grey">
+                    <div class="types__table-name">
+                        <p class="types__table-title table-title">Тип системы</p>
+                        <p class="types__item-text table-text_bold">Системы отопления и охлаждения</p>
+                    </div>
+                    <div class="types__table-column types__table-feature">
+                        <p class="types__table-title table-title">Особенности</p>
+                        <p class="types__item-text table-text">различные виды материалов труб и соединителей, а также способы их соединения</p>
+                    </div>
+                    <div class="types__table-column types__table-advantage">
+                        <p class="types__table-title table-title">Преимущества</p>
+                        <p class="types__item-text table-text">можно выполнить любую систему отопления</p>
+                    </div>
+                </div>
+                <div class="types__table-item">
+                    <div class="types__table-name">
+                        <p class="types__table-title table-title">Тип системы</p>
+                        <p class="types__item-text table-text_bold">Системы водоснабжения холодной и горячей воды</p>
+                    </div>
+                    <div class="types__table-column types__table-feature">
+                        <p class="types__table-title table-title">Особенности</p>
+                        <p class="types__item-text table-text">идеально подходят для создания внутренних систем водоснабжения</p>
+                    </div>
+                    <div class="types__table-column types__table-advantage">
+                        <p class="types__table-title table-title">Преимущества</p>
+                        <p class="types__item-text table-text">высокая стойкость к коррозии, химическая и микробиологическая нейтральность,
+                            большой дтапазон диаметров</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 columns -->
+        <div class="types">
+            <h3 class="title-h3">Типы систем KAN-therm</h3>
+            <div class="types__table">
+                <div class="types__table-item types__table-item_1 types__table-item_grey">
+                    <div class="types__table-name">
+                        <p class="types__table-title table-title">Тип системы</p>
+                        <p class="types__item-text table-text_bold">Системы отопления и охлаждения</p>
+                    </div>
+                    <div class="types__table-column types__table-feature">
+                        <p class="types__table-title table-title">Особенности</p>
+                        <p class="types__item-text table-text">различные виды материалов труб и соединителей, а также способы их соединения</p>
+                    </div>
+                    <div class="types__table-column types__table-advantage">
+                        <p class="types__table-title table-title">Преимущества</p>
+                        <p class="types__item-text table-text">высокая стойкость к коррозии, химическая и микробиологическая нейтральность,
+                            большой дтапазон диаметров</p>
+                    </div>
+                    <div class="types__table-column types__table-advantage">
+                        <p class="types__table-title table-title">Преимущества</p>
+                        <p class="types__item-text table-text">высокая стойкость к коррозии, химическая и микробиологическая нейтральность,
+                            большой дтапазон диаметров</p>
+                    </div>
+                </div>
+                <div class="types__table-item">
+                    <div class="types__table-name">
+                        <p class="types__table-title table-title">Тип системы</p>
+                        <p class="types__item-text table-text_bold">Системы водоснабжения холодной и горячей воды</p>
+                    </div>
+                    <div class="types__table-column types__table-feature">
+                        <p class="types__table-title table-title">Особенности</p>
+                        <p class="types__item-text table-text">идеально подходят для создания внутренних систем водоснабжения</p>
+                    </div>
+                    <div class="types__table-column types__table-advantage">
+                        <p class="types__table-title table-title">Преимущества</p>
+                        <p class="types__item-text table-text">высокая стойкость к коррозии, химическая и микробиологическая нейтральность,
+                            большой дтапазон диаметров</p>
+                    </div>
+                    <div class="types__table-column types__table-advantage">
+                        <p class="types__table-title table-title">Преимущества</p>
+                        <p class="types__item-text table-text">высокая стойкость к коррозии, химическая и микробиологическая нейтральность,
+                            большой диапазон диаметров</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-container specials">
+            <h3 class="title-h3">Акции</h3>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="specials__wrapper swiper-wrapper">
+                <a class="specials__slide swiper-slide">
+                    <div class="specials__img-wrapper">
+                        <img src="img/discount1.png" alt="" class="specials__img">
+                        <span class="specials__date">До 15 мая</span>
+                    </div>
+                    <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
+                </a>
+                <a class="specials__slide swiper-slide">
+                    <div class="specials__img-wrapper">
+                        <img src="img/discount2.png" alt="" class="specials__img">
+                        <span class="specials__date">До 15 мая</span>
+                    </div>
+                    <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper-container specials">
+            <h3 class="title-h3">Акции</h3>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="specials__wrapper swiper-wrapper">
+                <a class="specials__slide swiper-slide">
+                    <div class="specials__img-wrapper">
+                        <img src="img/discount1.png" alt="" class="specials__img">
+                        <span class="specials__date">До 15 мая</span>
+                    </div>
+                    <p class="specials__title">Газобетонные блоки по выгодной цене от 475 руб</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- 3 columns -->
+        <div class="links-catalog">
+            <h3 class="title-h3">Каталог товаров KAN</h3>
+            <div class="links-catalog__wrapper">
+                <div class="links-catalog__column">
+                    <p class="links-catalog__position">
+                        <a href="#" class="links-catalog__link">Общестроительные материалы</a> <span class="links-catalog__number">(152)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Асбестоцементные изделия</a> <span class="links-catalog__number">(162)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">ЖБИ</a> <span class="links-catalog__number">(202)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Пиломатериалы</a> <span class="links-catalog__number">(347)</span>
+                    </p>
+                </div>
+                <div class="links-catalog__column">
+                    <p class="links-catalog__position">
+                        <a href="#" class="links-catalog__link">Вентиляция</a> <span class="links-catalog__number">(784)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Кондиционирование</a> <span class="links-catalog__number">(71)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Водоснабжение</a> <span class="links-catalog__number">(318)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Канализация</a> <span class="links-catalog__number">(912)</span>
+                    </p>
+                </div>
+                <div class="links-catalog__column">
+                    <p class="links-catalog__position">
+                        <a href="#" class="links-catalog__link">Видеонаблюдение</a> <span class="links-catalog__number">(67)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Домофония</a> <span class="links-catalog__number">(12)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Контроль доступа</a> <span class="links-catalog__number">(67)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 columns -->
+        <div class="links-catalog">
+            <h3 class="title-h3">Каталог товаров KAN</h3>
+            <div class="links-catalog__wrapper">
+                <div class="links-catalog__column">
+                    <p class="links-catalog__position">
+                        <a href="#" class="links-catalog__link">Общестроительные материалы</a> <span class="links-catalog__number">(152)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Асбестоцементные изделия</a> <span class="links-catalog__number">(162)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">ЖБИ</a> <span class="links-catalog__number">(202)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Пиломатериалы</a> <span class="links-catalog__number">(347)</span>
+                    </p>
+                </div>
+                <div class="links-catalog__column">
+                    <p class="links-catalog__position">
+                        <a href="#" class="links-catalog__link">Вентиляция</a> <span class="links-catalog__number">(784)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Кондиционирование</a> <span class="links-catalog__number">(71)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Водоснабжение</a> <span class="links-catalog__number">(318)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Канализация</a> <span class="links-catalog__number">(912)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1 column -->
+        <div class="links-catalog">
+            <h3 class="title-h3">Каталог товаров KAN</h3>
+            <div class="links-catalog__wrapper">
+                <div class="links-catalog__column">
+                    <p class="links-catalog__position">
+                        <a href="#" class="links-catalog__link">Общестроительные материалы</a> <span class="links-catalog__number">(152)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Асбестоцементные изделия</a> <span class="links-catalog__number">(162)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">ЖБИ</a> <span class="links-catalog__number">(202)</span>
+                    </p>
+                    <p class="links-catalog__position">
+                        <a href="" class="links-catalog__link">Пиломатериалы</a> <span class="links-catalog__number">(347)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 experts -->
+        <div class="tabs-container">
+            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                <li class="tabs-container__tab-item"><a href="#tab1" class="active">Эксперты Юнимарт</a></li>
+                <li class="tabs-container__tab-item"><a href="#tab2">Преимущества Юнимарт</a></li>
+                <li class="tabs-container__tab-item"><a href="#tab3">Новости</a></li>
+            </ul>
+            <section id="first-tab-group" class="tabgroup">
+                <div id="tab1">
+                    <div class="swiper-container experts">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="experts__wrapper swiper-wrapper">
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 3 experts -->
+        <div class="tabs-container">
+            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                <li class="tabs-container__tab-item"><a href="#tab1" class="active">Эксперты Юнимарт</a></li>
+                <li class="tabs-container__tab-item"><a href="#tab2">Преимущества Юнимарт</a></li>
+                <li class="tabs-container__tab-item"><a href="#tab3">Новости</a></li>
+            </ul>
+            <section id="first-tab-group" class="tabgroup">
+                <div id="tab1">
+                    <div class="swiper-container experts">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="experts__wrapper swiper-wrapper">
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 2 experts -->
+        <div class="tabs-container">
+            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                <li class="tabs-container__tab-item"><a href="#tab1" class="active">Эксперты Юнимарт</a></li>
+                <li class="tabs-container__tab-item"><a href="#tab2">Преимущества Юнимарт</a></li>
+                <li class="tabs-container__tab-item"><a href="#tab3">Новости</a></li>
+            </ul>
+            <section id="first-tab-group" class="tabgroup">
+                <div id="tab1">
+                    <div class="swiper-container experts">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="experts__wrapper swiper-wrapper">
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 1 expert -->
+        <div class="tabs-container">
+            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                <li class="tabs-container__tab-item"><a href="#tab1" class="active">Эксперты Юнимарт</a></li>
+                <li class="tabs-container__tab-item"><a href="#tab2">Преимущества Юнимарт</a></li>
+                <li class="tabs-container__tab-item"><a href="#tab3">Новости</a></li>
+            </ul>
+            <section id="first-tab-group" class="tabgroup">
+                <div id="tab1">
+                    <div class="swiper-container experts">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="experts__wrapper swiper-wrapper">
+                            <div class="experts__slide swiper-slide">
+                                <div class="expert-img">
+                                    <img src="img/expert1.png">
+                                </div>
+                                <div class="expert-text-block">
+                                    <p class="expert-name">Дмитрий Чепелинский</p>
+                                    <p class="expert-desc">Эксперт департамента реализации</p>
+                                    <p class="expert-phone"><b>+7 495 981-69-21</b> доб.125</p>
+                                    <p class="expert-mail">d.chepelinsky@unimart24.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 4 advantages -->
+        <div class="advantages swiper-container">
+            <div class="advantages__wrapper swiper-wrapper">
+                <div class="advantages__slide swiper-slide">
+                    <div class="advantages__advantage advantages__advantage_reliability">
+                        <span class="advantages__advantage-title text-bold">Надежность соединений</span>
+                    </div>
+                </div>
+                <div class="advantages__slide swiper-slide">
+                    <div class="advantages__advantage advantages__advantage_guarantee">
+                        <span class="advantages__advantage-title text-bold">Гарантия на систему 10 лет</span>
+                    </div>
+                </div>
+                <div class="advantages__slide swiper-slide">
+                    <div class="advantages__advantage advantages__advantage_trouble-free">
+                        <span class="advantages__advantage-title text-bold">Безаварийная эксплуатация за 50 лет</span>
+                    </div>
+                </div>
+                <div class="advantages__slide swiper-slide">
+                    <div class="advantages__advantage advantages__advantage_quality-control">
+                        <span class="advantages__advantage-title text-bold">Контроль испытательной лаборатории на каждом этапе производства</span>
+                    </div>
+                </div>
+            </div>
+            <div class="two-images__pagination swiper-pagination"></div>
+        </div>
+
+        <!-- 3 advantages -->
+        <div class="advantages swiper-container">
+            <div class="advantages__wrapper swiper-wrapper">
+                <div class="advantages__slide swiper-slide">
+                    <div class="advantages__advantage advantages__advantage_reliability">
+                        <span class="advantages__advantage-title text-bold">Надежность соединений</span>
+                    </div>
+                </div>
+                <div class="advantages__slide swiper-slide">
+                    <div class="advantages__advantage advantages__advantage_guarantee">
+                        <span class="advantages__advantage-title text-bold">Гарантия на систему 10 лет</span>
+                    </div>
+                </div>
+                <div class="advantages__slide swiper-slide">
+                    <div class="advantages__advantage advantages__advantage_trouble-free">
+                        <span class="advantages__advantage-title text-bold">Безаварийная эксплуатация за 50 лет</span>
+                    </div>
+                </div>
+            </div>
+            <div class="two-images__pagination swiper-pagination"></div>
+        </div>
+
+        <!-- 2 advantages -->
+        <div class="advantages swiper-container">
+            <div class="advantages__wrapper swiper-wrapper">
+                <div class="advantages__slide swiper-slide">
+                    <div class="advantages__advantage advantages__advantage_reliability">
+                        <span class="advantages__advantage-title text-bold">Надежность соединений</span>
+                    </div>
+                </div>
+                <div class="advantages__slide swiper-slide">
+                    <div class="advantages__advantage advantages__advantage_guarantee">
+                        <span class="advantages__advantage-title text-bold">Гарантия на систему 10 лет</span>
+                    </div>
+                </div>
+            </div>
+            <div class="two-images__pagination swiper-pagination"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="libs/jquery-3.2.1.min/index.js"></script>
+<script>
+    $('.tabgroup > div').hide();
+    $('.tabgroup > div:first-of-type').show();
+    $('.tabs a').click(function(e){
+        e.preventDefault();
+        var $this = $(this),
+            tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+            others = $this.closest('li').siblings().children('a'),
+            target = $this.attr('href');
+        others.removeClass('active');
+        $this.addClass('active');
+        $(tabgroup).children('div').hide();
+        $(target).show();
+
+    })
+</script>
+
+<script type="text/javascript" src="libs/fancybox3/jquery.fancybox.min.js"></script>
+<script>
+    $("[data-fancybox]").fancybox();
+</script>
+
+
+<script type="text/javascript" src="libs/swiper/dist/js/swiper.js"></script>
+<script>
+    window.onload = function() {
+        if (window.innerWidth <= 480) {
+
+            var swiperTwoImages = new Swiper('.two-images__slider', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: '.swiper-pagination',
+                paginationClickable: true
+            });
+
+            var swiperAdvantages = new Swiper('.advantages', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                breakpoints: {
+                    480: {
+                        slidesPerView: 2,
+                    }
+                }
+            });
+        }
+
+        if (window.innerWidth <= 768) {
+            var swiperSpecials = new Swiper('.specials', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    480: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        initialSlide: 1
+                    }
+                }
+            });
+
+            var swiperPopular = new Swiper('.popular', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    480: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        initialSlide: 1
+                    }
+                }
+            });
+
+            var swiperUseCases = new Swiper('.use-cases', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    480: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        initialSlide: 1
+                    }
+                }
+            });
+
+            var swiperArticles = new Swiper('.articles', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    480: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        initialSlide: 1
+                    }
+                }
+            });
+
+            var swiperExperts = new Swiper('.experts', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                breakpoints: {
+                    480: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        initialSlide: 1
+                    }
+                }
+            });
+
+            var secondTab = document.querySelectorAll('.tabs-container__tab-item')[1];
+            secondTab.addEventListener('click', function() {
+                var swiperTabAdv= new Swiper('.tab-adv', {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    paginationClickable: true,
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 'auto',
+                            spaceBetween: 10,
+                            centeredSlides: true,
+                            initialSlide: 1
+                        }
+                    }
+                });
+            });
+
+            var thirdTab = document.querySelectorAll('.tabs-container__tab-item')[2];
+            thirdTab.addEventListener('click', function() {
+                var swiperTabAdv= new Swiper('.news-slider', {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    paginationClickable: true,
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 'auto',
+                            spaceBetween: 10,
+                            centeredSlides: true,
+                            initialSlide: 1
+                        }
+                    }
+                });
+            });
+
+        }
+    };
+
+</script>
+
+</body>
+</html>
