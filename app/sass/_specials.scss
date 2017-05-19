@@ -17,6 +17,7 @@
   border: 1px solid $grey-light3;
   border-bottom: 3px solid $grey-light3;
   @include trans();
+  height: auto;
 }
 
 .specials__slide:last-child {

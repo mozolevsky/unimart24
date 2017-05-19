@@ -475,22 +475,18 @@
 
 .logo-block___logo-wrapper {
   margin-right: 40px;
-  width: 32%;
-  padding-top: 33px;
-  padding-bottom: 33px;
-  background: #f7f7f7; }
+  width: 32%; }
 
 .logo-block__logo-img {
   /*width: 294px;*/
-  width: auto; }
+  width: 100%; }
 
 .logo-block___logo-desc {
   width: 60%; }
 
 @media (max-width: 1023px) {
   .logo-block___logo-wrapper {
-    margin-right: 30px;
-    text-align: center; }
+    margin-right: 30px; }
   .logo-block__logo-img {
     /*width: 256px;*/ } }
 
@@ -844,8 +840,7 @@
   border: 1px solid #ebebeb;
   border-bottom: 3px solid #ebebeb;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  height: auto; }
+  transition: all 0.3s ease-in-out; }
 
 .specials__slide:last-child {
   margin-right: 0; }
@@ -1144,22 +1139,12 @@
 
 .popular__slide {
   width: 25%;
-  height: auto;
   min-height: 275px;
   padding: 18px 20px;
   border: 1px solid #ebebeb;
   border-top: 2px solid #c4010c;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+          box-sizing: border-box; }
 
 .popular .swiper-button-next,
 .popular .swiper-button-prev {
@@ -1171,11 +1156,7 @@
   color: #214496;
   text-align: left;
   margin-bottom: 23px;
-  display: block;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+  display: block; }
 
 .popular__title:hover {
   cursor: pointer; }

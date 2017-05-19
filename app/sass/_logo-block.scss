@@ -6,11 +6,14 @@
 .logo-block___logo-wrapper {
   margin-right: 40px;
   width: 32%;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  background: $grey-light2;
 }
 
 .logo-block__logo-img {
   /*width: 294px;*/
-  width: 100%;
+  width: auto;
 }
 
 .logo-block___logo-desc {
@@ -21,6 +24,7 @@
 @media (max-width: $m) {
   .logo-block___logo-wrapper {
     margin-right: 30px;
+    text-align: center;
   }
 
   .logo-block__logo-img {

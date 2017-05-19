@@ -9,11 +9,14 @@
 
 .popular__slide {
   width: 25%;
+  height: auto;
   min-height: 275px;
   padding: 18px 20px;
   border: 1px solid $grey-light3;
   border-top: 2px solid $red;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .popular .swiper-button-next,
@@ -26,6 +29,7 @@
   text-align: left;
   margin-bottom: 23px;
   display: block;
+  flex-grow: 1;
 }
 
 .popular__title:hover {
