@@ -25,6 +25,9 @@
  color: $grey-medium2;
 }
 
+.links-catalog__position {
+  margin: 0;
+}
 
 @media (max-width: $s) {
   .links-catalog__column {

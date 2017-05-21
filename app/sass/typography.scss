@@ -3,7 +3,7 @@
   margin-top: 35px;
   margin-bottom: 25px;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 125%;
   color: $red;
   font-weight: 400;
   text-align: left;
@@ -242,6 +242,7 @@
 @media (max-width: 480px) {
   .title-h1 {
     font-size: 26px;
+    line-height: 110%;
   }
   .title-h2 {
     margin-top: 26px;

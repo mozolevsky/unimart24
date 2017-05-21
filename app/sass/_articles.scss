@@ -14,12 +14,17 @@
 
 .articles__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
 }
 
 .articles__slide {
-  width: 24%;
+  width: 23%;
+  margin-right: 3%;
   text-align: left;
+}
+
+.articles__slide:last-child {
+  margin-right: 0;
 }
 
 .articles__img {

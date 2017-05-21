@@ -4,11 +4,17 @@
 
 .use-cases__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .use-cases__slide {
-  width: 24%;
+  width: 23%;
+  margin-right: 3%;
+  text-align: left;
+}
+
+.use-cases__slide:last-child {
+  margin-right: 0;
 }
 
 .use-cases__link {

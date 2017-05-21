@@ -33,7 +33,6 @@
 
 }
 
-
 @media (max-width: $s) {
   .logo-block___logo-wrapper {
     margin-right: 21px;
@@ -57,6 +56,10 @@
   }
 
   .logo-block__logo-img {
+    /*width: 100%;*/
+  }
+
+  .logo-block___logo-desc {
     width: 100%;
   }
 }

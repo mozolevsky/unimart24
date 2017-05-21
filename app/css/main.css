@@ -5,7 +5,7 @@
   margin-top: 35px;
   margin-bottom: 25px;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 125%;
   color: #c4010c;
   font-weight: 400;
   text-align: left; }
@@ -178,7 +178,8 @@
 
 @media (max-width: 480px) {
   .title-h1 {
-    font-size: 26px; }
+    font-size: 26px;
+    line-height: 110%; }
   .title-h2 {
     margin-top: 26px;
     margin-bottom: 16px;
@@ -246,7 +247,11 @@
 @media (max-width: 479px) {
   .container {
     margin-left: 10px;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  .centeringin .container {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0; } }
 
 .left-nav__container {
   display: -webkit-box;
@@ -510,6 +515,8 @@
     width: 100%;
     margin-bottom: 15px; }
   .logo-block__logo-img {
+    /*width: 100%;*/ }
+  .logo-block___logo-desc {
     width: 100%; } }
 
 .two-images__slider {
@@ -1240,6 +1247,9 @@
 .links-catalog__number {
   color: #898989; }
 
+.links-catalog__position {
+  margin: 0; }
+
 @media (max-width: 767px) {
   .links-catalog__column {
     min-width: 175px; } }
@@ -1361,13 +1371,18 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .use-cases__slide {
-  width: 24%; }
+  width: 23%;
+  margin-right: 3%;
+  text-align: left; }
+
+.use-cases__slide:last-child {
+  margin-right: 0; }
 
 .use-cases__link {
   position: relative;
@@ -1428,14 +1443,18 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .articles__slide {
-  width: 24%;
+  width: 23%;
+  margin-right: 3%;
   text-align: left; }
+
+.articles__slide:last-child {
+  margin-right: 0; }
 
 .articles__img {
   width: 100%; }
@@ -1519,6 +1538,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 23%;
+  height: auto;
   margin-right: 3%;
   padding: 20px;
   padding-bottom: 30px;
