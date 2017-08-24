@@ -24,6 +24,10 @@
 @import "actions-table";
 @import "article-desc";
 
+@import "filters_ua";
+@import "tales_ua";
+@import "pagination_ua";
+
 
 .overflow-block {
   overflow: hidden;
@@ -31,8 +35,6 @@
   margin: 0;
   padding: 0;
 }
-
-
 
 @media (max-width: $s) {
   .overflow-block > div {

@@ -4,6 +4,7 @@ $grey-light2: #f7f7f7;
 $grey-light3: #ebebeb;
 $grey-light4: #cccccc;
 $grey-light5: #dbdbdb;
+$grey-light6: #e1e1e1;
 $grey-medium2: #898989;
 $gray-medium: #666666;
 $gray-dark: #424242;
@@ -20,6 +21,8 @@ $xs: 479px;
 $s: 767px;
 $m: 1023px;
 
+/* other */
+$border-rad: 3px;
 
 @mixin textParam($size: 15px, $height: 26px, $color: $black) {
   font-size: $size;

@@ -1,0 +1,11 @@
+Блок находится в макете article.html
+
+1. Нужно заменить блок .advantages в верстке 
+2. Перенести картинки 
+/img/arrows_icon.svg
+/img/cup_icon.svg
+/img/guarantee_icon.svg
+/img/quantity_icon.svg
+
+3. Из файла main.css заменить стили блока .advantages на новые 
+4. Обнвить в скриптах var swiperAdvantages на новую из присланног scripts.js

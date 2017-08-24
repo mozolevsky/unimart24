@@ -92,14 +92,14 @@ window.onload = function() {
 
         var swiperTwoImages = new Swiper('.two-images__slider', {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 0,
             pagination: '.swiper-pagination',
             paginationClickable: true
         });
 
         var swiperAdvantages = new Swiper('.advantages', {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 0,
             pagination: '.swiper-pagination',
             paginationClickable: true,
             breakpoints: {
@@ -251,4 +251,16 @@ window.onload = function() {
             cover.setAttribute("style", 'visibility: hidden');
         }
     });
+})();
+
+
+// yandex map mobile size
++(function(){
+    setTimeout(function() {
+        var map = document.getElementById('BX_YMAP_MAP_zKXRla') || "";
+
+        if (window.innerWidth <= 480 && map) {
+            map.style.cssText = "height: 200px; width: 100%;";
+        }
+    }, 600)
 })();

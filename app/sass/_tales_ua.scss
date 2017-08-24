@@ -1,0 +1,117 @@
+@media (min-width: 320px) {
+  .ua-tales {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .ua-tale {
+    width: 100%;
+
+    &__img {
+      margin-bottom: 11px;
+      width: 100%;
+    }
+
+    &__title {
+      display: block;
+      margin-bottom: 8px;
+      @include textParam(15px, 21px, $blue);
+      text-decoration: underline;
+    }
+
+    &__tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding-right: 7px;
+      padding-left: 7px;
+      vertical-align: middle;
+
+      text-align: center;
+      line-height: 21px;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: $red;
+      letter-spacing: 0.025em;
+
+      background-color: #f5f5f5;
+    }
+
+    &__details {
+      margin-bottom: 40px;
+    }
+
+    &__date {
+      display: inline-block;
+      margin: 0;
+      margin-right: 12px;
+      @include textParam(12px, 12px);
+    }
+
+    &__views {
+      display: inline-block;
+      margin: 0;
+      margin-right: 18px;
+      padding-left: 20px;
+      @include textParam(13px, 13px);
+
+      background: url('../img/ua-eye_icon.png') no-repeat left center;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .ua-tales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .ua-tale {
+    width: 48%;
+
+    &__details {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ua-tales {
+    padding-top: 20px;
+    justify-content: flex-start;
+  }
+
+  .ua-tale {
+    width: 31%;
+    margin-right: 3.5%;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .ua-tales {
+    padding-top: 40px;
+  }
+
+  .ua-tale {
+    margin-right: 2%;
+    width: 23.5%;
+
+    &__title {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &:nth-child(3n + 3) {
+      margin-right: 2%;
+    }
+
+    &:nth-child(4n + 4) {
+      margin-right: 0;
+    }
+  }
+}

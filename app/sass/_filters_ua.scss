@@ -1,0 +1,77 @@
+@media (min-width: 320px) {
+  .ua-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__select {
+        position: relative;
+        width: 48%;
+        min-height: 32px;
+        margin-bottom: 15px;
+        padding-left: 7px;
+
+        color: $blue !important;
+        @include textParam(12px, 26px);
+
+        border: 1px solid $grey-light6;
+        border-radius: $border-rad;
+
+        -webkit-appearance: none;
+        background: url('../img/ua-select_icon.png') no-repeat;
+        background-position: calc(100% - 5px) center;
+      }
+
+    &__switcher {
+        height: 30px;
+        border: 1px solid $grey-light6;
+        border-radius: $border-rad;
+      }
+
+    &__state {
+      display: inline-block;
+      height: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &_list {
+        width: 34px;
+        border-right: 1px solid $grey-light6;
+        background-image: url('../img/ua-switcher-list_icon.png');
+      }
+
+      &_tales {
+        width: 33px;
+        background-image: url('../img/ua-switcher-tales_icon.png');
+      }
+    }
+    }
+  }
+
+
+@media (min-width: 768px) {
+  .ua-filters {
+    justify-content: flex-start;
+
+    &__select {
+      margin-right: 10px;
+      width: 30%;
+
+      &_works {
+        margin-right: auto;
+      }
+
+      &_popul {
+        width: 140px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .ua-filters {
+    &_popul {
+      width: 165px;
+    }
+  }
+}
