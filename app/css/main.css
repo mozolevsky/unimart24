@@ -2128,6 +2128,7 @@
       background-position: -webkit-calc(100% - 5px) center;
       background-position: calc(100% - 5px) center; }
     .ua-filters__switcher {
+      display: inherit;
       height: 30px;
       border: 1px solid #e1e1e1;
       -webkit-border-radius: 3px;
@@ -2137,6 +2138,12 @@
       height: 30px;
       background-position: center;
       background-repeat: no-repeat; }
+      .ua-filters__state:hover {
+        cursor: pointer; }
+      .ua-filters__state_active.ua-filters__state_list {
+        background-image: url("../img/ua-switcher-list-active_icon.png"); }
+      .ua-filters__state_active.ua-filters__state_tales {
+        background-image: url("../img/ua-switcher-tales-active_icon.png"); }
       .ua-filters__state_list {
         width: 34px;
         border-right: 1px solid #e1e1e1;
@@ -2371,6 +2378,61 @@
                 border-radius: 3px; }
       .ua-pagination__page:last-child {
         border-right: 1px solid #e1e1e1; } }
+
+@media (min-width: 320px) {
+  .ua-nav {
+    padding-bottom: 25px;
+    font-size: 13px;
+    line-height: 30px; }
+    .ua-nav__to-all {
+      padding-left: 30px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      line-height: 32px;
+      text-decoration: none;
+      color: #214496;
+      background: #f3f3f3 url("../img/blue-arrow-left_icon.svg") no-repeat 15px center; }
+    .ua-nav__links-wrapper {
+      padding-top: 12px;
+      color: #666666;
+      -webkit-transition: all 0.8s ease-in-out;
+      transition: all 0.8s ease-in-out; }
+      .ua-nav__links-wrapper_short {
+        overflow-y: hidden;
+        height: 260px; }
+    .ua-nav__title {
+      margin: 0;
+      padding-left: 28px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em; }
+    .ua-nav__link {
+      display: block;
+      padding-left: 28px;
+      padding-right: 8px;
+      margin-bottom: 5px;
+      line-height: 20px;
+      color: #666666;
+      text-decoration: none; }
+      .ua-nav__link_active {
+        color: #d95b62;
+        background: url("../img/red-arrow-icon.png") no-repeat 15px 7px; }
+    .ua-nav__more-links {
+      position: relative;
+      margin-left: 28px;
+      text-decoration: none;
+      color: #214496;
+      border-bottom: 1px dotted #214496; }
+      .ua-nav__more-links:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        right: -12px;
+        width: 7px;
+        height: 4px;
+        background: url("../img/lightBlue-arrow-down_icon.svg") no-repeat center;
+        background-size: contain; } }
 
 .overflow-block {
   overflow: hidden;

@@ -23,6 +23,7 @@
       }
 
     &__switcher {
+        display: inherit;
         height: 30px;
         border: 1px solid $grey-light6;
         border-radius: $border-rad;
@@ -33,6 +34,18 @@
       height: 30px;
       background-position: center;
       background-repeat: no-repeat;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &_active.ua-filters__state_list {
+        background-image: url('../img/ua-switcher-list-active_icon.png');
+      }
+
+      &_active.ua-filters__state_tales {
+        background-image: url('../img/ua-switcher-tales-active_icon.png');
+      }
 
       &_list {
         width: 34px;

@@ -1,0 +1,68 @@
+@media (min-width: 320px) {
+  .ua-nav {
+    padding-bottom: 25px;
+    font-size: 13px;
+    line-height: 30px;
+
+    &__to-all {
+      padding-left: 30px;
+      display: flex;
+      line-height: 32px;
+      text-decoration: none;
+      color: $blue;
+      background: $gray-light url('../img/blue-arrow-left_icon.svg') no-repeat 15px center;
+    }
+
+    &__links-wrapper {
+      padding-top: 12px;
+      color: $gray-medium;
+      @include trans(0.8s);
+
+      &_short {
+        overflow-y: hidden;
+        height: 260px;
+      }
+    }
+
+    &__title {
+      margin: 0;
+      padding-left: 28px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    &__link {
+      display: block;
+      padding-left: 28px;
+      padding-right: 8px;
+      margin-bottom: 5px;
+      line-height: 20px;
+      color: $gray-medium;
+      text-decoration: none;
+
+      &_active {
+        color: #d95b62;
+        background: url('../img/red-arrow-icon.png') no-repeat 15px 7px;
+      }
+    }
+
+    &__more-links {
+      position: relative;
+      margin-left: 28px;
+      text-decoration: none;
+      color: $blue;
+      border-bottom: 1px dotted $blue;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        right: -12px;
+        width: 7px;
+        height: 4px;
+        background: url('../img/lightBlue-arrow-down_icon.svg') no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+}

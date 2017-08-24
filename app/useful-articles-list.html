@@ -35,15 +35,22 @@
         <div class="left-nav__container">
             <div class="ua-nav">
                 <a href="#" class="ua-nav__to-all">Ко всем статьям</a>
-                <div class="ua-nav__links-wrapper">
-                    <a href="#" class="ua-nav__link">Как класть кирпич? Технология и секреты правельной кладки</a>
+                <div class="ua-nav__links-wrapper ua-nav__links-wrapper_short">
+                    <p class="ua-nav__title">Строим свой дом</p>
+                    <a href="#" class="ua-nav__link ua-nav__link_active">Как класть кирпич?<br> Технология и секреты правельной кладки</a>
+                    <a href="#" class="ua-nav__link">Как ложить крышу</a>
+                    <a href="#" class="ua-nav__link">Какая система водостока лучше</a>
+                    <a href="#" class="ua-nav__link">5 главных правил правильного фундамента</a>
+                    <a href="#" class="ua-nav__link">Какие утеплители выбрать для дома</a>
+                    <a href="#" class="ua-nav__link">Лучшая система отопления для загородного дома</a>
+
                     <a href="#" class="ua-nav__link">Как ложить крышу</a>
                     <a href="#" class="ua-nav__link">Какая система водостока лучше</a>
                     <a href="#" class="ua-nav__link">5 главных правил правильного фундамента</a>
                     <a href="#" class="ua-nav__link">Какие утеплители выбрать для дома</a>
                     <a href="#" class="ua-nav__link">Лучшая система отопления для загородного дома</a>
                 </div>
-                <a href="#" class="ua-nav__more-links">Еще статьи</a>
+                <a href="#" id="more-articles" class="ua-nav__more-links">Еще статьи</a>
             </div>
         </div>
         <div class="left-column__banner-wrapper">
@@ -86,7 +93,7 @@
                 <option value="">Так себе</option>
             </select>
             <div class="ua-filters__switcher">
-                <div class="ua-filters__state ua-filters__state_list"></div>
+                <div class="ua-filters__state ua-filters__state_list ua-filters__state_active"></div>
                 <div class="ua-filters__state ua-filters__state_tales"></div>
             </div>
         </section>
@@ -186,6 +193,38 @@
 <script type="text/javascript" src="libs/fancybox3/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="libs/swiper/dist/js/swiper.js"></script>
 <script type="text/javascript" src="scripts/scripts.js"></script>
+<!-- little scripts for this page -->
+<script>
+    +(function() {
+        var moreArticles = document.getElementById('more-articles'),
+            linksList = document.querySelector('.ua-nav__links-wrapper_short');
+
+        moreArticles.addEventListener('click', function() {
+            linksList.classList.remove('ua-nav__links-wrapper_short');
+            moreArticles.style = 'display: none';
+        })
+    })();
+
+   +(function() {
+       var stateList = document.querySelector('.ua-filters__state_list'),
+           stateTales = document.querySelector('.ua-filters__state_tales');
+
+       function changeState(active, inactive) {
+           if (!inactive.classList.contains('ua-filters__state_active')) {
+               inactive.classList.add('ua-filters__state_active');
+               active.classList.remove('ua-filters__state_active');
+           }
+       }
+
+       stateList.addEventListener('click', function () {
+           changeState(stateTales, stateList);
+       });
+
+       stateTales.addEventListener('click', function () {
+           changeState(stateList, stateTales);
+       })
+   })();
+</script>
 
 </body>
 </html>
