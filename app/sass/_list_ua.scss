@@ -1,11 +1,11 @@
 @media (min-width: 320px) {
-  .ua-tales {
+  .ua-lists {
     padding-top: 15px;
     padding-bottom: 20px;
     text-align: left;
   }
 
-  .ua-tale {
+  .ua-list {
     width: 100%;
 
     &__img {
@@ -18,6 +18,10 @@
       margin-bottom: 8px;
       @include textParam(15px, 21px, $blue);
       text-decoration: underline;
+    }
+
+    &__desc {
+      @include textParam(14px, 22px, $black);
     }
 
     &__tag {
@@ -45,7 +49,8 @@
       display: inline-block;
       margin: 0;
       margin-right: 12px;
-      @include textParam(12px, 12px);
+      @include textParam(12px, 12px, #8f8f8f);
+      text-transform: uppercase;
     }
 
     &__views {
@@ -61,58 +66,39 @@
 }
 
 @media (min-width: 480px) {
-  .ua-tales {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .ua-lists {
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
-  .ua-tale {
-    width: 48%;
+  .ua-list {
+    display: flex;
 
-    &__details {
-      margin-bottom: 30px;
+    &__left-side {
+      width: 35%;
+      margin-right: 15px;
+    }
+
+    &__right-side {
+      width: calc(100% - 35% - 15px);
+    }
+
+    &__title {
+      margin-top: -4px;
+      @include textParam(18px, 26px, $blue);
+      font-weight: 600;
     }
   }
 }
 
 @media (min-width: 768px) {
-  .ua-tales {
-    padding-top: 20px;
-    justify-content: flex-start;
-  }
-
-  .ua-tale {
-    width: 31%;
-    margin-right: 3.5%;
-
-    &:nth-child(3n + 3) {
-      margin-right: 0;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .ua-tales {
-    padding-top: 40px;
-  }
-
-  .ua-tale {
-    margin-right: 2%;
-    width: 23.5%;
-
-    &__title {
-      &:hover {
-        cursor: pointer;
-      }
+  .ua-list {
+    &__left-side {
+      width: 188px;
     }
 
-    &:nth-child(3n + 3) {
-      margin-right: 2%;
-    }
-
-    &:nth-child(4n + 4) {
-      margin-right: 0;
+    &__right-side {
+      width: calc(100% - (188px + 15px));
     }
   }
 }
