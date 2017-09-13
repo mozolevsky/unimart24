@@ -1,0 +1,89 @@
+@media (min-width: 320px) {
+   .action-time {
+     margin-bottom: 28px;
+     display: flex;
+     flex-direction: column;
+
+     &__end {
+       width: 100%;
+       margin-bottom: 11px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 25px;
+       box-sizing: border-box;
+       background: $red;
+       color: $white;
+       border-radius: $border-rad;
+
+       &_finished {
+         background: #f3f3f3;
+         color: #6b80a0;
+       }
+     }
+
+     &__text {
+       position: relative;
+       display: inline-block;
+       margin-bottom: 0;
+
+       &::before {
+         content: '';
+         position: absolute;
+         left: -25px;
+         top: 1px;
+         width: 16px;
+         height: 16px;
+       }
+
+      &_calendar {
+        &::before {
+          background: url('../img/calender-action-time_icon.png') no-repeat center;
+        }
+      }
+
+     &_calendar-gray {
+       &::before {
+         background: url('../img/calender-action-time-finished_icon.png') no-repeat center;
+       }
+     }
+
+      &_print {
+        &::before {
+          background: url('../img/read-later-print_icon.png') no-repeat center;
+        }
+      }
+     }
+
+     &__print {
+        padding-top: 9px;
+       padding-bottom: 9px;
+       color: $blue;
+       background: $white;
+       border-radius: $border-rad;
+       border: 1px solid $grey-light6;
+       @include trans();
+
+       &:hover {
+         color: $red;
+         border: 1px solid $red;
+       }
+     }
+   }
+}
+
+@media (min-width: 480px) {
+  .action-time {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__end {
+      margin-bottom: 0;
+      width: 288px;
+    }
+
+    &__print {
+      width: 104px;
+      padding-left: 30px;
+    }
+  }
+}

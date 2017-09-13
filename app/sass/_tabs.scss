@@ -12,9 +12,19 @@
   margin: 0;
 }
 
+.tabs-container ul.tabs_contacts {
+ width: 400px;
+  border-bottom: 1px solid $tabs-border;
+}
+
 .tabs li {
     float:left;
     margin-right: 40px;
+}
+
+.tabs_contacts li {
+  margin-right: 0;
+  width: 50%;
 }
 
 .tabs a {
@@ -23,6 +33,10 @@
   text-decoration: none;
   @include textParam(15px, 21px);
   padding: 15px 0;
+}
+
+.tabs_contacts a {
+  text-align: center;
 }
 
 .tabs a:hover, .tabs a.active {
@@ -45,6 +59,12 @@
     border-top: 1px solid $tabs-border;
     width: 100%;
 }
+
+.tabgroup.tabgroup_contacts > div {
+  border-top: none;
+}
+
+
 
 .clearfix:after {
   content:"";
@@ -231,6 +251,10 @@
 
 
 @media (max-width: $s) {
+  .tabs-container ul.tabs_contacts {
+    width: 100%;
+  }
+
   .tabs li {
     margin-right: 20px;
   }
@@ -263,6 +287,7 @@
 
 
 @media (max-width: $xs) {
+
   .experts__slide {
     width: 80%;
   }

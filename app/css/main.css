@@ -399,6 +399,8 @@
 .left-column__newsletter {
   padding: 28px;
   border: 1px solid #f3f3f3; }
+  .left-column__newsletter_contacts {
+    margin-top: 30px; }
 
 .left-column__newsletter-title {
   margin-top: 0;
@@ -1544,9 +1546,17 @@
   padding: 0;
   margin: 0; }
 
+.tabs-container ul.tabs_contacts {
+  width: 400px;
+  border-bottom: 1px solid #bcc3d9; }
+
 .tabs li {
   float: left;
   margin-right: 40px; }
+
+.tabs_contacts li {
+  margin-right: 0;
+  width: 50%; }
 
 .tabs a {
   display: block;
@@ -1556,6 +1566,9 @@
   line-height: 21px;
   color: #000000;
   padding: 15px 0; }
+
+.tabs_contacts a {
+  text-align: center; }
 
 .tabs a:hover, .tabs a.active {
   color: #c5010d;
@@ -1574,6 +1587,9 @@
   padding-top: 20px;
   border-top: 1px solid #bcc3d9;
   width: 100%; }
+
+.tabgroup.tabgroup_contacts > div {
+  border-top: none; }
 
 .clearfix:after {
   content: "";
@@ -1739,6 +1755,8 @@
     line-height: 18px; } }
 
 @media (max-width: 767px) {
+  .tabs-container ul.tabs_contacts {
+    width: 100%; }
   .tabs li {
     margin-right: 20px; }
   .experts__slide {
@@ -2269,7 +2287,7 @@
 
 @media (min-width: 320px) {
   .ua-pagination {
-    padding-bottom: 50px; }
+    padding-bottom: 10px; }
     .ua-pagination__btn-more {
       margin-bottom: 20px;
       width: 100%;
@@ -2754,6 +2772,105 @@
   .rl-subscribe {
     width: -webkit-calc(200% - 33px);
     width: calc(200% - 33px); } }
+
+@media (min-width: 320px) {
+  .contacts-cont {
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px; }
+    .contacts-cont__left-side {
+      margin-bottom: 40px; }
+    .contacts-cont__icon-text {
+      padding-left: 20px;
+      background-repeat: no-repeat;
+      background-position: left 5px; }
+      .contacts-cont__icon-text_place {
+        background-image: url("../img/contacts-work-time_place.png"); }
+      .contacts-cont__icon-text_work-time {
+        background-image: url("../img/contacts-work-time_icon.png"); }
+      .contacts-cont__icon-text_phone {
+        background-image: url("../img/contacts-work-time_phone.png"); }
+      .contacts-cont__icon-text_mail {
+        background-image: url("../img/contacts-work-time_mail.png"); }
+    .contacts-cont__group-subtitle {
+      margin-bottom: 0; } }
+
+@media (min-width: 320px) {
+  .action-time {
+    margin-bottom: 28px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .action-time__end {
+      width: 100%;
+      margin-bottom: 11px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 25px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      background: #c4010c;
+      color: #fff;
+      -webkit-border-radius: 3px;
+              border-radius: 3px; }
+      .action-time__end_finished {
+        background: #f3f3f3;
+        color: #6b80a0; }
+    .action-time__text {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 0; }
+      .action-time__text::before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 1px;
+        width: 16px;
+        height: 16px; }
+      .action-time__text_calendar::before {
+        background: url("../img/calender-action-time_icon.png") no-repeat center; }
+      .action-time__text_calendar-gray::before {
+        background: url("../img/calender-action-time-finished_icon.png") no-repeat center; }
+      .action-time__text_print::before {
+        background: url("../img/read-later-print_icon.png") no-repeat center; }
+    .action-time__print {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      color: #214496;
+      background: #fff;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      border: 1px solid #e1e1e1;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      .action-time__print:hover {
+        color: #c4010c;
+        border: 1px solid #c4010c; } }
+
+@media (min-width: 480px) {
+  .action-time {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .action-time__end {
+      margin-bottom: 0;
+      width: 288px; }
+    .action-time__print {
+      width: 104px;
+      padding-left: 30px; } }
 
 .overflow-block {
   overflow: hidden;

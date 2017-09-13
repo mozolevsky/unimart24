@@ -23,14 +23,18 @@
 @import "social-networks";
 @import "actions-table";
 @import "article-desc";
-
 @import "filters_ua";
 @import "tales_ua";
 @import "pagination_ua";
 @import "nav_ua";
 @import "list_ua";
-
 @import "read-later";
+
+@import "contacts-content";
+
+@import "action-time";
+
+
 
 .overflow-block {
   overflow: hidden;

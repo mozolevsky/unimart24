@@ -1,0 +1,40 @@
+@media (min-width: 320px) {
+  .contacts-cont {
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+
+    &__left-side {
+      margin-bottom: 40px;
+    }
+
+    &__icon-text {
+      padding-left: 20px;
+      background-repeat: no-repeat;
+      background-position: left 5px;
+
+      &_place {
+        background-image: url('../img/contacts-work-time_place.png');
+      }
+
+      &_work-time {
+        background-image: url('../img/contacts-work-time_icon.png');
+      }
+
+      &_phone {
+        background-image: url('../img/contacts-work-time_phone.png');
+      }
+
+      &_mail {
+        background-image: url('../img/contacts-work-time_mail.png');
+      }
+    }
+
+    &__group-subtitle {
+      margin-bottom: 0;
+    }
+
+
+  }
+}
