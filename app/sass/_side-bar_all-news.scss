@@ -1,0 +1,118 @@
+.left-nav-an__container {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid $gray-light;
+  color: $gray-medium;
+}
+
+.left-nav-an__pointers {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  border-right: 1px solid $gray-light;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-nav-an__sortable-block {
+  border-right: 1px solid $gray-light;
+  display: none;
+  flex-direction: column;
+}
+
+.left-nav-an__active {
+  display: flex;
+}
+
+.left-nav-an__pointer {
+  width: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  @include trans();
+  line-height: 1em;
+}
+
+.left-nav-an__pointer_active {
+  color: $white;
+  background: $red;
+  line-height: 1em;
+  position: relative;
+  margin-left: -1px;
+  margin-right: -1px;
+  width: 42px;
+}
+
+.left-nav-an__pointer_active::after {
+  position: absolute;
+  content: '';
+  right: -6px;
+  top: 0;
+  height: 25px;
+  width: 6px;
+  background: url('../img/left-nav__pointer-active.svg') no-repeat center;
+  background-size: cover;
+}
+
+.left-nav-an__pointer:hover {
+  cursor: pointer;
+  color: $white;
+  background-color: $red;
+}
+
+.left-nav-an__articles {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.left-nav-an__tab-container {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  align-items: stretch;
+}
+
+.left-nav-an__tab-container_active {
+  display: flex;
+}
+
+.left-nav-an__article-name {
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $gray-medium;
+  text-align: left;
+  @include trans();
+}
+
+.left-nav-an__article-name:hover {
+  color: $white;
+  background-color: $red;
+}
+
+.left-nav-an__article-name:first-child {
+  padding-top: 6px;
+}
+
+.left-nav-an__article-name_active {
+  color: $red;
+  position: relative;
+}
+
+.left-nav-an__article-name_active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -3.5px;
+  left: 16px;
+  height: 7px;
+  width: 4px;
+  background: url('../img/left-nav__article-name-pointer_active.svg') no-repeat center;
+}
+
+
+@media (max-width: $m) {
+  .left-nav-an__container {
+    width: 220px;
+  }
+}

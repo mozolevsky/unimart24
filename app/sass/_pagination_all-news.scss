@@ -1,0 +1,145 @@
+@media (min-width: 320px) {
+  .an-pagination {
+    padding-bottom: 10px;
+
+    &__btn-more {
+      margin-bottom: 20px;
+      width: 100%;
+      display: inline-block;
+      @include textParam(13px, 34px);
+      text-align: center;
+      vertical-align: middle;
+      color: $white;
+      background: $red2;
+      border: none;
+      border-radius: $border-rad;
+      @include trans();
+
+      &:hover {
+        cursor: pointer;
+        color: $red2;
+        background: $white;
+        box-shadow: 0 0 0 1px $red;
+      }
+    }
+
+    &__switcher {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border: 1px solid $grey-light6;
+      border-radius: $border-rad;
+    }
+
+    &__page {
+      flex-grow: 1;
+      line-height: 32px;
+      padding-left: 8px;
+      padding-right: 8px;
+      text-align: center;
+      text-decoration: none;
+      color: $blue;
+      vertical-align: middle;
+      border-right: 1px solid $grey-light6;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &_first {
+        &:before {
+          content: 'Пред'
+        }
+      }
+
+      &_last {
+        &:before {
+          content: 'След'
+        }
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &_disabled {
+        color: #b7b7b7;
+        background: $gray-light;
+        pointer-events: none;
+      }
+
+      &_active {
+        color: $red2;
+        background: $gray-light;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .an-pagination {
+    &__page {
+      &_first {
+        &:before {
+          content: 'Предыдущая'
+        }
+      }
+
+      &_last {
+        &:before {
+          content: 'Следующая'
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .an-pagination {
+    display: flex;
+    justify-content: space-between;
+
+    &__btn-more {
+      width: 184px;
+    }
+
+    &__switcher {
+      width: 485px;
+      height: 34px;
+      border: none;
+    }
+
+    &__page {
+      border-top: 1px solid $grey-light6;
+      border-bottom: 1px solid $grey-light6;
+
+      &_first {
+        margin-right: 7px;
+        border: none;
+        border-radius: $border-rad;
+      }
+
+      &:nth-child(2) {
+        border-left: 1px solid $grey-light6;
+        border-top-left-radius: $border-rad;
+        border-bottom-left-radius: $border-rad;
+      }
+
+      &:nth-child(7) {
+        border-top-right-radius: $border-rad;
+        border-bottom-right-radius: $border-rad;
+      }
+
+      &_last {
+        margin-left: 7px;
+        border: 1px solid $grey-light6;
+        border-radius: $border-rad;
+      }
+
+      &:last-child {
+        border-right: 1px solid $grey-light6;
+      }
+    }
+  }
+}
