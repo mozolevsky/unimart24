@@ -1,0 +1,136 @@
+@media (min-width: 320px) {
+  .ca-lists {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+  .ca-list {
+    width: 100%;
+
+    &__left-side {
+      position: relative;
+      display: inline-block;
+    }
+
+    &__img {
+      margin-bottom: 11px;
+      width: 100%;
+    }
+
+    &__action-time {
+      position: absolute;
+      bottom: 11px;
+      left: 0;
+      display: inline-block;
+      padding-left: 9px;
+      padding-right: 9px;
+      font-size: 12px;
+      line-height: 21px;
+      color: $white;
+      background-color: $red;
+    }
+
+    &__title {
+      display: block;
+      margin-bottom: 8px;
+      @include textParam(15px, 21px, $blue);
+      text-decoration: underline;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__desc {
+      margin-bottom: 35px;
+      @include textParam(14px, 22px, $black);
+    }
+
+    &__tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding-right: 7px;
+      padding-left: 7px;
+      vertical-align: middle;
+
+      text-align: center;
+      line-height: 21px;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: $red;
+      letter-spacing: 0.025em;
+
+      background-color: #f5f5f5;
+    }
+
+    &__details {
+      margin-bottom: 40px;
+    }
+
+    &__date {
+      display: inline-block;
+      margin: 0;
+      margin-right: 12px;
+      @include textParam(12px, 12px, #8f8f8f);
+      text-transform: uppercase;
+    }
+
+    &__views {
+      display: inline-block;
+      margin: 0;
+      margin-right: 18px;
+      padding-left: 20px;
+      @include textParam(13px, 13px);
+
+      background: url('../img/ua-eye_icon.png') no-repeat left center;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .ca-lists {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .ca-list {
+    display: flex;
+
+    &__left-side {
+      width: 158px;
+      margin-right: 15px;
+    }
+
+    &__action-time {
+      top: 90px;
+      bottom: auto;
+    }
+
+    &__right-side {
+      width: calc(100% - 35% - 15px);
+    }
+
+    &__title {
+      margin-top: -4px;
+      @include textParam(18px, 26px, $blue);
+      font-weight: 600;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ca-list {
+    &__left-side {
+      width: 188px;
+    }
+
+    &__action-time {
+      top: 111px;
+    }
+
+    &__right-side {
+      width: calc(100% - (188px + 15px));
+    }
+  }
+}

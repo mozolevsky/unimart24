@@ -1,0 +1,98 @@
+@media (min-width: 320px) {
+  .ca-tales {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+  .ca-tale {
+    width: 100%;
+
+    &__img {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    &__img-link {
+      position: relative;
+      display: block;
+    }
+
+    &__action-time {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      display: inline-block;
+      padding-left: 9px;
+      padding-right: 9px;
+      font-size: 12px;
+      line-height: 21px;
+      color: $white;
+      background-color: $red;
+    }
+
+    &__title {
+      display: block;
+      margin-bottom: 35px;
+      @include textParam(15px, 21px, $blue);
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .ca-tales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .ca-tale {
+    width: 48%;
+
+    &__details {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ca-tales {
+    padding-top: 20px;
+    justify-content: flex-start;
+  }
+
+  .ca-tale {
+    width: 31%;
+    margin-right: 3.5%;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .ca-tales {
+    padding-top: 40px;
+  }
+
+  .ca-tale {
+    margin-right: 2%;
+    width: 23.5%;
+
+    &__title {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &:nth-child(3n + 3) {
+      margin-right: 2%;
+    }
+
+    &:nth-child(4n + 4) {
+      margin-right: 0;
+    }
+  }
+}
