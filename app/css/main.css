@@ -3421,7 +3421,7 @@
     width: 100%; }
     .ca-list__left-side {
       position: relative;
-      display: inline-block; }
+      display: block; }
     .ca-list__img {
       margin-bottom: 11px;
       width: 100%; }
