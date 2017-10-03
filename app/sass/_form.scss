@@ -1,0 +1,193 @@
+@media (min-width: 320px) {
+  .form {
+    margin-bottom: 17px;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 30px 10px;
+    background-color: #f7f7f7;
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 24px;
+      color: #c5010d;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &__input-area {
+      margin-bottom: 15px;
+      text-align: left;
+
+      &_capcha {
+        display: flex;
+      }
+
+      &_conditions {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__input {
+      padding-left: 10px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 34px;
+      border: 1px solid #e1e1e1;
+      border-radius: 3px;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.502);
+
+      &_capcha {
+        margin-right: 10px;
+        width: 84px;
+        height: 40px;
+        background-color: transparent;
+      }
+    }
+
+    &__textarea {
+      margin-bottom: 15px;
+      padding-left: 10px;
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 133px;
+      border: 1px solid #e1e1e1;
+      border-radius: 3px;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.502);
+    }
+
+    &__capcha-box {
+      display: inline-block;
+      background: url('../img/capchaimg.png') no-repeat center;
+      width: 168px;
+      height: 40px;
+    }
+
+    &__checkbox {
+      display: none;
+
+      &:checked + label:after {
+        display: block;
+      }
+    }
+
+    &__checkbox-label {
+      position: relative;
+      display: block;
+      padding-left: 20px;
+      padding-right: 12px;
+
+      font-size: 11px;
+      line-height: 15px;
+      color: $black;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        box-sizing: border-box;
+        width: 15px;
+        height: 15px;
+
+        border: 1px solid $grey-light4;
+        border-radius: $border-rad;
+        background-color: $white;
+      }
+
+      &:after {
+        display: none;
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 2px;
+        width: 10px;
+        height: 8px;
+        background: url('../img/rl-subscribe-tick_icon.png') no-repeat center;
+      }
+    }
+
+    &__link {
+      color: $blue;
+      text-decoration: underline;
+    }
+
+    &__btn {
+      height: 40px;
+      width: 100%;
+      border: none;
+      border-radius: 3px;
+      background-color: #c5010d;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .form {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    &__title {
+      text-align: left;
+    }
+
+    &__input-area {
+      &_conditions {
+        width: 49%;
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+      }
+    }
+
+    &__btn {
+      width: 50%;
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    margin-right: 0;
+    margin-left: 0;
+
+    &__area {
+      text-align: left;
+    }
+
+    &__inputs-group {
+      margin-right: 20px;
+      width: 261px;
+      display: inline-block;
+      vertical-align: top;
+
+      &_textarea {
+        margin-right: auto;
+        width: calc(100% - 285px);
+      }
+    }
+
+    &__input-area {
+      &_capcha {
+        width: 261px;
+        margin-right: 20px;
+        display: inline-block;
+      }
+    }
+
+    &__input {
+      &_capcha {
+        margin-right: 5px;
+      }
+    }
+
+    &__fields-group {
+      width: calc(100% - 286px);
+      display: inline-block;
+    }
+  }
+}

@@ -89,14 +89,6 @@ $("[data-fancybox]").fancybox();
 /* sliders */
 window.onload = function() {
     if (window.innerWidth < 480) {
-
-        var swiperTwoImages = new Swiper('.two-images__slider', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            pagination: '.swiper-pagination',
-            paginationClickable: true
-        });
-
         var swiperAdvantages = new Swiper('.advantages', {
             slidesPerView: 1,
             spaceBetween: 0,
@@ -107,6 +99,16 @@ window.onload = function() {
                     slidesPerView: 2
                 }
             }
+        });
+    }
+
+    if (window.innerWidth <= 480) {
+
+        var swiperTwoImages = new Swiper('.two-images__slider', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: '.swiper-pagination',
+            paginationClickable: true
         });
     }
 

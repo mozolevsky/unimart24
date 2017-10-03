@@ -562,7 +562,7 @@
   .two-images__slider {
     margin: 20px 0; } }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .two-images__slider {
     padding-bottom: 35px;
     margin-bottom: 0; }
@@ -1039,7 +1039,8 @@
 
 .info-wrapper__list-item {
   position: relative;
-  padding-top: 10px; }
+  padding-top: 10px;
+  line-height: 26px; }
 
 .info-wrapper__list-item::before {
   content: '';
@@ -3421,7 +3422,7 @@
     width: 100%; }
     .ca-list__left-side {
       position: relative;
-      display: inline-block; }
+      display: block; }
     .ca-list__img {
       margin-bottom: 11px;
       width: 100%; }

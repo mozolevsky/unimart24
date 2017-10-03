@@ -562,7 +562,7 @@
   .two-images__slider {
     margin: 20px 0; } }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .two-images__slider {
     padding-bottom: 35px;
     margin-bottom: 0; }
@@ -1039,7 +1039,8 @@
 
 .info-wrapper__list-item {
   position: relative;
-  padding-top: 10px; }
+  padding-top: 10px;
+  line-height: 26px; }
 
 .info-wrapper__list-item::before {
   content: '';
@@ -3931,6 +3932,149 @@
 @media (max-width: 1023px) {
   .left-nav-ca__container {
     width: 220px; } }
+
+@media (min-width: 320px) {
+  .form {
+    margin-bottom: 17px;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 30px 10px;
+    background-color: #f7f7f7; }
+    .form__title {
+      margin-top: 0;
+      margin-bottom: 24px;
+      color: #c5010d;
+      font-size: 20px;
+      font-weight: 600; }
+    .form__input-area {
+      margin-bottom: 15px;
+      text-align: left; }
+      .form__input-area_capcha {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      .form__input-area_conditions {
+        margin-bottom: 20px; }
+    .form__input {
+      padding-left: 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 100%;
+      height: 34px;
+      border: 1px solid #e1e1e1;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.502); }
+      .form__input_capcha {
+        margin-right: 10px;
+        width: 84px;
+        height: 40px;
+        background-color: transparent; }
+    .form__textarea {
+      margin-bottom: 15px;
+      padding-left: 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 100%;
+      min-height: 133px;
+      border: 1px solid #e1e1e1;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.502); }
+    .form__capcha-box {
+      display: inline-block;
+      background: url("../img/capchaimg.png") no-repeat center;
+      width: 168px;
+      height: 40px; }
+    .form__checkbox {
+      display: none; }
+      .form__checkbox:checked + label:after {
+        display: block; }
+    .form__checkbox-label {
+      position: relative;
+      display: block;
+      padding-left: 20px;
+      padding-right: 12px;
+      font-size: 11px;
+      line-height: 15px;
+      color: #000000; }
+      .form__checkbox-label:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #cccccc;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        background-color: #fff; }
+      .form__checkbox-label:after {
+        display: none;
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 2px;
+        width: 10px;
+        height: 8px;
+        background: url("../img/rl-subscribe-tick_icon.png") no-repeat center; }
+    .form__link {
+      color: #214496;
+      text-decoration: underline; }
+    .form__btn {
+      height: 40px;
+      width: 100%;
+      border: none;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      background-color: #c5010d;
+      color: white; } }
+
+@media (min-width: 480px) {
+  .form {
+    padding-right: 20px;
+    padding-left: 20px; }
+    .form__title {
+      text-align: left; }
+    .form__input-area_conditions {
+      width: 49%;
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle; }
+    .form__btn {
+      width: 50%;
+      display: inline-block; } }
+
+@media (min-width: 768px) {
+  .form {
+    margin-right: 0;
+    margin-left: 0; }
+    .form__area {
+      text-align: left; }
+    .form__inputs-group {
+      margin-right: 20px;
+      width: 261px;
+      display: inline-block;
+      vertical-align: top; }
+      .form__inputs-group_textarea {
+        margin-right: auto;
+        width: -webkit-calc(100% - 285px);
+        width: calc(100% - 285px); }
+    .form__input-area_capcha {
+      width: 261px;
+      margin-right: 20px;
+      display: inline-block; }
+    .form__input_capcha {
+      margin-right: 5px; }
+    .form__fields-group {
+      width: -webkit-calc(100% - 286px);
+      width: calc(100% - 286px);
+      display: inline-block; } }
 
 .overflow-block {
   overflow: hidden;
