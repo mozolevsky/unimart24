@@ -3985,8 +3985,6 @@
       font-size: 13px;
       color: rgba(0, 0, 0, 0.502); }
     .form__capcha-box {
-      display: inline-block;
-      background: url("../img/capchaimg.png") no-repeat center;
       width: 168px;
       height: 40px; }
     .form__checkbox {
@@ -4037,6 +4035,8 @@
 
 @media (min-width: 480px) {
   .form {
+    margin-right: -20px;
+    margin-left: -20px;
     padding-right: 20px;
     padding-left: 20px; }
     .form__title {
@@ -4075,6 +4075,124 @@
       width: -webkit-calc(100% - 286px);
       width: calc(100% - 286px);
       display: inline-block; } }
+
+@media (min-width: 320px) {
+  .reviews {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-align: left; }
+  .review {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    border-bottom: 1px solid #eaeaea; }
+    .review__text {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      background: #f7f7f7; }
+    .review__answer {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      padding: 0 20px;
+      border-left: 1px solid #c5010d; }
+    .review__company-name {
+      margin-bottom: 8px;
+      font-size: 15px;
+      line-height: 15px;
+      font-weight: bold;
+      color: #c5010d; }
+    .review__date {
+      margin-bottom: 0;
+      font-size: 12px;
+      color: rgba(31, 31, 31, 0.7);
+      text-transform: uppercase; }
+    .review__answer-text {
+      font-style: italic;
+      color: rgba(0, 0, 0, 0.9); }
+  .author {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    line-height: 22px; }
+    .author__img {
+      margin-right: 10px;
+      width: 55px;
+      height: 55px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    .author__info {
+      margin-top: 5px; }
+    .author__name {
+      margin-bottom: 0;
+      font-weight: bold;
+      color: #c5010d; }
+    .author__desc {
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 0; }
+    .author__date {
+      margin-bottom: 0;
+      font-size: 12px;
+      color: rgba(31, 31, 31, 0.7);
+      text-transform: uppercase; }
+      .author__date_more480 {
+        display: none; } }
+
+@media (min-width: 480px) {
+  .review {
+    margin-right: -20px;
+    margin-left: -20px; }
+    .review__text {
+      padding-left: 20px;
+      padding-right: 20px; }
+    .review__company-name {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 15px; }
+    .review__date {
+      display: inline-block; }
+  .author__img {
+    margin-right: 15px; }
+  .author__name {
+    display: inline-block;
+    margin-right: 20px; }
+  .author__desc {
+    font-size: 15px; }
+  .author__date_more480 {
+    display: inline-block; }
+  .author__date_more320 {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .reviews {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .review {
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 15px;
+    line-height: 26px; }
+    .review__text {
+      padding-left: 20px;
+      padding-right: 20px; }
+      .review__text p {
+        margin-bottom: 15px; }
+    .review__answer {
+      margin-left: 68px; }
+  .author {
+    padding-left: 0; }
+    .author__name {
+      font-size: 15px; } }
 
 .overflow-block {
   overflow: hidden;
