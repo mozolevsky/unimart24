@@ -16,12 +16,20 @@
   margin-bottom: 20px;
 }
 
-.contacts__map {
-  box-sizing: border-box;
-  width: 505px;
-  height: 272px;
-  margin-left: 30px;
-  margin-top: -45px;
+.contacts-cont {
+  display: flex;
+  justify-content: space-between;
+
+  &__left-side {
+    box-sizing: border-box;
+    width: 43%;
+    vertical-align: top;
+  }
+
+  &__right-side {
+    width: 56%;
+    margin-top: -20px;
+  }
 }
 
 .contacts-block__address-item .phone,
@@ -43,43 +51,18 @@
 }
 
 @media (max-width: 1280px) {
-  .contacts__map {
-    width: 441px;
-  }
+
 }
 
 @media (max-width: $m) {
-  .contacts__map {
-    width: 406px;
-  }
+
 }
 
 @media (max-width: $s) {
-  .contacts-block__wrap {
-    flex-wrap: wrap;
-  }
 
-  .contacts__map {
-    order: -1;
-    width: 100%;
-    padding: 0;
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: 20px;
-    height: 282px;
-  }
-
-  .contacrs-block__address {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 @media (max-width: $xs) {
-  .contacts__map {
-    height: 164px;
-  }
 
   .contacrs-block__address {
     flex-direction: column;
