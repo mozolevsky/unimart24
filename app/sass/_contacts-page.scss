@@ -79,6 +79,48 @@
       bottom: 0!important;
     }
   }
+
+  .how-to-go {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 25px 0 25px 20px;
+    border: 1px solid #f3cccf;
+    text-align: left;
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 20px;
+      color: #c5010d;
+      font-weight: bold;
+    }
+
+    &__header {
+      text-align: center;
+    }
+
+    &__img {
+      margin-bottom: 10px;
+    }
+
+    &__desc {
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .how-to-go {
+    padding: 25px 20px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -105,6 +147,21 @@
       margin-right: 0;
       margin-left: 0;
       width: 49%;
+    }
+  }
+
+  .how-to-go {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 28px 23px 34px 28px;
+
+    &__header {
+      width: 20%;
+      color: green;
+    }
+
+    &__desc {
+      width: 76%;
     }
   }
 }
