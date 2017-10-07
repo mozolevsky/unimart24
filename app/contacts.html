@@ -61,42 +61,72 @@
 
             <h1 class="title-h1">Контактная информация</h1>
 
-            <div class="tabs-container">
-                <ul class="tabs clearfix tabs_contacts" data-tabgroup="first-tab-group">
-                    <li class="tabs-container__tab-item"><a href="#tab1" class="active">Офис продаж</a></li>
-                    <li class="tabs-container__tab-item"><a href="#tab2">Шоу-румы</a></li>
-                </ul>
-                <section id="first-tab-group" class="tabgroup tabgroup_contacts">
-                    <div id="tab1" class="overflow-block">
-                        <div class="contacts-cont">
-                            <div class="contacts-cont__left-side">
-                                <p class="contacts-cont__icon-text contacts-cont__icon-text_place">д. Захарово, строение 57<br> Истринский район, Московская область</p>
+            <div class="contacts-tabs">
+                <div class="tabs-container">
+                    <ul class="tabs clearfix tabs_contacts" data-tabgroup="first-tab-group">
+                        <li class="tabs-container__tab-item"><a href="#tab1" class="active">Офис продаж</a></li>
+                        <li class="tabs-container__tab-item"><a href="#tab2" id="showroom-identifier">Шоу-румы</a></li>
+                    </ul>
+                    <section id="first-tab-group" class="tabgroup tabgroup_contacts">
+                        <div id="tab1">
+                            <div class="contacts-cont">
+                                <div class="contacts-cont__left-side">
+                                    <p class="contacts-cont__icon-text contacts-cont__icon-text_place">д. Захарово, строение 57<br> Истринский район, Московская область</p>
 
-                                <p><b>Офис продаж</b></p>
+                                    <p class="contacts-cont__title">Офис продаж</p>
 
-                                <p class="contacts-cont__group-subtitle">График работы</p>
-                                <p class="contacts-cont__icon-text contacts-cont__icon-text_work-time">Пн-Сб <b>9:00 - 21:00</b><br> Воскресенье — выходной</p>
+                                    <p class="contacts-cont__group-subtitle">График работы</p>
+                                    <p class="contacts-cont__icon-text contacts-cont__icon-text_work-time">Пн-Сб <b>9:00 - 21:00</b><br> Воскресенье — выходной</p>
 
-                                <p class="contacts-cont__group-subtitle">Департамент реализации</p>
-                                <p class="contacts-cont__icon-text contacts-cont__icon-text_phone"><b>+ 7 (495) 981-69-21</b> — Многоканальный</p>
+                                    <p class="contacts-cont__group-subtitle">Департамент реализации</p>
+                                    <p class="contacts-cont__icon-text contacts-cont__icon-text_phone"><b>+ 7 (495) 981-69-21</b> — Многоканальный</p>
 
-                                <p class="contacts-cont__group-subtitle">Департамент закупок и производства</p>
-                                <p class="contacts-cont__icon-text contacts-cont__icon-text_phone"><b>+ 7 (495) 981-69-21</b> — Телефон и факс</p>
+                                    <p class="contacts-cont__group-subtitle">Департамент закупок и производства</p>
+                                    <p class="contacts-cont__icon-text contacts-cont__icon-text_phone"><b>+ 7 (495) 981-69-21</b> — Телефон и факс</p>
 
-                                <p class="contacts-cont__icon-text contacts-cont__icon-text_mail">
-                                    <a class="contacts-cont__link" href="mailto:info@unimart24.ru?subject=Mail from site unimart24.ru">info@unimart24.ru</a>
-                                </p>
+                                    <p class="contacts-cont__icon-text contacts-cont__icon-text_mail">
+                                        <a class="contacts-cont__link" href="mailto:info@unimart24.ru?subject=Mail from site unimart24.ru">info@unimart24.ru</a>
+                                    </p>
 
-                            </div>
-                            <div class="contacts-cont__right-side">
-                                <div id="map" style="width:100%; height: 405px;"></div>
+                                </div>
+                                <div class="contacts-cont__right-side">
+                                    <div id="map" style="width:100%; height: 407px;"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="tab2" class="overflow-block">
-                        Блок 2
-                    </div>
-                </section>
+                        <div id="tab2">
+                            <div class="contacts-cont">
+                                <div class="contacts-cont__left-side">
+                                    <p class="contacts-cont__title">Шоурум в офисе продаж</p>
+                                    <p class="contacts-cont__text-little">Общестроительные и кровельные материалы, интерьерные краски, материалы для инженерных сетей, отделочные материалы.</p>
+
+                                    <p class="contacts-cont__icon-text contacts-cont__icon-text_place">д. Захарово, строение 57<br> Истринский район, Московская область</p>
+
+                                    <p class="contacts-cont__title">Imperial Garden</p>
+                                    <p class="contacts-cont__text-little">2000 образцов искусственного камня, тротуарной плитки, брусчатки и других товаров для обустройства.</p>
+
+                                    <p class="contacts-cont__icon-text contacts-cont__icon-text_place">Садовый центр Imperial Garden
+                                        <br> Новорижское шоссе, 23 км</p>
+
+                                    <p class="contacts-cont__icon-text contacts-cont__icon-text_phone"><b>(495) 981-69-21</b> — единый номер Офиса продаж и Шoу-рума</p>
+                                </div>
+                                <div class="contacts-cont__right-side">
+                                    <div class="showroom-slider swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="showroom-slider__image-wrapper swiper-slide">
+                                                <img src="img/showroom-slider-1.png" alt="" class="showroom-slider__img">
+                                            </div>
+                                            <div class="showroom__image-wrapper swiper-slide">
+                                                <img src="img/showroom-slider-2.png" alt="" class="showroom-slider__img">
+                                            </div>
+                                        </div>
+                                        <div class="showroom-slider__pagination swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
 
         </div>

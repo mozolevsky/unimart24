@@ -88,6 +88,20 @@ $("[data-fancybox]").fancybox();
 
 /* sliders */
 window.onload = function() {
+   var showroomTab = document.getElementById('showroom-identifier') || null;
+
+   if (showroomTab) {
+       showroomTab.addEventListener('click', function () {
+           var swiperShowroom = new Swiper('.showroom-slider', {
+               slidesPerView: 1,
+               spaceBetween: 0,
+               pagination: '.swiper-pagination',
+               paginationClickable: true
+           });
+       })
+   }
+
+
     if (window.innerWidth < 480) {
         var swiperAdvantages = new Swiper('.advantages', {
             slidesPerView: 1,
