@@ -217,8 +217,7 @@
 
 .right-column {
   width: 75%;
-  display: block;
-  overflow: hidden; }
+  display: block; }
 
 @media (max-width: 1260px) {
   .left-column {
@@ -4095,6 +4094,8 @@
               border-radius: 3px;
       font-size: 13px;
       color: rgba(0, 0, 0, 0.502); }
+      .form__textarea_min {
+        min-height: 85px; }
     .form__capcha-box {
       width: 168px;
       height: 40px; }

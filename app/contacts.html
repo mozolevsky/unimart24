@@ -142,6 +142,40 @@
                 </p>
             </section>
 
+            <section class="form">
+                <p class="form__title">Написать нам</p>
+                <form action="#" method="post" class="form__area">
+                    <div class="form__inputs-group">
+                        <div class="form__input-area">
+                            <label for="name" class="form__label" hidden></label>
+                            <input id="name" type="text" class="form__input" placeholder="Имя">
+                        </div>
+                        <div class="form__input-area">
+                            <label for="email" class="form__label" hidden></label>
+                            <input id="email" type="text" class="form__input" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form__inputs-group form__inputs-group_textarea">
+                        <textarea class="form__textarea form__textarea_min" name="message">Сообщение</textarea>
+                    </div>
+                    <div class="form__input-area form__input-area_capcha">
+                        <label for="capcha" class="form__label" hidden></label>
+                        <input id="capcha" type="text" class="form__input form__input_capcha" placeholder="Слово">
+                        <img src="img/capchaimg.png" alt="" class="form__capcha-box">
+                    </div>
+                    <div class="form__fields-group">
+                        <div class="form__input-area form__input-area_conditions">
+                            <input type="checkbox" class="form__checkbox" id="form__checkbox" checked>
+                            <label class="form__checkbox-label" for="form__checkbox">
+                                Я согласен с условиями <br>
+                                <a href="#" class="form__link">политики конфиденциальности</a>
+                            </label>
+                        </div>
+                        <button class="form__btn">Отправить</button>
+                    </div>
+                </form>
+            </section>
+
         </div>
     </div>
 </div>
