@@ -144,19 +144,19 @@
 
             <section class="form">
                 <p class="form__title">Написать нам</p>
-                <form action="#" method="post" class="form__area">
+                <form action="#" method="post" class="form__area" id="contacts-form">
                     <div class="form__inputs-group">
                         <div class="form__input-area">
                             <label for="name" class="form__label" hidden></label>
-                            <input id="name" type="text" class="form__input" placeholder="Имя">
+                            <input id="name" type="text" name="name" class="form__input" placeholder="Имя">
                         </div>
                         <div class="form__input-area">
                             <label for="email" class="form__label" hidden></label>
-                            <input id="email" type="text" class="form__input" placeholder="Email">
+                            <input id="email" type="text" name="email" class="form__input" placeholder="Email">
                         </div>
                     </div>
                     <div class="form__inputs-group form__inputs-group_textarea">
-                        <textarea class="form__textarea form__textarea_min" name="message">Сообщение</textarea>
+                        <textarea class="form__textarea form__textarea_min" name="message" placeholder="Сообщение"></textarea>
                     </div>
                     <div class="form__input-area form__input-area_capcha">
                         <label for="capcha" class="form__label" hidden></label>
@@ -171,7 +171,7 @@
                                 <a href="#" class="form__link">политики конфиденциальности</a>
                             </label>
                         </div>
-                        <button class="form__btn">Отправить</button>
+                        <button type="submit" class="form__btn">Отправить</button>
                     </div>
                 </form>
             </section>
@@ -183,6 +183,24 @@
 <script src="libs/jquery-3.2.1.min/index.js"></script>
 <script type="text/javascript" src="libs/fancybox3/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="libs/swiper/dist/js/swiper.js"></script>
+<script type="text/javascript" src="libs/jquery-validation/dist/jquery.validate.js"></script>
+<script type="text/javascript" src="libs/jquery-validation/dist/additional-methods.min.js"></script>
+<script>
+    $("#contacts-form").validate({
+        rules: {
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            message: "required"
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+</script>
+
 <script type="text/javascript" src="scripts/scripts.js"></script>
 
 <!-- scripts for map -->

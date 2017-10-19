@@ -28,6 +28,7 @@
     <link href="css/main.css" type="text/css" rel="stylesheet" />
 
 
+
 </head>
 <body>
 <div>
@@ -72,19 +73,19 @@
 
                 <section class="form">
                     <p class="form__title">Оставить отзыв</p>
-                    <form action="#" method="post" class="form__area">
+                    <form action="" method="post" class="form__area" id="review-form">
                         <div class="form__inputs-group">
                             <div class="form__input-area">
                                 <label for="name" class="form__label" hidden></label>
-                                <input id="name" type="text" class="form__input" placeholder="Имя">
+                                <input id="name" type="text" name="name" class="form__input" placeholder="Имя">
                             </div>
                             <div class="form__input-area">
                                 <label for="phone" class="form__label" hidden></label>
-                                <input id="phone" type="text" class="form__input" placeholder="Телефон">
+                                <input id="phone" type="text" name="phone" class="form__input" placeholder="Телефон">
                             </div>
                             <div class="form__input-area">
                                 <label for="email" class="form__label" hidden></label>
-                                <input id="email" type="text" class="form__input" placeholder="Email">
+                                <input id="email" type="email" name="email" class="form__input" placeholder="Email">
                             </div>
                             <div class="form__input-area">
                                 <label for="profession" class="form__label" hidden></label>
@@ -92,7 +93,7 @@
                             </div>
                         </div>
                         <div class="form__inputs-group form__inputs-group_textarea">
-                            <textarea class="form__textarea" name="message">Сообщение</textarea>
+                            <textarea class="form__textarea" name="message" placeholder="Сообщение"></textarea>
                         </div>
                         <div class="form__input-area form__input-area_capcha">
                             <label for="capcha" class="form__label" hidden></label>
@@ -107,7 +108,7 @@
                                     <a href="#" class="form__link">политики конфиденциальности</a>
                                 </label>
                             </div>
-                            <button class="form__btn">Отправить</button>
+                            <button type="submit" class="form__btn">Отправить</button>
                         </div>
                     </form>
                 </section>
@@ -290,6 +291,32 @@
 <script src="libs/jquery-3.2.1.min/index.js"></script>
 <script type="text/javascript" src="libs/fancybox3/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="libs/swiper/dist/js/swiper.js"></script>
+<script type="text/javascript" src="libs/jquery-validation/dist/jquery.validate.js"></script>
+<script type="text/javascript" src="libs/jquery-validation/dist/additional-methods.min.js"></script>
+<script type="text/javascript" src="libs/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+<script>
+    $("#review-form").validate({
+        rules: {
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true
+            },
+            message: "required"
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+    $(document).ready(function(){
+        $('#phone').mask('+7(000) 000-00-00');
+    });
+
+</script>
+
 <script type="text/javascript" src="scripts/scripts.js"></script>
 
 
