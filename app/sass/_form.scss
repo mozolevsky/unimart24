@@ -9,12 +9,13 @@
     &__title {
       margin-top: 0;
       margin-bottom: 24px;
-      color: #c5010d;
+      color: $red;
       font-size: 20px;
       font-weight: 600;
     }
 
     &__input-area {
+      position: relative;
       margin-bottom: 15px;
       text-align: left;
 
@@ -24,6 +25,15 @@
 
       &_conditions {
         margin-bottom: 20px;
+      }
+    }
+
+    &__inputs-group {
+      position: relative;
+
+      &_textarea {
+        margin-bottom: 15px;
+        text-align: left;
       }
     }
 
@@ -45,8 +55,12 @@
       }
     }
 
+    &__input.error,
+    &__textarea.error {
+      border: 1px solid #c5010d;
+    }
+
     &__textarea {
-      margin-bottom: 15px;
       padding-left: 10px;
       box-sizing: border-box;
       width: 100%;
@@ -125,6 +139,14 @@
       background-color: #c5010d;
       color: white;
     }
+  }
+
+  span.error {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    font-size: 10px;
+    color: $red;
   }
 }
 
