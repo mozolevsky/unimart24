@@ -1,0 +1,27 @@
+@media (min-width: 320px) {
+  .intro {
+    text-align: left;
+
+    &__block {
+      margin-bottom: 30px;
+    }
+
+    &__title-block {
+      margin-bottom: 7px;
+    }
+
+    &__title-number {
+      margin-right: 14px;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: rgb(243, 243, 243);
+
+      text-align: center;
+      vertical-align: middle;
+      @include textParam(18px, 45px, #c71720);
+      font-weight: bold;
+    }
+  }
+}

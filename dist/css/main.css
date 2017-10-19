@@ -4076,24 +4076,25 @@
       -webkit-border-radius: 3px;
               border-radius: 3px;
       font-size: 13px;
-      color: rgba(0, 0, 0, 0.502); }
+      color: rgba(0, 0, 0, 0.502);
+      background: white; }
       .form__input_capcha {
         margin-right: 10px;
         width: 84px;
-        height: 40px;
-        background-color: transparent; }
+        height: 40px; }
     .form__textarea {
       margin-bottom: 15px;
       padding-left: 10px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       width: 100%;
-      min-height: 133px;
+      min-height: 181px;
       border: 1px solid #e1e1e1;
       -webkit-border-radius: 3px;
               border-radius: 3px;
       font-size: 13px;
-      color: rgba(0, 0, 0, 0.502); }
+      color: rgba(0, 0, 0, 0.502);
+      background: white; }
       .form__textarea_min {
         min-height: 85px; }
     .form__capcha-box {
@@ -4110,21 +4111,23 @@
       padding-right: 12px;
       font-size: 11px;
       line-height: 15px;
-      color: #000000; }
-      .form__checkbox-label:before {
+      color: #000000;
+      /*&:before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+
+        box-sizing: border-box;
         width: 15px;
         height: 15px;
-        border: 1px solid #cccccc;
-        -webkit-border-radius: 3px;
-                border-radius: 3px;
-        background-color: #fff; }
-      .form__checkbox-label:after {
+
+        border: 1px solid $grey-light4;
+        border-radius: $border-rad;
+        background-color: $white;
+      }
+
+      &:after {
         display: none;
         content: '';
         position: absolute;
@@ -4132,7 +4135,8 @@
         left: 2px;
         width: 10px;
         height: 8px;
-        background: url("../img/rl-subscribe-tick_icon.png") no-repeat center; }
+        background: url('../img/rl-subscribe-tick_icon.png') no-repeat center;
+      }*/ }
     .form__link {
       color: #214496;
       text-decoration: underline; }
@@ -4187,6 +4191,15 @@
       width: -webkit-calc(100% - 286px);
       width: calc(100% - 286px);
       display: inline-block; } }
+
+@media (min-width: 1280px) {
+  .form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .form__title {
+      width: 30%; } }
 
 @media (min-width: 320px) {
   .reviews {
@@ -4305,6 +4318,28 @@
     padding-left: 0; }
     .author__name {
       font-size: 15px; } }
+
+@media (min-width: 320px) {
+  .intro {
+    text-align: left; }
+    .intro__block {
+      margin-bottom: 30px; }
+    .intro__title-block {
+      margin-bottom: 7px; }
+    .intro__title-number {
+      margin-right: 14px;
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: #f3f3f3;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 18px;
+      line-height: 45px;
+      color: #c71720;
+      font-weight: bold; } }
 
 .overflow-block {
   overflow: hidden;

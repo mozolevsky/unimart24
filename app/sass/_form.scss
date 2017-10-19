@@ -36,12 +36,12 @@
       border-radius: 3px;
       font-size: 13px;
       color: rgba(0, 0, 0, 0.502);
+      background: white;
 
       &_capcha {
         margin-right: 10px;
         width: 84px;
         height: 40px;
-        background-color: transparent;
       }
     }
 
@@ -50,11 +50,12 @@
       padding-left: 10px;
       box-sizing: border-box;
       width: 100%;
-      min-height: 133px;
+      min-height: 181px;
       border: 1px solid #e1e1e1;
       border-radius: 3px;
       font-size: 13px;
       color: rgba(0, 0, 0, 0.502);
+      background: white;
 
       &_min {
         min-height: 85px;
@@ -62,8 +63,6 @@
     }
 
     &__capcha-box {
-      //display: inline-block;
-      //background: url('../img/capchaimg.png') no-repeat center;
       width: 168px;
       height: 40px;
     }
@@ -86,7 +85,7 @@
       line-height: 15px;
       color: $black;
 
-      &:before {
+      /*&:before {
         content: '';
         position: absolute;
         top: 0;
@@ -110,7 +109,7 @@
         width: 10px;
         height: 8px;
         background: url('../img/rl-subscribe-tick_icon.png') no-repeat center;
-      }
+      }*/
     }
 
     &__link {
@@ -194,6 +193,16 @@
     &__fields-group {
       width: calc(100% - 286px);
       display: inline-block;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .form {
+    display: flex;
+
+    &__title {
+      width: 30%;
     }
   }
 }
