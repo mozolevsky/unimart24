@@ -4108,7 +4108,7 @@
       width: 168px;
       height: 40px; }
     .form__checkbox {
-      display: none; }
+      visibility: hidden; }
       .form__checkbox:checked + label:after {
         display: block; }
     .form__checkbox-label {
@@ -4119,7 +4119,7 @@
       font-size: 11px;
       line-height: 15px;
       color: #000000;
-      /*&:before {
+      /* &:before {
         content: '';
         position: absolute;
         top: 0;

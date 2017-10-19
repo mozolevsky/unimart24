@@ -165,8 +165,8 @@
                     </div>
                     <div class="form__fields-group">
                         <div class="form__input-area form__input-area_conditions">
-                            <input type="checkbox" class="form__checkbox" id="form__checkbox" checked>
-                            <label class="form__checkbox-label" for="form__checkbox">
+                            <input type="checkbox" name="terms" class="form__checkbox" id="checkbox">
+                            <label class="form__checkbox-label" for="checkbox">
                                 Я согласен с условиями <br>
                                 <a href="#" class="form__link">политики конфиденциальности</a>
                             </label>
@@ -193,7 +193,10 @@
                 required: true,
                 email: true
             },
-            message: "required"
+            message: "required",
+            terms: {
+                required: true
+            },
         },
         submitHandler: function(form) {
             form.submit();
