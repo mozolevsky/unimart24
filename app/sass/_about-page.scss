@@ -1,13 +1,18 @@
 @media (min-width: 320px) {
   .intro {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     text-align: left;
 
     &__block {
       margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
     }
 
     &__title-block {
       margin-bottom: 7px;
+      display: flex;
+      align-items: center;
     }
 
     &__title-number {
@@ -22,6 +27,86 @@
       vertical-align: middle;
       @include textParam(18px, 45px, #c71720);
       font-weight: bold;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      @include textParam(18px, 26px, $red);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__img {
+      align-self: center;
+      width: 251px;
+      height: 251px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .intro {
+    &__block {
+      margin-bottom: 7px;
+      flex-direction: row;
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &__img {
+      margin-top: 18px;
+      margin-left: 10px;
+      align-self: flex-start;
+      width: 220px;
+      height: 220px;
+
+      &_left {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+
+    &__desc {
+      margin-bottom: 0;
+      @include textParam(13px, 20px);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    &__block {
+      margin-bottom: 30px;
+    }
+
+    &__img {
+      margin-top: 0;
+      margin-left: 42px;
+      width: 250px;
+      height: 250px;
+
+      &_left {
+        margin-left: 0;
+        margin-right: 30px;
+      }
+    }
+
+    &__title-block {
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+
+    &__desc {
+      margin-top: -5px;
+      padding-left: 60px;
+      @include textParam(14px, 24px);
     }
   }
 }
