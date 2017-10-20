@@ -62,6 +62,7 @@
 
     &__textarea {
       padding-left: 10px;
+      padding-top: 7px;
       box-sizing: border-box;
       width: 100%;
       min-height: 181px;
@@ -227,9 +228,15 @@
 @media (min-width: 1280px) {
   .form {
     display: flex;
+    justify-content: space-between;
 
     &__title {
-      width: 30%;
+      width: 20%;
+      text-align: center;
+    }
+
+    &__area {
+      width: 76%;
     }
   }
 }

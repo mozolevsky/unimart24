@@ -11,8 +11,9 @@
   .contacts-cont {
     margin-bottom: 40px;
     text-align: left;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: "Open Sans";
 
     &__left-side {
       margin-bottom: 30px;
@@ -21,7 +22,7 @@
     &__icon-text {
       padding-left: 20px;
       background-repeat: no-repeat;
-      background-position: left 5px;
+      background-position: left 6px;
 
       &_place {
         background-image: url('../img/contacts-work-time_place.png');
@@ -107,8 +108,8 @@
 
     &__desc {
       margin-bottom: 0;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 15px;
+      line-height: 26px;
     }
   }
 }
@@ -153,7 +154,7 @@
   .how-to-go {
     flex-direction: row;
     justify-content: space-between;
-    padding: 28px 23px 34px 28px;
+    padding: 28px 23px 34px 20px;
 
     &__header {
       width: 20%;

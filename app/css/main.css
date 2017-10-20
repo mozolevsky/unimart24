@@ -2781,14 +2781,15 @@
   .contacts-cont {
     margin-bottom: 40px;
     text-align: left;
-    font-size: 14px;
-    line-height: 24px; }
+    font-size: 15px;
+    line-height: 26px;
+    font-family: "Open Sans"; }
     .contacts-cont__left-side {
       margin-bottom: 30px; }
     .contacts-cont__icon-text {
       padding-left: 20px;
       background-repeat: no-repeat;
-      background-position: left 5px; }
+      background-position: left 6px; }
       .contacts-cont__icon-text_place {
         background-image: url("../img/contacts-work-time_place.png"); }
       .contacts-cont__icon-text_work-time {
@@ -2848,8 +2849,8 @@
       margin-bottom: 10px; }
     .how-to-go__desc {
       margin-bottom: 0;
-      font-size: 14px;
-      line-height: 24px; } }
+      font-size: 15px;
+      line-height: 26px; } }
 
 @media (min-width: 480px) {
   .how-to-go {
@@ -2889,7 +2890,7 @@
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 28px 23px 34px 28px; }
+    padding: 28px 23px 34px 20px; }
     .how-to-go__header {
       width: 20%;
       color: green; }
@@ -4092,6 +4093,7 @@
       border: 1px solid #c5010d; }
     .form__textarea {
       padding-left: 10px;
+      padding-top: 7px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       width: 100%;
@@ -4210,9 +4212,16 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .form__title {
-      width: 30%; } }
+      width: 20%;
+      text-align: center; }
+    .form__area {
+      width: 76%; } }
 
 @media (min-width: 320px) {
   .reviews {
