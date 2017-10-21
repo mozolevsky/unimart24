@@ -110,3 +110,37 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .intro {
+    &__img {
+      margin-left: 30px;
+
+      &_left {
+        margin-left: 0;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .intro {
+    &__title-block {
+      margin-top: 30px;
+    }
+
+    &__desc {
+      margin-top: 0;
+    }
+
+    &__text-block {
+      width: calc(100% - 305px);
+    }
+
+    &__img {
+      width: 275px;
+      height: 275px;
+    }
+  }
+}

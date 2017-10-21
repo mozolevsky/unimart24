@@ -4450,6 +4450,25 @@
     line-height: 24px;
     color: #000000; } }
 
+@media (min-width: 1024px) {
+  .intro__img {
+    margin-left: 30px; }
+    .intro__img_left {
+      margin-left: 0;
+      margin-right: 30px; } }
+
+@media (min-width: 1280px) {
+  .intro__title-block {
+    margin-top: 30px; }
+  .intro__desc {
+    margin-top: 0; }
+  .intro__text-block {
+    width: -webkit-calc(100% - 305px);
+    width: calc(100% - 305px); }
+  .intro__img {
+    width: 275px;
+    height: 275px; } }
+
 .overflow-block {
   overflow: hidden;
   width: 100%;
