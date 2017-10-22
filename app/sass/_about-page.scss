@@ -47,10 +47,42 @@
       line-height: 24px;
     }
   }
+
+  .tick {
+    margin-right: -15px;
+    margin-left: -15px;
+    border-top: 1px solid transparent;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    background: $grey-light2;
+    text-align: left;
+
+    &__title {
+      margin-top: 24px;
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      list-style-image: url('../img/tick-list-marker.png');
+    }
+
+    &__list-item {
+      margin-bottom: 10px;
+      padding-left: 5px;
+      @include textParam(14px, 24px);
+
+      &::before {
+        content: none!important;
+      }
+    }
+  }
 }
 
 @media (min-width: 480px) {
   .intro {
+    margin-bottom: 35px;
+
     &__block {
       margin-bottom: 7px;
       flex-direction: row;
@@ -108,6 +140,13 @@
       padding-left: 60px;
       @include textParam(14px, 24px);
     }
+  }
+
+  .tick {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 29px;
+    padding-right: 60px;
   }
 }
 
