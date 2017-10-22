@@ -105,7 +105,7 @@
 .info-wrapper__list-item::before {
   content: '';
   position: absolute;
-  top: 19px;
+  top: 24px;
   left: -30px;
   display: block;
   width: 14px;
@@ -125,6 +125,14 @@
   display: inline-block;
   padding-right: 7px;
   color: $red;
+  font-style: normal;
+
+}
+
+.info-wrapper__list-item_num .num-black {
+  display: inline-block;
+  padding-right: 7px;
+  color: $black;
   font-style: normal;
 
 }

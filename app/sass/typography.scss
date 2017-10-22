@@ -29,6 +29,10 @@
   text-align: left;
 }
 
+.title-h1 + .title-h2 {
+  margin-top: 26px;
+}
+
 .text-italic {
   font-size: 18px;
   line-height: 30px;
@@ -151,7 +155,7 @@
   }
 
   .title-h2 {
-    margin-top: 55px;
+    margin-top: 46px;
     font-size: 26px;
   }
 
