@@ -86,8 +86,9 @@ $('.tabs a').click(function(e){
 $("[data-fancybox]").fancybox();
 
 
+
 /* sliders */
-window.onload = function() {
+var slidersInit = function() {
    var showroomTab = document.getElementById('showroom-identifier') || null;
 
    if (showroomTab) {
@@ -100,7 +101,6 @@ window.onload = function() {
            });
        })
    }
-
 
     if (window.innerWidth < 480) {
         var swiperAdvantages = new Swiper('.advantages', {
@@ -251,6 +251,14 @@ window.onload = function() {
 
     }
 };
+
+window.addEventListener("onload", function() {
+   slidersInit();
+});
+
+window.addEventListener("orientationchange", function() {
+    slidersInit();
+});
 
 /* video cover */
 
