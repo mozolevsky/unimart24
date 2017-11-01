@@ -200,6 +200,8 @@
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -220,6 +222,7 @@
 
 .right-column {
   width: 75%;
+  max-width: 822px;
   display: block; }
 
 @media (max-width: 1260px) {
@@ -4518,6 +4521,109 @@
   .intro__img {
     width: 275px;
     height: 275px; } }
+
+@media (min-width: 320px) {
+  .bank-details {
+    font-size: 14px; }
+    .bank-details__detail-box {
+      margin-bottom: 15px; }
+    .bank-details__title {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+      line-height: 22px; }
+    .bank-details__desc {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: "Open Sans";
+      text-align: left;
+      font-weight: bold; }
+    .bank-details__buttons {
+      margin-top: 25px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .bank-details__buttons a:first-child {
+        margin-right: 10px; }
+    .bank-details__btn {
+      padding-left: 34px;
+      padding-right: 15px;
+      color: #214496;
+      background: #fff;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      border: 1px solid #e1e1e1;
+      line-height: 32px;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      .bank-details__btn:hover {
+        color: #c4010c;
+        border: 1px solid #c4010c;
+        text-decoration: none; }
+      .bank-details__btn_download {
+        background: url("../img/download-pdf_icon.png") no-repeat 11px center; }
+      .bank-details__btn_print {
+        background: url("../img/read-later-print_icon.png") no-repeat 11px center; } }
+
+@media (min-width: 480px) {
+  .bank-details__detail-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .bank-details__title {
+    width: 44%;
+    margin-right: 20px;
+    text-align: right; }
+  .bank-details__desc {
+    width: -webkit-calc(56% - 20px);
+    width: calc(56% - 20px); }
+  .bank-details__btn {
+    padding-left: 44px;
+    padding-right: 22px; }
+    .bank-details__btn_download {
+      background: url("../img/download-pdf_icon.png") no-repeat 21px center; }
+    .bank-details__btn_print {
+      background: url("../img/read-later-print_icon.png") no-repeat 21px center; } }
+
+@media (min-width: 768px) {
+  .bank-details {
+    font-size: 15px; }
+    .bank-details__detail-box {
+      margin-bottom: 10px; }
+    .bank-details__title {
+      width: 237px;
+      margin-right: 28px;
+      text-align: right; }
+    .bank-details__desc {
+      width: -webkit-calc(100% - 265px);
+      width: calc(100% - 265px); }
+    .bank-details__buttons {
+      margin-left: 265px; } }
+
+@media (min-width: 1024px) {
+  .bank-details__title {
+    width: 227px;
+    margin-right: 20px;
+    text-align: right; }
+  .bank-details__desc {
+    width: -webkit-calc(100% - 248px);
+    width: calc(100% - 248px); }
+  .bank-details__buttons {
+    margin-left: 247px; } }
+
+@media (min-width: 1280px) {
+  .bank-details__title {
+    width: 317px;
+    margin-right: 40px;
+    text-align: right; }
+  .bank-details__desc {
+    width: -webkit-calc(100% - 357px);
+    width: calc(100% - 357px); }
+  .bank-details__buttons {
+    margin-top: 55px;
+    margin-left: 357px; } }
 
 .overflow-block {
   overflow: hidden;

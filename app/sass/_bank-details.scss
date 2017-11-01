@@ -1,0 +1,150 @@
+@media (min-width: 320px) {
+  .bank-details {
+    font-size: 14px;
+
+    &__detail-box {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+      line-height: 22px;
+    }
+
+    &__desc {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: "Open Sans";
+      text-align: left;
+      font-weight: bold;
+    }
+
+    &__buttons {
+      margin-top: 25px;
+      display: flex;
+
+      & a:first-child {
+        margin-right: 10px;
+      }
+    }
+
+    &__btn {
+      padding-left: 34px;
+      padding-right: 15px;
+      color: $blue;
+      background: $white;
+      border-radius: $border-rad;
+      border: 1px solid $grey-light6;
+      line-height: 32px;
+      @include trans();
+
+      &:hover {
+        color: $red;
+        border: 1px solid $red;
+        text-decoration: none;
+      }
+
+      &_download {
+        background: url("../img/download-pdf_icon.png") no-repeat 11px center;
+      }
+
+      &_print {
+        background: url("../img/read-later-print_icon.png") no-repeat 11px center;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .bank-details {
+    &__detail-box {
+      display: flex;
+    }
+
+    &__title {
+      width: 44%;
+      margin-right: 20px;
+      text-align: right;
+    }
+
+    &__desc {
+      width: calc(56% - 20px);
+    }
+
+    &__btn {
+      padding-left: 44px;
+      padding-right: 22px;
+
+      &_download {
+        background: url("../img/download-pdf_icon.png") no-repeat 21px center;
+      }
+
+      &_print {
+        background: url("../img/read-later-print_icon.png") no-repeat 21px center;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .bank-details {
+    font-size: 15px;
+
+    &__detail-box {
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      width: 237px;
+      margin-right: 28px;
+      text-align: right;
+    }
+
+    &__desc {
+      width: calc(100% - 265px);
+    }
+
+    &__buttons {
+      margin-left: 265px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .bank-details {
+    &__title {
+      width: 227px;
+      margin-right: 20px;
+      text-align: right;
+    }
+
+    &__desc {
+      width: calc(100% - 248px);
+    }
+
+    &__buttons {
+      margin-left: 247px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .bank-details {
+    &__title {
+      width: 317px;
+      margin-right: 40px;
+      text-align: right;
+    }
+
+    &__desc {
+      width: calc(100% - 357px);
+    }
+
+    &__buttons {
+      margin-top: 55px;
+      margin-left: 357px;
+    }
+  }
+}
