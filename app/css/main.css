@@ -4625,6 +4625,83 @@
     margin-top: 55px;
     margin-left: 357px; } }
 
+@media (min-width: 320px) {
+  .all-partners {
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .all-partners__partner-box {
+      margin-bottom: 30px;
+      width: 47%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    .all-partners__partner {
+      margin-bottom: 10px;
+      border: 1px solid #e0dad7;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      min-height: 99px; }
+    .all-partners__title {
+      margin-bottom: 0;
+      font-family: "Open Sans";
+      font-size: 14px;
+      color: #214496;
+      font-weight: 600;
+      text-align: left; } }
+
+@media (min-width: 480px) {
+  .all-partners__partner-box {
+    width: 47.8%; }
+  .all-partners__partner {
+    margin-bottom: 15px;
+    min-height: 155px; }
+  .all-partners__title {
+    font-size: 16px; } }
+
+@media (min-width: 768px) {
+  .all-partners {
+    margin-bottom: 20px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .all-partners__partner-box {
+      width: 31%;
+      margin-right: 3.5%; }
+      .all-partners__partner-box:nth-child(3n) {
+        margin-right: 0; } }
+
+@media (min-width: 1280px) {
+  .all-partners__partner-box {
+    width: 23%;
+    min-height: 152px;
+    margin-right: -webkit-calc(8% / 3);
+    margin-right: calc(8% / 3); }
+    .all-partners__partner-box:nth-child(3n) {
+      margin-right: -webkit-calc(8% / 3);
+      margin-right: calc(8% / 3); }
+    .all-partners__partner-box:nth-child(4n) {
+      margin-right: 0; } }
+
 .overflow-block {
   overflow: hidden;
   width: 100%;
