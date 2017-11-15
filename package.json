@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/mozolevsky/unimart24/issues"
   },
-  "homepage": "https://github.com/mozolevsky/unimart#readme"
+  "homepage": "https://github.com/mozolevsky/unimart#readme",
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.1"
+  }
 }

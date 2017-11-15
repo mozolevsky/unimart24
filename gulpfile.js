@@ -10,11 +10,14 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     cache = require('gulp-cache'),
     autoprefixer = require('gulp-autoprefixer'),
-    rigger = require('gulp-rigger');
+    rigger = require('gulp-rigger'),
+    sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
     return gulp.src('app/sass/main.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(sourcemaps.write())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))

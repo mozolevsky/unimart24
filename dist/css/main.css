@@ -3152,7 +3152,8 @@
   padding-bottom: 6px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  line-height: 1em; }
+  line-height: 1em;
+  text-align: center; }
 
 .left-nav-an__pointer_active {
   color: #fff;
