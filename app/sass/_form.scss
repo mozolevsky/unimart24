@@ -84,6 +84,7 @@
 
     &__checkbox {
       //display: none;
+      position: absolute;
       visibility: hidden;
 
       &:checked + label:after {
@@ -237,6 +238,13 @@
 
     &__area {
       width: 76%;
+    }
+
+    &__input-area {
+      &_conditions {
+        width: 100%;
+        margin-bottom: 15px;
+      }
     }
   }
 }
