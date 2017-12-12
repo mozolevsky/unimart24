@@ -11,10 +11,12 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     autoprefixer = require('gulp-autoprefixer'),
     rigger = require('gulp-rigger'),
+    wait = require('gulp-wait'),
     sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
     return gulp.src('app/sass/main.scss')
+        .pipe(wait(1500))
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(sourcemaps.write())

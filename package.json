@@ -19,6 +19,7 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.0",
+    "gulp-wait": "0.0.2",
     "imagemin-pngquant": "^5.0.0"
   },
   "repository": {

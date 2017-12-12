@@ -12,6 +12,18 @@
       color: $red;
       font-size: 20px;
       font-weight: 600;
+
+      &_doors {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000000;
+      }
+    }
+
+    &__area_doors {
+      position: relative;
     }
 
     &__input-area {
@@ -23,8 +35,18 @@
         display: flex;
       }
 
+      &_capcha-doors {
+        margin-top: 60px;
+      }
+
       &_conditions {
         margin-bottom: 20px;
+      }
+
+      &_conditions-doors {
+        position: absolute;
+        bottom: 94px;
+        width: 207px;
       }
     }
 
@@ -52,6 +74,7 @@
         margin-right: 10px;
         width: 84px;
         height: 40px;
+        vertical-align: bottom;
       }
     }
 
@@ -136,6 +159,10 @@
     &__link {
       color: $blue;
       text-decoration: underline;
+
+      &_doors {
+        color: #c5010d;
+      }
     }
 
     &__btn {
@@ -168,6 +195,18 @@
       text-align: left;
     }
 
+    &__area {
+      &_doors {
+        text-align: left;
+      }
+    }
+
+    &__fields-group {
+      &_doors {
+        display: inline-block;
+      }
+    }
+
     &__input-area {
       &_conditions {
         width: 49%;
@@ -175,11 +214,32 @@
         margin-bottom: 0;
         vertical-align: middle;
       }
+
+      &_conditions-doors {
+        width: 100%;
+        bottom: 60px;
+        left: 0;
+      }
+
+      &_capcha-doors {
+        margin-top: 30px;
+        margin-bottom: 0;
+        display: inline-block;
+        vertical-align: bottom;
+
+        & img {
+          margin-right: 6px;
+        }
+      }
     }
 
     &__btn {
       width: 50%;
       display: inline-block;
+
+      &_doors {
+        width: 173px;
+      }
     }
   }
 }
@@ -211,6 +271,22 @@
         margin-right: 20px;
         display: inline-block;
       }
+
+      &_capcha-doors {
+        margin-top: 0;
+
+        & img {
+          margin-right: 0;
+        }
+      }
+
+      &_conditions-doors {
+        bottom: 0;
+        top: -43px;
+        left: 51%;
+        width: auto;
+        height: 30px;
+      }
     }
 
     &__input {
@@ -223,6 +299,32 @@
       width: calc(100% - 286px);
       display: inline-block;
     }
+
+    &__btn {
+      &_doors {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .form {
+    &__fields-group {
+      &_doors {
+        display: inline-flex;
+      }
+    }
+
+    &__input-area {
+      &_conditions-doors {
+        position: static;
+
+        & label {
+          min-width: 180px;
+        }
+      }
+    }
   }
 }
 
@@ -231,6 +333,11 @@
     display: flex;
     justify-content: space-between;
 
+    &_doors {
+      display: block;
+      padding-bottom: 15px;
+    }
+
     &__title {
       width: 20%;
       text-align: center;
@@ -238,12 +345,39 @@
 
     &__area {
       width: 76%;
+
+      &_doors {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
 
     &__input-area {
       &_conditions {
         width: 100%;
         margin-bottom: 15px;
+      }
+
+      &_conditions-doors {
+        position: absolute;
+        width: auto;
+        left: 60%;
+      }
+    }
+
+    &__inputs-group {
+      &_textarea-doors {
+        width: 275px;
+      }
+    }
+
+    &__btn {
+      &_doors {
+        width: 260px;
+        position: absolute;
+        right: 20px;
+        bottom: 19px;
       }
     }
   }
