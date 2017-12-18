@@ -4,6 +4,11 @@
   width: 100%;
   border: 1px solid $grey-light3;
   text-align: center;
+
+  &_category {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .social-networks__text {

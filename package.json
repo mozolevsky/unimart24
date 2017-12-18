@@ -18,6 +18,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^2.1.0",
     "gulp-wait": "0.0.2",
     "imagemin-pngquant": "^5.0.0"
@@ -32,7 +33,5 @@
     "url": "https://github.com/mozolevsky/unimart24/issues"
   },
   "homepage": "https://github.com/mozolevsky/unimart#readme",
-  "dependencies": {
-    "gulp-sourcemaps": "^2.6.1"
-  }
+  "dependencies": {}
 }

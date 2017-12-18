@@ -26,6 +26,14 @@
         width: 100%;
       }
 
+      &_category {
+        width: 100%;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
       &_popul {
         width: 50%;
       }
@@ -80,6 +88,10 @@
 
       &_cat {
         width: 220px;
+      }
+
+      &_category {
+        width: 262px;
       }
 
       &_popul {

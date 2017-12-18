@@ -1,0 +1,235 @@
+@media (min-width: 320px) {
+    .category-tales {
+      padding-top: 15px;
+      padding-bottom: 20px;
+      text-align: left;
+    }
+  
+    .category-tale {
+      width: 100%;
+      margin-bottom: 30px;
+  
+      &__img {
+        width: 100%;
+      }
+  
+      &__img-link {
+        position: relative;
+        margin-bottom: 17.5px;
+        display: block;
+      }
+      &__action-time {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        display: inline-block;
+        padding-left: 9px;
+        padding-right: 9px;
+        font-size: 12px;
+        line-height: 21px;
+        color: $white;
+        background-color: $red;
+      }
+
+      &__title-block {
+          margin-bottom: 6px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          font-weight: bold;
+      }
+  
+      &__title {
+        margin-top: 2px;
+        margin-right: 5px;
+        display: block;
+        @include textParam(16px, 21px, $blue);
+        text-decoration: none;
+      }
+
+      &__goods-count {
+          display: inline-block;
+          padding: 6px 7px;
+          background-color: #f5f5f5;
+          @include textParam(12px, 1, $red);
+          border-radius: 3px;
+      }
+
+      &__sub-cats {
+          margin-bottom: 8px;
+      }
+
+      &__sub-cat {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @include textParam(13px, 25px, $blue);
+      }
+
+      &__sub-cat-title {
+          margin-right: 5px;
+      }
+
+      &__sub-cat-count {
+          color: $red;
+      }
+
+      &__btn {
+          display: inline-block;
+          padding-left: 8px;
+          padding-right: 12px;
+          border-radius: 3px;
+          border: 1px solid #e5e5e5;
+          background: transparent;
+          color: $red;
+          font-size: 12px;
+          line-height: 20px;
+          vertical-align: middle;
+          text-align: center;
+          @include trans();
+
+          &:hover {
+              color: white;
+              background: $red;
+              border-color: $red;
+          }
+
+          &_plus {
+            background: white;
+          }
+
+          &_plus {
+            background: #f3f3f3;
+            border-color: #f3f3f3;
+          }
+      }
+
+      &__help {
+          display: inline-block;
+          box-sizing: border-box;
+          padding-left: 35px;
+          padding-right: 17px;
+          line-height: 31px;
+          font-size: 12px;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: $red;
+          border: 1px solid #eaeaea;
+          border-radius: $border-rad;
+          background-image: url('../img/help-block-icon.png');
+          background-repeat: no-repeat;
+          background-position: 6px center;
+          background-size: 23px 23px;
+
+          &:hover {
+              text-decoration: none;
+              background-color: #f2f2f2;
+              border: 1px solid #f2f2f2;
+          }
+      }
+    }
+}
+  
+  @media (min-width: 480px) {
+    .category-tales {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .category-tale {
+      width: 48%;
+  
+      &__details {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  
+@media (min-width: 1024px) {
+    .category-tales {
+        padding-top: 20px;
+        justify-content: flex-start;
+    }
+
+    .category-tale {
+        box-sizing: border-box;
+        width: calc((100% - 40px) / 3);
+        margin-right: 20px;
+
+        &:nth-child(3n + 3) {
+        margin-right: 0;
+        }
+        
+        & a {
+            @include trans();
+        }
+
+        &__img-link {
+            border: 1px solid #f2f2f2;
+
+            &:hover {
+                border-color: $red;
+                overflow: hidden;
+
+                & .category-tale__img {
+                    transform: scale(1.03);
+                }
+            }
+        }
+
+        &__img {
+            @include trans(0.6s);
+        }
+
+        &__title {
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        &__sub-cat-title {
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+
+    .category-nav {
+        margin-bottom: 38px;
+        border: 1px solid #f3f3f3;
+        text-align: left;
+
+        &__link {
+            position: relative;
+            display: block;
+            padding: 6px 12px;
+            font-size: 13px;
+            line-height: 27px;
+            color: $blue;
+            border-bottom: 1px solid #f3f3f3;
+           transition:color 0.25s ease;
+
+            &:hover {
+                text-decoration: none;
+                color: red;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                top:0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-color: #f3f3f3;
+                transform-origin:left;
+                transition:width 0.6s ease-in-out;
+                z-index:-1;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
+  
