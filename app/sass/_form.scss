@@ -341,6 +341,11 @@
     &__title {
       width: 20%;
       text-align: center;
+
+      &_doors {
+        width: 50%;
+        text-align: left;
+      }
     }
 
     &__area {

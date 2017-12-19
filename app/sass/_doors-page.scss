@@ -20,6 +20,7 @@
 
         &__desc {
             text-align: center;
+            font-style: italic;
         }
     }
 
@@ -119,14 +120,6 @@
 
 
 @media (min-width: 1024px) {
-    .doors {
-        &__desc {
-            font-style: normal;
-            font-weight: 600;
-        }
-    }
-
-
     .doors-content {
         &_versa {
             & .doors-content__img-wrapper {
