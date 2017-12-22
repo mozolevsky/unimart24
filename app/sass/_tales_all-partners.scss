@@ -1,5 +1,5 @@
 @media (min-width: 320px) {
-    .all-partners {
+    .all-partners-tales {
         margin-bottom: 15px;
         display: flex;
         justify-content: space-between;
@@ -67,7 +67,7 @@
 }
 
 @media (min-width: 480px) {
-    .all-partners {
+    .all-partners-tales {
         &__partner-box {
             width: 47.8%;
         }
@@ -84,7 +84,7 @@
 }
 
 @media (min-width: 768px) {
-    .all-partners {
+    .all-partners-tales {
         margin-bottom: 20px;
         justify-content: flex-start;
 
@@ -115,7 +115,7 @@
 
 
 @media (min-width: 1280px) {
-    .all-partners {
+    .all-partners-tales {
         &__partner-box {
             width: 23%;
             min-height: 152px;
