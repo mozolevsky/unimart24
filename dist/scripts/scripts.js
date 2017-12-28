@@ -252,6 +252,8 @@ var slidersInit = function() {
     }
 };
 
+slidersInit();
+
 window.addEventListener("onload", function() {
    slidersInit();
 });

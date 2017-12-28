@@ -22,11 +22,6 @@
 }
 
 @media (max-width: 1260px) {
-  .container {
-    //margin-left: 30px;
-    //margin-right: 35px;
-  }
-
   .left-column {
     width: 220px;
     margin-right: 40px;
@@ -37,8 +32,8 @@
 
 @media (max-width: $m) {
   .container {
-    margin-left: 30px;
-    margin-right: 35px;
+    // margin-left: 30px;
+    // margin-right: 35px;
   }
 
   .left-column {
