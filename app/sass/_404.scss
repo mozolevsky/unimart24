@@ -200,6 +200,10 @@
             text-align: left;
         }
 
+        &__title {
+            font-size: 28px;
+        }
+
     }
 
     .search-404 {
@@ -217,8 +221,12 @@
             margin-right: 30px;
             display: block;
             color: #fff;
-            font-size: 20px;
+            font-size: 18px;
             min-width: 260px;
+        }
+
+        &__input {
+            font-size: 16px;
         }
     }
 
@@ -267,11 +275,19 @@
         &__text-block {
             width: 470px;
         }
+
+        &__title {
+            font-size: 28px;
+        }
     }
     
     .search-404 {
         margin-left: 0;
         margin-right: 0;
+
+        &__input { 
+            font-size: 16px;
+        }
     }
 
     .specials-404 {
@@ -308,6 +324,30 @@
         &__number {
             margin-right: 55px;
             font-size: 200px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__desc {
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+
+    .search-404 {
+        &__title {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        &__input-wrapper {
+            width: 68%;
+        }
+
+        &__input {
+            font-size: 18px;
         }
     }
 
