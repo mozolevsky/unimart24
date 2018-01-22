@@ -125,18 +125,51 @@
         font-family: "Open Sans";
 
         &__group {
-            margin-bottom: 20px;
+            padding: 15px;
+            margin: 0 -15px;
+
+            border-bottom: 1px solid #e5e5e5;
+
+            &:first-child {
+                border-top: 1px solid #e5e5e5;
+            }
         }
 
         &__group-title {
-            margin-bottom: 5px;
+            position: relative;
             display: block;
+            padding-right: 10px;
+            font-size: 13px;
             font-weight: 600;
             color: $red;
 
             & span {
                 color: #6b80a0;
             }
+
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                right: 0;
+                width: 11px;
+                height: 7px;
+                transform: translate(0, -50%) rotate(0deg);
+                background: url('../img/accordion-arrow-down_icon.svg') no-repeat center;
+                background-size: cover;
+                transition: all 0.3s ease;
+            }
+
+            &.active {
+                &::after {
+                    transform: translate(0, -50%) rotate(180deg);
+                }
+            }
+        }
+
+        &__group-block {
+            display:none;
         }
 
         &__group-link {
@@ -242,13 +275,31 @@
         flex-wrap: wrap;
 
         &__group {
-            width: 280px;
+            padding: 0;
+            margin-left: 0;
             margin-right: 70px;
+            width: 280px;
+            border: none;
+
+            &:first-child {
+                border: none;
+            }
+        }
+
+        &__group-block {
+            display: block!important;
+            margin-bottom: 20px;
         }
 
         &__group-title {
+            margin-bottom: 5px;
+            padding-right: 0;
             font-weight: normal;
             font-size: 16px;
+
+            &::after {
+                content: none;
+            }
         }
 
         &__group-link {

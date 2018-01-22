@@ -290,3 +290,34 @@ window.addEventListener("orientationchange", function() {
         }
     }, 600)
 })();
+
+// accordion on 404 page 
+
+$(function() {
+    var windowWidth = $(window).width();
+
+    $('.links-404__group-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+        
+        if (windowWidth <= 767) {
+            if ($(e.target).is('.active')) {
+                $('.links-404__group-title').removeClass('active');
+                $('.links-404__group-block').slideUp(300).removeClass('open');
+            } else {
+                $('.links-404__group-title').removeClass('active');
+                $('.links-404__group-block').slideUp(300).removeClass('open');
+        
+                // Add active class to section title
+                $(this).addClass('active');
+                // Open up the hidden content panel
+                $(currentAttrValue).slideDown(300).addClass('open');
+            }
+            e.preventDefault();
+        }
+    });
+
+    $(window).resize(function() {
+        windowWidth = $(window).width();
+    });
+});
