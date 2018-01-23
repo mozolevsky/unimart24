@@ -250,6 +250,17 @@ var slidersInit = function() {
         }
 
     }
+
+    if (window.innerWidth > 1023) {
+        var swiperSpecialsMin = new Swiper('.specials-404_min__slider', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: '.specials-404_min__pagination',
+            paginationClickable: true
+        });
+
+        window.swiperSpecialsMin = swiperSpecialsMin;
+    }
 };
 
 slidersInit();
