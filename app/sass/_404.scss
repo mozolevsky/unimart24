@@ -206,6 +206,8 @@
     }
 
     .promo-404 {
+        display: flex;
+        justify-content: center;
         margin-left: -15px;
         margin-right: -15px;
         padding: 20px 0;
@@ -220,6 +222,7 @@
             line-height: 32px;
             color: #fff;
             background-color: $red;
+            text-align: center;
         }
     }
 }

@@ -5,3 +5,7 @@
 .breadcrumbs-wrapper > .rsbreadcrumb {
   text-align: left;
 }
+
+.breadcrumbs-wrapper > ul > li:before, ol > li:before {
+  content: none;
+}
