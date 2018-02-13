@@ -1,0 +1,191 @@
+
+.advantages-p {
+    text-align: left;
+
+    &__item {
+        margin-bottom: 2em;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        min-height: 40px;
+        padding-left: 53px;
+
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: bold;
+        color: $red;
+        text-transform: uppercase;
+        text-align: left;
+
+        background-position: left center;
+        background-size: auto;
+        background-repeat: no-repeat;
+
+        &_1 {
+            background-image: url('../img/adv-page-icon-1_min.png');
+        }
+
+        &_2 {
+            background-image: url('../img/adv-page-icon-2_min.png');
+        }
+
+        &_3 {
+            background-image: url('../img/adv-page-icon-3_min.png');
+        }
+
+        &_4 {
+            background-image: url('../img/adv-page-icon-4_min.png');
+        }
+
+        &_5 {
+            min-height: 48px;
+            background-image: url('../img/adv-page-icon-5_min.png');
+        }
+
+        &_6 {
+            background-image: url('../img/adv-page-icon-6_min.png');
+        }
+
+        &_7 {
+            padding-left: 59px;
+            background-image: url('../img/adv-page-icon-7_min.png');
+        }
+
+        &_8 {
+            padding-left: 59px;
+            background-image: url('../img/adv-page-icon-8_min.png');
+        }
+    }
+
+    &__desc { 
+        font-size: 13px;
+        line-height: 1.69;
+    }
+
+    &__conditions-title {
+        margin-bottom: 1em;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    &__condition {
+        display: block;
+        margin-bottom: 10px;
+        padding: 20px 15px 30px;
+        font-size: 15px;
+        line-height: 1em;
+        color: $red;
+        font-weight: 700;
+        border: 1px solid $grey-light6;
+    }
+}
+
+@media (min-width: 480px) {
+    .advantages-p {
+        &__title {
+            margin-bottom: 0;
+
+            &_7 {
+                padding-left: 53px;
+            }
+        }
+
+        &__desc {
+            padding-left: 53px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .advantages-p {
+        &__item {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        &__title {
+            box-sizing: border-box;
+            width: 34%;
+            padding-left: 84px;
+            min-height: 71px;
+            background-position-x: 10px;
+
+            &_1 {
+                background-image: url('../img/adv-page-icon-1.png');
+                background-size: 61px 57px;
+            }
+    
+            &_2 {
+                background-image: url('../img/adv-page-icon-2.png');
+                background-size: 59px 52px;
+            }
+    
+            &_3 {
+                background-image: url('../img/adv-page-icon-3.png');
+                background-size: 61px 57px;
+            }
+    
+            &_4 {
+                background-image: url('../img/adv-page-icon-4.png');
+                background-size: 56px 63px;
+            }
+    
+            &_5 {
+                background-image: url('../img/adv-page-icon-5.png');
+                background-size: 60px 70px;
+            }
+    
+            &_6 {
+                background-image: url('../img/adv-page-icon-6.png');
+                background-size: 54px 62px;
+            }
+    
+            &_7 {
+                background-image: url('../img/adv-page-icon-7.png');
+                background-size: 75px 35px;
+                background-position-x: 0;
+            }
+
+            &_8 {
+                background-image: url('../img/adv-page-icon-8.png');
+                background-size: 62px 56px;
+            }
+        }
+
+        &__desc {
+            margin-bottom: 0;
+            box-sizing: border-box;
+            width: 66%;
+        }
+
+        &__conditions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__condition {
+            width: 31.5%;
+            box-sizing: border-box;
+            transition: all 0.4s ease;
+
+            &:hover {
+                text-decoration: none;
+                background: $gray-light;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .advantages-p {
+        &__desc {
+            padding-left: 20px;
+            font-size: 14px;
+        }
+    }
+}
