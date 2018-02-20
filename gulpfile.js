@@ -56,19 +56,19 @@ gulp.task("browser-sync", function () {
 });
 
 gulp.task("es6", function () {
-	return gulp.src("app/js/*")
+	return gulp.src("app/scripts/*")
         .pipe(babel({
 	presets: ["es2015"]
 }))
-        .pipe(gulp.dest("dist/js"));
+        .pipe(gulp.dest("dist/scripts"));
 });
 
 gulp.task("scriptsMin", ["es6"], function () {
-	return gulp.src("dist/js/*")
+	return gulp.src("dist/scripts/*")
         .pipe(uglify())
         .on("error", function (err) { gutil.log(gutil.colors.red("[Error]"), err.toString()); })
         .pipe(rename({ suffix: ".min" }))
-        .pipe(gulp.dest("dist/js"));
+        .pipe(gulp.dest("dist/scripts"));
 });
 
 gulp.task("clean", function () {
@@ -93,7 +93,7 @@ gulp.task("img", function () {
 gulp.task("watch", ["sass", "browser-sync"], function () {
 	gulp.watch("app/sass/**/**/*.scss", ["sass"]);
 	gulp.watch("app/**/**/**/*.html", browserSync.reload);
-	gulp.watch("app/js/**/*.js", browserSync.reload);
+	gulp.watch("app/scripts/**/*.js", browserSync.reload);
 });
 
 gulp.task("default", ["watch"]);
