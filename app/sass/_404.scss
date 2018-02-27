@@ -1,5 +1,6 @@
 @media (min-width: 320px) {
     .container-404 {
+        font-family: "Opensans";
         display: block;
         box-sizing: border-box;
         width: 100%;
@@ -8,7 +9,6 @@
     .top-404 {
         margin-top: 33px;
         margin-bottom: 40px;
-        font-family: "Open Sans";
 
         &__number {
             margin-bottom: 10px;
@@ -37,7 +37,7 @@
             padding: 11px 26px 11px 26px;
             font-size: 14px;
             color: #fff;
-            font-weight: 600;
+            font-family: Opensansbold;
             text-align: center;
             
             background-color: $red;
@@ -149,7 +149,6 @@
         text-align: left;
         font-size: 14px;
         line-height: 26px;
-        font-family: "Open Sans";
 
         &__group {
             padding: 15px;
@@ -167,7 +166,7 @@
             display: block;
             padding-right: 10px;
             font-size: 13px;
-            font-weight: 600;
+            font-family:Opensansbold;
             color: $red;
 
             & span {
