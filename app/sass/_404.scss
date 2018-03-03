@@ -8,6 +8,7 @@
 
     .top-404 {
         margin-bottom: 40px;
+        text-align: center;
 
         &__number {
             margin-bottom: 10px;
@@ -247,6 +248,9 @@
     }
 
     .promo-404 {
+        margin-left: -5px;
+        margin-right: -5px;
+
         &__text {
             padding-left: 50px;
             padding-right: 50px;
@@ -267,6 +271,7 @@
         margin-bottom: 50px;
         display: flex;
         align-items: center;
+        text-align: left;
 
         &__number {
             margin: 0;
