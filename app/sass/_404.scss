@@ -145,7 +145,7 @@
     }
 
     .links-404 {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         text-align: left;
         font-size: 14px;
         line-height: 26px;
@@ -171,6 +171,7 @@
 
             & span {
                 color: #6b80a0;
+                font-family:Opensans;
             }
 
             &::after {
@@ -196,6 +197,7 @@
 
         &__group-block {
             display:none;
+            margin-top: 12px;
         }
 
         &__group-link {
@@ -241,6 +243,14 @@
         &__text {
             padding-left: 50px;
             padding-right: 50px;
+        }
+    }
+
+    .links-404 {
+        margin-bottom: 41px;
+
+        &__group-link {
+            margin-left: 20px;
         }
     }
 }
@@ -302,6 +312,7 @@
     .links-404 {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 25px;
 
         &__group {
             padding: 0;
@@ -317,14 +328,15 @@
 
         &__group-block {
             display: block!important;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         &__group-title {
-            margin-bottom: 5px;
+            margin-bottom: 0;
             padding-right: 0;
             font-weight: normal;
             font-size: 16px;
+            font-family:Opensans;
 
             &::after {
                 content: none;
@@ -332,6 +344,7 @@
         }
 
         &__group-link {
+            margin-left: 0;
             font-size: 13px;
         }
     }
@@ -393,6 +406,8 @@
     }
 
     .links-404 {
+        margin-bottom: 35px;
+
         &__group {
             width: 280px;
             margin-right: calc((100% - 840px) / 2);
@@ -429,6 +444,7 @@
         }
 
         &__desc {
+            margin-bottom: 36px;
             font-size: 15px;
             line-height: 26px;
         }
@@ -457,6 +473,8 @@
     }
 
     .links-404 {
+        margin-bottom: 53px;
+
         &__group {
             width: 270px;
             margin-right: calc((100% - 1080px) / 3);
