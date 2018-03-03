@@ -7,7 +7,6 @@
     }
 
     .top-404 {
-        margin-top: 33px;
         margin-bottom: 40px;
 
         &__number {
@@ -130,6 +129,10 @@
                 padding-bottom: 38px;
             }
 
+            & .specials__slide {
+                background: #fff;
+            }
+
             & .swiper-pagination-bullet {
                 border: 1px solid $red;
             }
@@ -141,6 +144,10 @@
 
         &__title {
             margin-top: 15px;
+        }
+
+        & .specials__slide {
+            background: #fff;
         }
     }
 
@@ -257,7 +264,6 @@
 
 @media (min-width: 768px) {
     .top-404 {
-        margin-top: 35px;
         margin-bottom: 50px;
         display: flex;
         align-items: center;
@@ -452,6 +458,7 @@
 
     .search-404 {
         &__title {
+            margin-right: 25px;
             font-size: 26px;
             line-height: 32px;
         }
